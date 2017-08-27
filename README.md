@@ -1,7 +1,7 @@
-## VoiceAttack-Profiles
+# VoiceAttack-Profiles
 Perfiles de Voice Attack para uso personal pero compartidos para quien los quiera.
 
-# Manual
+## Manual
 Os comparto un manualillo para añadir Spotify en vuestro perfil actual de VA:
 
 1- Descargar plugin VA de Spotify de aquí: http://www.litpixi.com/va-spotify/ (más info aquí)
@@ -14,14 +14,14 @@ Os comparto un manualillo para añadir Spotify en vuestro perfil actual de VA:
 
 Una vez cargado el perfil es recomendable realizar algún cambio:
 
-# Configurar comandos para Abrir Spotify
+## Configurar comandos para Abrir Spotify
 
 a) edita comando "LaunchSpotify"
 b) edita subcomando "Run Application" y selecciona el exe o el shortcut de tu Spotify
 c) guarda todo.
 
 
-# Configurar Playlists
+## Configurar Playlists
 
 a) mediante menú de botón derecho, duplica el comando "EJEMPLO: Copia este comando y pega la URL de tu playlist"
 b) Activa casilla "When I say" y modifica contenido con lo que queréis decir para que Shirka os entienda
@@ -30,7 +30,7 @@ c) editar subcomando "Set Text" que está entre comentarios con dirección URI d
 d) Podéis editar el otro subcomando "Set Text" con lo que queráis que Shirka os conteste al abrir la playlist.
 
 
-# Como conseguir dirección URI de Spotify
+## Como conseguir dirección URI de Spotify
 
 a) Abrir Spotify (o a estas alturas decir "Abre Spotify"
 b) buscar playlist deseada.
