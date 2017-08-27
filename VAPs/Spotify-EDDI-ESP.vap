@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-16"?>
 <Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>85adead0-49ba-40ff-bd81-52f8788b55ed</Id>
-  <Name>Elite:Dangerous+EDDI publico+Cortana+Spotify</Name>
+  <Name>Spotify-EDDI-ESP</Name>
   <Commands>
     <Command>
       <Id>4cb24aac-14bf-4b55-aed1-a7197a4da01c</Id>
