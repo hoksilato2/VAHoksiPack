@@ -64,7 +64,7 @@
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
-          <InputMode>0</InputMode>
+          <InputMode>0</InputMode>in
           <ConditionSetName />
           <ConditionSetCondition />
           <ConditionPairing>0</ConditionPairing>
@@ -2623,7 +2623,7 @@
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>U:\Axel\OneDrive\Desktop\spotify.lnk</Context>
+          <Context>%USERPROFILE%\Desktop\spotify.lnk</Context>
           <Context2 />
           <Context3 />
           <Context4>Launch</Context4>
