@@ -3519,7 +3519,7 @@
     </Command>
     <Command>
       <Id>c671047c-dc3c-4b3e-8c4e-6239793c9677</Id>
-      <CommandString>Pon[ algo de ; ]música clásica</CommandString>
+      <CommandString>Pon[ algo de ; ]música clásica [de;en] Spotify</CommandString>
       <ActionSequence>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -3818,7 +3818,7 @@
     </Command>
     <Command>
       <Id>002b4867-ccba-40f6-8219-6fe14e181590</Id>
-      <CommandString>Pon[ algo de ; ]música [del espacio; de películas del espacio]</CommandString>
+      <CommandString>Pon[ algo de ; ]música[del espacio; de películas del espacio] [de;en] Spotify</CommandString>
       <ActionSequence>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -4043,7 +4043,7 @@
     </Command>
     <Command>
       <Id>f54034b0-1776-4270-8e4c-8e675092aaba</Id>
-      <CommandString>Pon[ algo de; ]música [tranquila; de meditación].</CommandString>
+      <CommandString>Pon[ algo de; ]música [tranquila; de meditación] [de;en] Spotify.</CommandString>
       <ActionSequence>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -5483,7 +5483,7 @@
     </Command>
     <Command>
       <Id>76884e91-9592-4546-8378-2c19f7ca167f</Id>
-      <CommandString>Pon música [para el;de] combate</CommandString>
+      <CommandString>Pon música [para el;de] combate [de;en] Spotify</CommandString>
       <ActionSequence>
         <CommandAction>
           <PairingSet>false</PairingSet>
