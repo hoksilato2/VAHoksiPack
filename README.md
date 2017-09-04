@@ -8,7 +8,7 @@ Os comparto un manualillo para añadir Spotify en vuestro perfil actual de VA:
 
 2- Descomprimir contenido en .\Voiceattack\Apps Os debería quedar la carpeta Spotify al lado de la de EDDI.
 
-3- Descargar perfil VAP de Spotify de aquí (Usar botón derecho -> Decargar enlace..)
+3- Descargar perfil VAP de Spotify de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/Spotify-EDDI-ESP.vap) (Usar botón derecho -> Decargar enlace..)
 
 5- Abrir VA y exportar vuestro actual perfil (para hacer un backup por si aca)
 
