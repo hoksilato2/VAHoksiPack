@@ -20,7 +20,11 @@ Os comparto un manualillo para añadir Spotify en vuestro perfil actual de VA:
 
 8- Seleccionar perfil VAP de Spotify descargado para añadir comandos de Spotify a vuestro perfil.
 
-ES NECESARIO ANULAR OTROS COMANDOS DE VA DE OTROS REPRODUCTORES (COMO VLC) DADO QUE PUEDE QUE ALGUNOS COMANDOS SEAN IGUALES (Ej: "Pon música tranquila")
+## A tener en cuenta
+
+- Dado que el plugin sigue con muchos bugs y es bastante inestable, he substituido parte de los comandos con la ayuda del CLMControl que funciona muy bien. Es para controlar las acciones de varios reproductores mediante consola de comandos.
+
+- ES NECESARIO ANULAR OTROS COMANDOS DE VA DE OTROS REPRODUCTORES (COMO VLC) DADO QUE PUEDE QUE ALGUNOS COMANDOS SEAN IGUALES (Ej: "Pon música tranquila")
 
 
 Una vez cargado el perfil es recomendable realizar algún cambio:
