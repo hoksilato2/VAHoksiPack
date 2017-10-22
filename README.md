@@ -28,26 +28,37 @@ Una vez cargado el perfil es recomendable realizar algún cambio:
 ## Configurar comandos para Abrir Spotify
 
 a) edita comando "LaunchSpotify"
+
 b) edita subcomando "Run Application" y selecciona el exe o el shortcut de tu Spotify
+
 c) guarda todo.
 
 
 ## Configurar Playlists
 
 a) mediante menú de botón derecho, duplica el comando "EJEMPLO: Copia este comando y pega la URL de tu playlist"
+
 b) Activa casilla "When I say" y modifica contenido con lo que queréis decir para que Shirka os entienda
+
 ejemplo: Pon[ algo de ; ]música Pop
 c) editar subcomando "Set Text" que está entre comentarios con dirección URI de la playlist
+
 d) Podéis editar el otro subcomando "Set Text" con lo que queráis que Shirka os conteste al abrir la playlist.
+
 
 
 ## Como conseguir dirección URI de Spotify
 
 a) Abrir Spotify (o a estas alturas decir "Abre Spotify"
+
 b) buscar playlist deseada.
+
 c) Buscar menú "..." donde está la opción de "compartir"
+
 d) Usar opción "URI" para que se copie en el portapapeles.
+
 e) el formato es como este: spotify:usermicron07laylist:2CUqZmzR60Q5dnWP3kvRAm (playlist hecha por el creador del plugin)
+
 
 
 Espero que os guste y os sirva. En principio no debería haber problema si no tenéis cuenta premium, aunque si no la tenéis os recomiendo mil hacer una cuenta familiar con 5 colegas mas. Así os sale tirado.
