@@ -8,14 +8,19 @@ Os comparto un manualillo para añadir Spotify en vuestro perfil actual de VA:
 
 2- Descomprimir contenido en .\Voiceattack\Apps Os debería quedar la carpeta Spotify al lado de la de EDDI.
 
-3- Descargar perfil VAP de Spotify de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/Spotify-EDDI-ESP.vap) (Usar botón derecho -> Decargar enlace..)
+3- Descargar Command Line Media Controller (CLMControl) de aquí: https://commandlinemedia.codeplex.com/. Más info [aquí](https://commandlinemedia.codeplex.com/documentation)
 
-5- Abrir VA y exportar vuestro actual perfil (para hacer un backup por si aca)
+4- Descomprimir contenido en .\Voiceattack\Apps\Spotify
 
-6- Editar perfil que usáis en VA y usar botón "Import Commands"
+5- Descargar perfil VAP de Spotify de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/blob/master/VAPs/Hoksilato-Spotify-Profile.vap) (Usar botón derecho -> Decargar enlace..)
 
-7- Seleccionar perfil VAP de Spotify descargado para añadir comandos de Spotify a vuestro perfil.
+6- Abrir VA y exportar vuestro actual perfil (para hacer un backup por si aca)
 
+7- Editar perfil que usáis en VA y usar botón "Import Commands"
+
+8- Seleccionar perfil VAP de Spotify descargado para añadir comandos de Spotify a vuestro perfil.
+
+ES NECESARIO ANULAR OTROS COMANDOS DE VA DE OTROS REPRODUCTORES (COMO VLC) DADO QUE PUEDE QUE ALGUNOS COMANDOS SEAN IGUALES (Ej: "Pon música tranquila")
 
 
 Una vez cargado el perfil es recomendable realizar algún cambio:
@@ -44,23 +49,9 @@ c) Buscar menú "..." donde está la opción de "compartir"
 d) Usar opción "URI" para que se copie en el portapapeles.
 e) el formato es como este: spotify:usermicron07laylist:2CUqZmzR60Q5dnWP3kvRAm (playlist hecha por el creador del plugin)
 
-Os he dejado tres playlist de ejemplo:
-
-- Música Clásica: 
-https://open.spotify.com/embed/user/...NtxAn0wvDErVm5
-
-- Música de combate:
-https://open.spotify.com/embed/user/...1DWWRktbhJiuqL
-
-- Música Tranquila: 
-https://open.spotify.com/embed/user/...1DX9uKNf5jGX6m
-
-- Música del espacio: 
-https://open.spotify.com/embed/user/...1DX0i61tT0OnnK
 
 Espero que os guste y os sirva. En principio no debería haber problema si no tenéis cuenta premium, aunque si no la tenéis os recomiendo mil hacer una cuenta familiar con 5 colegas mas. Así os sale tirado.
 
-Sería chulo que propusierais cambios, playlists y demás para ir mejorando no solo el apartado de spotify si no a toda Shirka entera
 
 post en el foro de Elite Dangerous: 
 https://forums.frontier.co.uk/showthread.php/332163-Voiceattack-EDDI-en-espa%F1ol?p=5863560#post5863560
