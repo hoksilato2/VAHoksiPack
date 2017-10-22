@@ -456,7 +456,7 @@
           <KeyCodes />
           <Context>{VA_SOUNDS}\EliteDangerous\blip.mp3</Context>
           <Context2 />
-          <Context3>00000000-0000-0000-0000-000000000000</Context3>
+          <Context3>00000000-0000-0000-0000-000000000000< /Context3>
           <Context4>Default</Context4>
           <X>35</X>
           <Y>0</Y>
@@ -2338,7 +2338,7 @@
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>U:\Axel\OneDrive\Desktop\spotify.lnk</Context>
+          <Context>U:\Hoksilato\OneDrive\Desktop\spotify.lnk</Context>
           <Context2 />
           <Context3 />
           <Context4>Launch</Context4>
