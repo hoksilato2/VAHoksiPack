@@ -9120,7 +9120,7 @@
           <Delay>0</Delay>
           <KeyCodes />
           <Context>Script</Context>
-          <Context2 xml:space="preserve">Como [desee comandante; desees Áx el]. [Deje la música en mis manos;A ver si te gusta {TXT:Spotify_ArtistName}].</Context2>
+          <Context2 xml:space="preserve">Como [desee comandante; desee]. [Deje la música en mis manos;A ver si te gusta {TXT:Spotify_ArtistName}].</Context2>
           <Context3 />
           <Context4 />
           <X>0</X>
