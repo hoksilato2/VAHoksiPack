@@ -41,6 +41,7 @@ a) mediante menú de botón derecho, duplica el comando "EJEMPLO: Copia este com
 b) Activa casilla "When I say" y modifica contenido con lo que queréis decir para que Shirka os entienda
 
 ejemplo: Pon[ algo de ; ]música Pop
+
 c) editar subcomando "Set Text" que está entre comentarios con dirección URI de la playlist
 
 d) Podéis editar el otro subcomando "Set Text" con lo que queráis que Shirka os conteste al abrir la playlist.
