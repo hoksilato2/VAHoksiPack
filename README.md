@@ -1,73 +1,29 @@
-# VoiceAttack-Profiles
-Perfiles de Voice Attack para uso personal pero compartidos para quien los quiera.
+# Shirka por Altair28
+## Perfil de Voice Attack y personalidad Shirka de EDDI para usar en Elite:Dangerous
 
-## Manual
-Os comparto un manualillo para añadir Spotify en vuestro perfil actual de VA:
+En el *branch* "Shirka-Altair28" iré añadiendo los cambios que va haciendo Altair28 en la traducción y modificación del código de los dos archivos necesarios (Perfil de VA y personalidad de EDDI).
 
-1- Descargar plugin VA de Spotify de [aquí](http://www.litpixi.com/va-spotify/). Más info [aquí](http://voiceattack.com/SMF/index.php?topic=585.0/)
+Todos los méritos de esta traducción y el manual van dirigidos a Altair28 del foro oficial de Elite:Dangerous. Mediante este github intentaremos echarle una mano.
 
-2- Descomprimir contenido en .\Voiceattack\Apps Os debería quedar la carpeta Spotify al lado de la de EDDI.
+**Hilo del foro de Elite:Dangerous:**
 
-3- Descargar Command Line Media Controller (CLMControl) de [aquí](https://commandlinemedia.codeplex.com/). Más info [aquí](https://commandlinemedia.codeplex.com/documentation)
+https://forums.frontier.co.uk/showthread.php/332163-Voiceattack-EDDI-en-espa%C3%B1ol/page10
 
-4- Descomprimir contenido en .\Voiceattack\Apps\Spotify
+**Instrucciones de uso:**
 
-5- Descargar perfil VAP de Spotify de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/blob/master/VAPs/Hoksilato-Spotify-Profile.vap) (Usar botón derecho -> Decargar enlace..)
-
-6- Abrir VA y exportar vuestro actual perfil (para hacer un backup por si aca)
-
-7- Editar perfil que usáis en VA y usar botón "Import Commands"
-
-8- Seleccionar perfil VAP de Spotify descargado para añadir comandos de Spotify a vuestro perfil.
-
-## A tener en cuenta
-
-- Dado que el plugin sigue con muchos bugs y es bastante inestable, he substituido parte de los comandos con la ayuda del CLMControl que funciona muy bien. Es para controlar las acciones de varios reproductores mediante consola de comandos.
-
-- ES NECESARIO ANULAR OTROS COMANDOS DE VA DE OTROS REPRODUCTORES (COMO VLC) DADO QUE PUEDE QUE ALGUNOS COMANDOS SEAN IGUALES (Ej: "Pon música tranquila")
-
-
-Una vez cargado el perfil es recomendable realizar algún cambio:
-
-## Configurar comandos para Abrir Spotify
-
-a) edita comando "LaunchSpotify"
-
-b) edita subcomando "Run Application" y selecciona el exe o el shortcut de tu Spotify
-
-c) guarda todo.
-
-
-## Configurar Playlists
-
-a) mediante menú de botón derecho, duplica el comando "EJEMPLO: Copia este comando y pega la URL de tu playlist"
-
-b) Activa casilla "When I say" y modifica contenido con lo que queréis decir para que Shirka os entienda
-
-ejemplo: Pon[ algo de ; ]música Pop
-
-c) editar subcomando "Set Text" que está entre comentarios con dirección URI de la playlist
-
-d) Podéis editar el otro subcomando "Set Text" con lo que queráis que Shirka os conteste al abrir la playlist.
+https://drive.google.com/file/d/0B8TfEGmhBLXJZkx2QWJFMHo2Qm8/view 
 
 
 
-## Como conseguir dirección URI de Spotify
+## Archivos que se van modificando:
 
-a) Abrir Spotify (o a estas alturas decir "Abre Spotify"
+[Perfil de Voice Attack](https://github.com/hoksilato2/VoiceAttack-Profiles/blob/Shirka-Altair28/VAPs/EliteDangerous%20con%20EDDI%20publico-Profile.vap)
 
-b) buscar playlist deseada.
-
-c) Buscar menú "..." donde está la opción de "compartir"
-
-d) Usar opción "URI" para que se copie en el portapapeles.
-
-e) el formato es como este: spotify:usermicron07laylist:2CUqZmzR60Q5dnWP3kvRAm (playlist hecha por el creador del plugin)
+[Shirka: Personalidad de EDDI](https://github.com/hoksilato2/VoiceAttack-Profiles/blob/Shirka-Altair28/Personalities/Shirka.json) 
 
 
+### Instalación de archivos
 
-Espero que os guste y os sirva. En principio no debería haber problema si no tenéis cuenta premium, aunque si no la tenéis os recomiendo mil hacer una cuenta familiar con 5 colegas mas. Así os sale tirado.
+**Perfil de Voice Attack:** Exportación mediante el mismo Voice Attack. También se puede usar la opción "Import Commands" del menú de edición de perfiles de VA para importar solo los comandos que quieras.
 
-
-post en el foro de Elite Dangerous: 
-https://forums.frontier.co.uk/showthread.php/332163-Voiceattack-EDDI-en-espa%F1ol?p=5863560#post5863560
+**Personalidad de EDDI:** Copiar en C:\Users\%username%\AppData\Roaming\EDDI\personalities\Shirka.json
