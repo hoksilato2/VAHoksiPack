@@ -12,7 +12,7 @@ Os comparto un manualillo para añadir Spotify en vuestro perfil actual de VA:
 
 4- Descomprimir contenido en .\Voiceattack\Apps\Spotify
 
-5- Descargar perfil VAP de Spotify de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/blob/master/VAPs/Hoksilato-Spotify-Profile.vap) (Usar botón derecho -> Decargar enlace..)
+5- Descargar perfil VAP de Spotify de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/Hoksilato-Spotify-Profile.vap) (Usar botón derecho -> Decargar enlace..)
 
 6- Abrir VA y exportar vuestro actual perfil (para hacer un backup por si aca)
 
