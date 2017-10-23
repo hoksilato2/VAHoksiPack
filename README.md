@@ -17,9 +17,9 @@ https://drive.google.com/file/d/0B8TfEGmhBLXJZkx2QWJFMHo2Qm8/view
 
 ## Archivos que se van modificando:
 
-[Perfil de Voice Attack](https://github.com/hoksilato2/VoiceAttack-Profiles/blob/Shirka-Altair28/VAPs/EliteDangerous%20con%20EDDI%20publico-Profile.vap)
+[Perfil de Voice Attack](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/Shirka-Altair28/VAPs/EliteDangerous%20con%20EDDI%20publico-Profile.vap)
 
-[Shirka: Personalidad de EDDI](https://github.com/hoksilato2/VoiceAttack-Profiles/blob/Shirka-Altair28/Personalities/Shirka.json) 
+[Shirka: Personalidad de EDDI](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/Shirka-Altair28/Personalities/Shirka.json) 
 
 
 ### Instalación de archivos
