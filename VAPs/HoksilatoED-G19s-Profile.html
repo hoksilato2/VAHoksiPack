@@ -11,11 +11,11 @@ TABLE { width:100%; font-family:Calibri,Tahoma,Arial; }
 .tblHeader { font-size:18px; color:#FFFFFF; background-color:#000000; font-weight:bold;font-family:Calibri,Tahoma,Arial; border-style:inset; border-width:2px; }
 </style>
 </head>
-<title>HoksilatoG19s - VoiceAttack Profile Command Sheet</title>
+<title>HoksilatoED+EDDI publico+G19s - VoiceAttack Profile Command Sheet</title>
 <body>
 <table class='tblHeader'>
 <tr>
-<td style='padding-left:8px'>HoksilatoG19s</td>
+<td style='padding-left:8px'>HoksilatoED+EDDI publico+G19s</td>
 <td style='text-align:right;white-space:nowrap;'>VoiceAttack Profile Command Sheet</td>
 </tr>
 </table>
@@ -30,22 +30,46 @@ TABLE { width:100%; font-family:Calibri,Tahoma,Arial; }
 </thead>
 <tbody>
 <tr class='r0'>
-<td width='15%'>((EDDI NPC attack commenced))</td>
-<td width='15%'>EDDI music (under attack)</td>
+<td width='15%'>((EDDI docked))</td>
+<td width='15%'>EDDI music (docked)</td>
 <td width='15%'>G19s App</td>
-<td>Begin Boolean Compare : [play_combat] Equals False, Set Text [Script] to '[Comandante. Prepárese para el combate]', Execute external plugin, 'EDDI 2.4.6-b2' and wait for return, Pause 2.2 seconds, Execute command, 'PLAYLIST COMBAT' (and wait until it completes), End Condition</td>
+<td>Begin Boolean Compare : [play_cantina] Equals False, DISABLED - Set Text [Script] to '[]', DISABLED - Execute external plugin, 'EDDI 2.4.6-b2' and wait for return, Pause 2.2 seconds, Execute command, 'PLAYLIST CANTINA' (and wait until it completes), End Condition</td>
 </tr>
 <tr class='r1'>
-<td width='15%'>((Entered normal space))</td>
+<td width='15%'>((EDDI entered normal space))</td>
 <td width='15%'>EDDI music (entered normal space)</td>
+<td width='15%'>G19s App</td>
+<td>Begin Boolean Compare : [play_space] Equals False, DISABLED - Set Text [Script] to '[]', DISABLED - Execute external plugin, 'EDDI 2.4.6-b2' and wait for return, Pause 2.2 seconds, Execute command, 'PLAYLIST SPACE' (and wait until it completes), End Condition</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>((EDDI entered signal source))</td>
+<td width='15%'>EDDI music (entered signal source)</td>
+<td width='15%'>G19s App</td>
+<td>Kill command, '((EDDI entered normal space))', Begin Boolean Compare : [play_suspense] Equals False, DISABLED - Set Text [Script] to '[Tenga precaución comandante]', DISABLED - Execute external plugin, 'EDDI 2.4.6-b2' and wait for return, Pause 2.2 seconds, Execute command, 'PLAYLIST SUSPENSE' (and wait until it completes), End Condition</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>((EDDI entered supercruise))</td>
+<td width='15%'>EDDI music (entered supercruise)</td>
 <td width='15%'>G19s App</td>
 <td>Begin Boolean Compare : [play_relax] Equals False, DISABLED - Set Text [Script] to '[Comandante. Prepárese para el combate]', DISABLED - Execute external plugin, 'EDDI 2.4.6-b2' and wait for return, Pause 2.2 seconds, Execute command, 'PLAYLIST RELAX' (and wait until it completes), End Condition</td>
 </tr>
 <tr class='r0'>
-<td width='15%'>((Entered supercruise))</td>
+<td width='15%'>((EDDI jumped))</td>
 <td width='15%'>EDDI music (entered supercruise)</td>
 <td width='15%'>G19s App</td>
 <td>Begin Boolean Compare : [play_relax] Equals False, DISABLED - Set Text [Script] to '[Comandante. Prepárese para el combate]', DISABLED - Execute external plugin, 'EDDI 2.4.6-b2' and wait for return, Pause 2.2 seconds, Execute command, 'PLAYLIST RELAX' (and wait until it completes), End Condition</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>((EDDI npc attack commenced))</td>
+<td width='15%'>EDDI music (under attack)</td>
+<td width='15%'>G19s App</td>
+<td>Begin Boolean Compare : [play_combat] Equals False, Set Text [Script] to '[Comandante. Prepárese para el combate]', Execute external plugin, 'EDDI 2.4.6-b2' and wait for return, Pause 2.2 seconds, Execute command, 'PLAYLIST COMBAT' (and wait until it completes), End Condition</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>((EDDI undocked))</td>
+<td width='15%'>G19s App C'ya cmdr.</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute command, '[Para; Pausa] [la música;] [de;] [Spotify;]' (and wait until it completes)</td>
 </tr>
 <tr class='r1'>
 <td width='15%'>Baja[; un poco] [el tráfico;el volumen del tráfico]</td>
@@ -117,31 +141,43 @@ TABLE { width:100%; font-family:Calibri,Tahoma,Arial; }
 <td width='15%'>[Para; Pausa] [la música;] [de;] [Spotify;]</td>
 <td width='15%'>G19s App STOP music</td>
 <td width='15%'>G19s App</td>
-<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Set Boolean [play_combat] to False (save value to profile), Set Boolean [play_relax] to False (save value to profile), Set Boolean [play_space] to False (save value to profile), Execute external plugin, 'EliteG19s VoiceAttack Plugin'</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Set Boolean [play_combat] to False (save value to profile), Set Boolean [play_suspense] to False (save value to profile), Set Boolean [play_cantina] to False (save value to profile), Set Boolean [play_relax] to False (save value to profile), Set Boolean [play_space] to False (save value to profile), Execute external plugin, 'EliteG19s VoiceAttack Plugin'</td>
 </tr>
 <tr class='r1'>
 <td width='15%'>Pasa [a; ]la [siguiente; ]canción [;de Spotify]; Siguiente canción [;de Spotify]; Siguiente pista [;de Spotify];[Pon; ]otra canción [;de Spotify]</td>
 <td width='15%'>G19s App next track</td>
 <td width='15%'>G19s App</td>
-<td>Execute command, 'Silencia la música' (and wait until it completes), Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Pause 2 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Pause 2 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Set Text [Script] to 'Reproduciendo siguiente canción llamada {TXT:EliteG19s_Current_Title}; Como ordene comandante', Execute external plugin, 'EDDI 2.4.6-b2'</td>
+<td>DISABLED - Execute command, 'Silencia la música' (and wait until it completes), Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Pause 2 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, DISABLED - Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Pause 2 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Set Text [Script] to 'Reproduciendo siguiente canción llamada {TXT:EliteG19s_Current_Title}; Como ordene comandante', Execute external plugin, 'EDDI 2.4.6-b2'</td>
 </tr>
 <tr class='r0'>
+<td width='15%'>PLAYLIST CANTINA</td>
+<td width='15%'>G19s App Playlist cantina</td>
+<td width='15%'>G19s App</td>
+<td>Execute command, 'Silencia la música' (and wait until it completes), Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ----------playlist-----------, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ------------------------------, Set Boolean [play_cantina] to True (save value to profile), Set Boolean [play_supense] to False (save value to profile), Set Boolean [play_relax] to False (save value to profile), Set Boolean [play_space] to False (save value to profile), Set Boolean [play_combat] to False (save value to profile), Pause 5 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r1'>
 <td width='15%'>PLAYLIST COMBAT</td>
 <td width='15%'>G19s App Playlist combat</td>
 <td width='15%'>G19s App</td>
-<td>Execute command, 'Silencia la música' (and wait until it completes), Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ----------playlist-----------, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ------------------------------, Set Boolean [play_relax] to False (save value to profile), Set Boolean [play_space] to False (save value to profile), Set Boolean [play_combat] to True (save value to profile), Pause 5 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+<td>Execute command, 'Silencia la música' (and wait until it completes), Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ----------playlist-----------, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ------------------------------, Set Boolean [play_suspense] to False (save value to profile), Set Boolean [play_cantina] to False (save value to profile), Set Boolean [play_relax] to False (save value to profile), Set Boolean [play_space] to False (save value to profile), Set Boolean [play_combat] to True (save value to profile), Pause 5 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
 </tr>
-<tr class='r1'>
+<tr class='r0'>
 <td width='15%'>PLAYLIST RELAX</td>
 <td width='15%'>G19s App Playlist relax</td>
 <td width='15%'>G19s App</td>
-<td>Execute command, 'Silencia la música' (and wait until it completes), Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ----------playlist-----------, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ------------------------------, Set Boolean [play_relax] to True (save value to profile), Set Boolean [play_space] to False (save value to profile), Set Boolean [play_combat] to False (save value to profile), Pause 5 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+<td>Execute command, 'Silencia la música' (and wait until it completes), Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ----------playlist-----------, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ------------------------------, Set Boolean [play_cantina] to False (save value to profile), Set Boolean [play_suspense] to False (save value to profile), Set Boolean [play_relax] to True (save value to profile), Set Boolean [play_space] to False (save value to profile), Set Boolean [play_combat] to False (save value to profile), Pause 5 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
 </tr>
-<tr class='r0'>
+<tr class='r1'>
 <td width='15%'>PLAYLIST SPACE</td>
 <td width='15%'>G19s App Playlist space</td>
 <td width='15%'>G19s App</td>
-<td>Execute command, 'Silencia la música' (and wait until it completes), Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ----------playlist-----------, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ------------------------------, Set Boolean [play_relax] to False (save value to profile), Set Boolean [play_space] to True (save value to profile), Set Boolean [play_combat] to False (save value to profile), Pause 5 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+<td>Execute command, 'Silencia la música' (and wait until it completes), Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ----------playlist-----------, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ------------------------------, Set Boolean [play_suspense] to False (save value to profile), Set Boolean [play_cantina] to False (save value to profile), Set Boolean [play_relax] to False (save value to profile), Set Boolean [play_space] to True (save value to profile), Set Boolean [play_combat] to False (save value to profile), Pause 5 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>PLAYLIST SUSPENSE</td>
+<td width='15%'>G19s App Playlist suspense</td>
+<td width='15%'>G19s App</td>
+<td>Execute command, 'Silencia la música' (and wait until it completes), Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ----------playlist-----------, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ------------------------------, Set Boolean [play_cantina] to False (save value to profile), Set Boolean [play_relax] to False (save value to profile), Set Boolean [play_space] to False (save value to profile), Set Boolean [play_combat] to False (save value to profile), Set Boolean [play_suspense] to True (save value to profile), Pause 5 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
 </tr>
 <tr class='r1'>
 <td width='15%'>Pon[ algo de ; ]música [del espacio; de películas del espacio]</td>
@@ -207,7 +243,7 @@ TABLE { width:100%; font-family:Calibri,Tahoma,Arial; }
 <td width='15%'>Silencia la música</td>
 <td width='15%'>G19s App volume 0</td>
 <td width='15%'>G19s App</td>
-<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin'</td>
 </tr>
 <tr class='r0'>
 <td width='15%'>Sube[; un poco] [el tráfico;el volumen del tráfico]</td>
@@ -220,6 +256,18 @@ TABLE { width:100%; font-family:Calibri,Tahoma,Arial; }
 <td width='15%'>G19s App volume music up</td>
 <td width='15%'>G19s App</td>
 <td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Play sound, '{VA_SOUNDS}\EliteDangerous\blip.mp3' , Start Dictation Mode (Clearing Dictation Buffer), Pause 3 seconds, Stop Dictation Mode, Begin Text Compare : [{DICTATION}] Ends With 'más', Jump: Command Start, End Condition, Set Text [Script] to '¿Está bien así[;comandante]?', Execute external plugin, 'EDDI 2.4.6-b2'</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>[Sube;Baja;Pon] [;el volumen] [;de] [;la música] [a la mitad; al 50%]</td>
+<td width='15%'>G19s App volume 50%</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Play sound, '{VA_SOUNDS}\EliteDangerous\blip.mp3'</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>[Sube;Pon] [;el volumen] [;de] [;la música] [a tope;al máximo; al 100%]</td>
+<td width='15%'>G19s App volume 50%</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Play sound, '{VA_SOUNDS}\EliteDangerous\blip.mp3'</td>
 </tr>
 </tbody>
 </table>
