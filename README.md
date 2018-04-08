@@ -1,6 +1,28 @@
 # VoiceAttack-Profiles
 Perfiles de Voice Attack para uso personal pero compartidos para quien los quiera.
 
+### Características
+- Personalidad de IA de la nave (Sirka) con la ayuda del Software EDDI y VoiceAttack
+- Comandos básicos del juego mediante voz con Sirka y Voiceattack
+- Consola externa con múltiples características gracias a la APP G19s Companion:
+  - Escucha de Música local, Spotify, Radios y Potcasts
+  - Tráfico aereo para mayor inmersión
+  - Lector de Feeds
+  - Herramientas como cálculo de rutas, búsqueda de tipo de astros por cercanía, commodities, materiales, shipyard...
+  - Discord Rich Presence (https://discordapp.com/rich-presence)
+- Mediante el perfil de VA para G19s he ideado lo que le llamo música ambiental automática. Consiste en:
+  - Playlist de Spotify adecuadas para cada circumstancia del juego
+  - Al decir "pon música" Sirka te pregunta por el género (Concierto, Rock, Electrónica o Relax)
+  - Según la música que escojas esta se adecuará a la acción del juego según:
+    - Si estás en una dockeado en una estación
+    - Si estás navegando por el espacio
+    - Si estás en un momento de tensión (señales)
+    - Si estás siendo atacado.
+
+Entre otras cosas. Podéis descargar todos los comandos de aquí:
+    - [Comandos de Sirka+EDDI](https://github.com/hoksilato2/VoiceAttack-Profiles/blob/master/VAPs/HoksilatoED-G19s.html) (Usar botón derecho -> Decargar enlace..)
+    - [Comandos de G19s](https://github.com/hoksilato2/VoiceAttack-Profiles/blob/master/VAPs/HoksilatoED-Sirka%2BEDDI.html) (Usar botón derecho -> Decargar enlace..)
+
 ## Manual
 Pasos a seguir para añadir los perfiles de VoiceAttack e instalar el software y los plugins necesarios (explicado lo más sencillo que he sabido)
 
@@ -117,6 +139,12 @@ Logitech ARX Control:
 Espero que os guste y os sirva. En principio no debería haber problema si no tenéis cuenta premium, aunque si no la tenéis os recomiendo mil hacer una cuenta familiar con 5 colegas mas. Así os sale tirado.
 
 
-post en el foro de Elite Dangerous:
 
+Sirka Original por Altair28 (VA+EDDI):
+https://forums.frontier.co.uk/showthread.php/332163-Voiceattack-EDDI-en-espa%C3%B1ol
+
+toda la info del G19s:
+https://forums.frontier.co.uk/showthread.php/394345-Elite-G19s-Companion
+
+post antiguo en el foro de Elite Dangerous (antes del G19s):
 https://forums.frontier.co.uk/showthread.php/332163-Voiceattack-EDDI-en-espa%F1ol?p=5863560#post5863560
