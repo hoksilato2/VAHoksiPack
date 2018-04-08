@@ -21,8 +21,8 @@ Perfiles de Voice Attack para uso personal pero compartidos para quien los quier
 
 Entre otras cosas. Podéis descargar todos los comandos de aquí:
 
-- [Comandos de Sirka+EDDI](https://github.com/hoksilato2/VoiceAttack-Profiles/blob/master/VAPs/HoksilatoED-G19s.html) (Usar botón derecho -> Decargar enlace..)
-- [Comandos de G19s](https://github.com/hoksilato2/VoiceAttack-Profiles/blob/master/VAPs/HoksilatoED-Sirka%2BEDDI.html) (Usar botón derecho -> Decargar enlace..)
+- [Comandos de Sirka+EDDI](https://raw.githubusercontent.com/hoksilato2/VoiceAttack-Profiles/master/VAPs/HoksilatoED-G19s.html) (Usar botón derecho -> Decargar enlace..)
+- [Comandos de G19s](https://raw.githubusercontent.com/hoksilato2/VoiceAttack-Profiles/master/VAPs/HoksilatoED-G19s.html) (Usar botón derecho -> Decargar enlace..)
 
 Abajo de todo hay un recopilatorio de los posts originales del foro de Frontier.
 
@@ -71,7 +71,7 @@ Si ya estáis usando a vuestra propia Sirka personalizada podéis pasar directam
 
  2- No configurar nada que te pida la aplicación y cerrarla
 
- 3- Descargar archivo json modificado de [aquí](https://github.com/hoksilato2/Elite-G19s-Companion-Options/blob/master/options.json) (Usar botón derecho -> Decargar enlace..)
+ 3- Descargar archivo json modificado de [aquí](https://raw.githubusercontent.com/hoksilato2/Elite-G19s-Companion-Options/master/options.json) (Usar botón derecho -> Decargar enlace..)
 
  4- Dirigirse a la carpeta "%appdata%\EliteG19s" (puedes copiar esta ruta en la barra de búsqueda de Windows)
 
