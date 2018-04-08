@@ -2,59 +2,79 @@
 Perfiles de Voice Attack para uso personal pero compartidos para quien los quiera.
 
 ## Manual
-Os comparto un manualillo para añadir Spotify en vuestro perfil actual de VA:
+Pasos a seguir para añadir los perfiles de VoiceAttack e instalar el software y los plugins necesarios (explicado lo más sencillo que he sabido)
 
-1- Descargar plugin VA de Spotify de [aquí](http://www.litpixi.com/va-spotify/). Más info [aquí](http://voiceattack.com/SMF/index.php?topic=585.0/)
+- Sirka de Altair28 con mejoras de la comunidad y mias.
+- G19s con funciones para playlist de Spotify
 
-2- Descomprimir contenido en .\Voiceattack\Apps Os debería quedar la carpeta Spotify al lado de la de EDDI.
+Si ya estáis usando a vuestra propia Sirka personalizada podéis pasar directamente a los pasos del G19s.
 
-3- Descargar Command Line Media Controller (CLMControl) de [aquí](https://commandlinemedia.codeplex.com/). Más info [aquí](https://commandlinemedia.codeplex.com/documentation)
 
-4- Descomprimir contenido en .\Voiceattack\Apps\Spotify
+### Sirka
+1- Descargar perfil VA de Sirka modificada de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/HoksilatoED Sirka+EDDI.vap) (Usar botón derecho -> Decargar enlace..)
+2- Abrir VoiceAttack y mediante el botón de al lado del icono del cuadrado y el lápiz usar la opción "Import Profile"
+3- Seleccionar el archivo .vap descargado.
+4- Instalar EDDI. Podéis encontrarlo aquí: https://github.com/EDCD/EDDI/releases
+5- Descargar personalidad modificada de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/blob/master/Personalities/Shirka20.json) (Usar botón derecho -> Decargar enlace..)
+6- Copiar archivo Shirka20.json en: %userprofile%\AppData\Roaming\EDDI\personalities
 
-5- Descargar perfil VAP de Spotify de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/Hoksilato-Spotify-Profile.vap) (Usar botón derecho -> Decargar enlace..)
+### G19s
+1- Descargar perfil VA para G19s Companion de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/HoksilatoED G19s.vap) (Usar botón derecho -> Decargar enlace..)
+2- Abrir VA y exportar vuestro actual perfil mediante el botón de al lado del icono del cuadrado y el lápiz usando la opción "Export Profile" (para hacer un backup por si aca)
+3- Abrir editor del perfil que usáis en VA mediante el botón del icono del cuadrado y el lápiz
+4- Usar botón de abajo "Import Commands"
+3- Seleccionar perfil VAP de G19s Companion descargado para añadir los comandos nuevos a vuestro perfil.
 
-6- Abrir VA y exportar vuestro actual perfil (para hacer un backup por si aca)
-
-7- Editar perfil que usáis en VA y usar botón "Import Commands"
-
-8- Seleccionar perfil VAP de Spotify descargado para añadir comandos de Spotify a vuestro perfil.
 
 ## A tener en cuenta
 
-- Dado que el plugin sigue con muchos bugs y es bastante inestable, he substituido parte de los comandos con la ayuda del CLMControl que funciona muy bien. Es para controlar las acciones de varios reproductores mediante consola de comandos.
-
-- ES NECESARIO ANULAR OTROS COMANDOS DE VA DE OTROS REPRODUCTORES (COMO VLC) DADO QUE PUEDE QUE ALGUNOS COMANDOS SEAN IGUALES (Ej: "Pon música tranquila")
+- ES NECESARIO ANULAR OTROS COMANDOS DE VA DE OTROS REPRODUCTORES (COMO VLC) DADO QUE PUEDE QUE ALGUNOS COMANDOS SEAN IGUALES (Ej: "Pon música")
 
 
-Una vez cargado el perfil es recomendable realizar algún cambio:
+## Instalar G19s Companion
+ 1- Instalar Elite G19s Companion clicando [aquí](https://apps.magicmau.nl) Una vez instalada se abrirá automáticamente
+ 2- No configurar nada que te pida la aplicación y cerrarla
+ 3- Descargar archivo json modificado de [aquí](https://github.com/hoksilato2/Elite-G19s-Companion-Options/blob/master/options.json) (Usar botón derecho -> Decargar enlace..)
+ 4- Dirigirse a la carpeta "%appdata%\EliteG19s" (puedes copiar esta ruta en la barra de búsqueda de Windows)
+ 5- Substituir options.json por el modificado que hemos descargado.
+ 6- Descargar plugin G19s para VA de [aquí](https://apps.magicmau.nl/EliteG19s-v...ack-latest.zip)
+ 7- Guardar archivo .dll en la carpeta donde tenéis instalado VA:
+    .\VoiceAttack\Apps\EliteG19s\EliteG19s.VoiceAttack.dll
 
-## Configurar comandos para Abrir Spotify
+ Si queréis usar Spotify, deberéis abrir el archivo options.json con el bloc de notas u otro editor y añadir vuestro usuario de Spotify en la siguiente linea:
 
-a) edita comando "LaunchSpotify"
+(linea 14):
 
-b) edita subcomando "Run Application" y selecciona el exe o el shortcut de tu Spotify
+      "SpotifyUsername": "Your Spotify Device Username (see https://www.spotify.com/us/account/set-device-password/)",
 
-c) guarda todo.
+  Por ejemplo:
+
+      "SpotifyUsername": "Hoksilato",
+
+ 6- Abrir Elite G19s Companion y rellenar todos los campos que os pida.
 
 
-## Configurar Playlists
+## Configurar Playlists de Spotify
+Para configurar las Playlist hay que añadirlas (o modificarlas) tanto en el archivo options.json de G19s, como en el perfil de VoiceAttack.
 
-a) mediante menú de botón derecho, duplica el comando "EJEMPLO: Copia este comando y pega la URL de tu playlist"
+### En options.json
+1- Editar archivo %appdata%\EliteG19s\options.json (podéis hacerlo también desde el menú OPTIONS de la APP)
+2- Buscar línea con el siguiente texto:
 
-b) Activa casilla "When I say" y modifica contenido con lo que queréis decir para que Shirka os entienda
+      "SpotifyPlaylists": [
 
-ejemplo: Pon[ algo de ; ]música Pop
+3- Si queréis añadir nuevas playlist acordaros de respetar el formato del archivo. Tened en cuenta que si añadís el contenido al final del apartado hay que quitar la última coma.
+4- A partir de aquí, ya tendréis acceso a vuestras playlist desde la APP G19s.
 
-c) editar subcomando "Set Text" que está entre comentarios con dirección URI de la playlist
-
-d) Podéis editar el otro subcomando "Set Text" con lo que queráis que Shirka os conteste al abrir la playlist.
-
+### En Perfil VA
+1- Editar perfil de VA
+2- Editar dirección URI de Spotify de los comandos "PLAYLIST"
+3- Si queréis añadir nuevas Playlist para que Sirka las reconozca tenéis que modificar los comandos que empiezan por "enter" (nivel avanzado)
 
 
 ## Como conseguir dirección URI de Spotify
 
-a) Abrir Spotify (o a estas alturas decir "Abre Spotify"
+a) Abrir Spotify
 
 b) buscar playlist deseada.
 
@@ -62,12 +82,19 @@ c) Buscar menú "..." donde está la opción de "compartir"
 
 d) Usar opción "URI" para que se copie en el portapapeles.
 
-e) el formato es como este: spotify:usermicron07laylist:2CUqZmzR60Q5dnWP3kvRAm (playlist hecha por el creador del plugin)
+e) el formato es como este: spotify:user:hoksilato:playlist:5NtEC3cKu3fPfgUAjk2keg
 
+## LOGITECH ARX CONTROL
+G19s tiene la opción de poder verlo también en vuestro dispositivo Android o iOS mediante la aplicación Logitech ARX Control.
+
+- Logitech ARX Control:
+Windows: http://support.logitech.com/en_us/software/lgs
+Android: https://play.google.com/store/apps/d....arxcontrolapp
+iOS: https://itunes.apple.com/us/app/logi...ol/id896793941
 
 
 Espero que os guste y os sirva. En principio no debería haber problema si no tenéis cuenta premium, aunque si no la tenéis os recomiendo mil hacer una cuenta familiar con 5 colegas mas. Así os sale tirado.
 
 
-post en el foro de Elite Dangerous: 
+post en el foro de Elite Dangerous:
 https://forums.frontier.co.uk/showthread.php/332163-Voiceattack-EDDI-en-espa%F1ol?p=5863560#post5863560
