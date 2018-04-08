@@ -19,7 +19,7 @@ Perfiles de Voice Attack para uso personal pero compartidos para quien los quier
     - Si estás en un momento de tensión (señales)
     - Si estás siendo atacado.
 
-Entre otras cosas. Podéis descargar todos los comandos de aquí:
+Entre otras cosas. Podéis descargar la lista de todos los comandos de aquí:
 
 - [Comandos de Sirka+EDDI](https://raw.githubusercontent.com/hoksilato2/VoiceAttack-Profiles/master/VAPs/HoksilatoED-G19s.html) (Usar botón derecho -> Decargar enlace..)
 - [Comandos de G19s](https://raw.githubusercontent.com/hoksilato2/VoiceAttack-Profiles/master/VAPs/HoksilatoED-G19s.html) (Usar botón derecho -> Decargar enlace..)
