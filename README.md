@@ -12,17 +12,27 @@ Si ya estáis usando a vuestra propia Sirka personalizada podéis pasar directam
 
 ### Sirka
 1- Descargar perfil VA de Sirka modificada de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/HoksilatoED Sirka+EDDI.vap) (Usar botón derecho -> Decargar enlace..)
+
 2- Abrir VoiceAttack y mediante el botón de al lado del icono del cuadrado y el lápiz usar la opción "Import Profile"
+
 3- Seleccionar el archivo .vap descargado.
+
 4- Instalar EDDI. Podéis encontrarlo aquí: https://github.com/EDCD/EDDI/releases
+
 5- Descargar personalidad modificada de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/blob/master/Personalities/Shirka20.json) (Usar botón derecho -> Decargar enlace..)
+
 6- Copiar archivo Shirka20.json en: %userprofile%\AppData\Roaming\EDDI\personalities
+
 
 ### G19s
 1- Descargar perfil VA para G19s Companion de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/HoksilatoED G19s.vap) (Usar botón derecho -> Decargar enlace..)
+
 2- Abrir VA y exportar vuestro actual perfil mediante el botón de al lado del icono del cuadrado y el lápiz usando la opción "Export Profile" (para hacer un backup por si aca)
+
 3- Abrir editor del perfil que usáis en VA mediante el botón del icono del cuadrado y el lápiz
+
 4- Usar botón de abajo "Import Commands"
+
 3- Seleccionar perfil VAP de G19s Companion descargado para añadir los comandos nuevos a vuestro perfil.
 
 
@@ -33,11 +43,17 @@ Si ya estáis usando a vuestra propia Sirka personalizada podéis pasar directam
 
 ## Instalar G19s Companion
  1- Instalar Elite G19s Companion clicando [aquí](https://apps.magicmau.nl) Una vez instalada se abrirá automáticamente
+
  2- No configurar nada que te pida la aplicación y cerrarla
+
  3- Descargar archivo json modificado de [aquí](https://github.com/hoksilato2/Elite-G19s-Companion-Options/blob/master/options.json) (Usar botón derecho -> Decargar enlace..)
+
  4- Dirigirse a la carpeta "%appdata%\EliteG19s" (puedes copiar esta ruta en la barra de búsqueda de Windows)
+
  5- Substituir options.json por el modificado que hemos descargado.
+
  6- Descargar plugin G19s para VA de [aquí](https://apps.magicmau.nl/EliteG19s-v...ack-latest.zip)
+
  7- Guardar archivo .dll en la carpeta donde tenéis instalado VA:
     .\VoiceAttack\Apps\EliteG19s\EliteG19s.VoiceAttack.dll
 
