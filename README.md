@@ -21,7 +21,7 @@ Perfiles de Voice Attack para uso personal pero compartidos para quien los quier
 
 Entre otras cosas. Podéis descargar la lista de todos los comandos de aquí:
 
-- [Comandos de Sirka+EDDI](https://raw.githubusercontent.com/hoksilato2/VoiceAttack-Profiles/master/VAPs/HoksilatoED-G19s.html) (Usar botón derecho -> Decargar enlace..)
+- [Comandos de Sirka+EDDI](https://raw.githubusercontent.com/hoksilato2/VoiceAttack-Profiles/master/VAPs/HoksilatoED-Sirka%2BEDDI.html) (Usar botón derecho -> Decargar enlace..)
 - [Comandos de G19s](https://raw.githubusercontent.com/hoksilato2/VoiceAttack-Profiles/master/VAPs/HoksilatoED-G19s.html) (Usar botón derecho -> Decargar enlace..)
 
 Abajo de todo hay un recopilatorio de los posts originales del foro de Frontier.
