@@ -73,18 +73,23 @@ Si ya estáis usando a vuestra propia Sirka personalizada podéis pasar directam
 ## Configurar Playlists de Spotify
 Para configurar las Playlist hay que añadirlas (o modificarlas) tanto en el archivo options.json de G19s, como en el perfil de VoiceAttack.
 
+
 ### En options.json
 1- Editar archivo %appdata%\EliteG19s\options.json (podéis hacerlo también desde el menú OPTIONS de la APP)
+
 2- Buscar línea con el siguiente texto:
 
       "SpotifyPlaylists": [
 
 3- Si queréis añadir nuevas playlist acordaros de respetar el formato del archivo. Tened en cuenta que si añadís el contenido al final del apartado hay que quitar la última coma.
+
 4- A partir de aquí, ya tendréis acceso a vuestras playlist desde la APP G19s.
 
 ### En Perfil VA
 1- Editar perfil de VA
+
 2- Editar dirección URI de Spotify de los comandos "PLAYLIST"
+
 3- Si queréis añadir nuevas Playlist para que Sirka las reconozca tenéis que modificar los comandos que empiezan por "enter" (nivel avanzado)
 
 
@@ -105,7 +110,9 @@ G19s tiene la opción de poder verlo también en vuestro dispositivo Android o i
 
 - Logitech ARX Control:
 Windows: http://support.logitech.com/en_us/software/lgs
+
 Android: https://play.google.com/store/apps/d....arxcontrolapp
+
 iOS: https://itunes.apple.com/us/app/logi...ol/id896793941
 
 
@@ -113,4 +120,5 @@ Espero que os guste y os sirva. En principio no debería haber problema si no te
 
 
 post en el foro de Elite Dangerous:
+
 https://forums.frontier.co.uk/showthread.php/332163-Voiceattack-EDDI-en-espa%F1ol?p=5863560#post5863560
