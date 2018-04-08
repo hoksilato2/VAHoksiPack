@@ -108,12 +108,10 @@ e) el formato es como este: spotify:user:hoksilato:playlist:5NtEC3cKu3fPfgUAjk2k
 ## LOGITECH ARX CONTROL
 G19s tiene la opción de poder verlo también en vuestro dispositivo Android o iOS mediante la aplicación Logitech ARX Control.
 
-- Logitech ARX Control:
-Windows: http://support.logitech.com/en_us/software/lgs
-
-Android: https://play.google.com/store/apps/d....arxcontrolapp
-
-iOS: https://itunes.apple.com/us/app/logi...ol/id896793941
+Logitech ARX Control:
+- Windows: http://support.logitech.com/en_us/software/lgs
+- Android: https://play.google.com/store/apps/d....arxcontrolapp
+- iOS: https://itunes.apple.com/us/app/logi...ol/id896793941
 
 
 Espero que os guste y os sirva. En principio no debería haber problema si no tenéis cuenta premium, aunque si no la tenéis os recomiendo mil hacer una cuenta familiar con 5 colegas mas. Así os sale tirado.
