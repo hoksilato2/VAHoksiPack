@@ -11,7 +11,7 @@ Si ya estáis usando a vuestra propia Sirka personalizada podéis pasar directam
 
 
 ### Sirka
-1- Descargar perfil VA de Sirka modificada de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/HoksilatoED Sirka+EDDI.vap) (Usar botón derecho -> Decargar enlace..)
+1- Descargar perfil VA de Sirka modificada de [aquí]("https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/HoksilatoED Sirka+EDDI.vap") (Usar botón derecho -> Decargar enlace..)
 
 2- Abrir VoiceAttack y mediante el botón de al lado del icono del cuadrado y el lápiz usar la opción "Import Profile"
 
@@ -25,7 +25,7 @@ Si ya estáis usando a vuestra propia Sirka personalizada podéis pasar directam
 
 
 ### G19s
-1- Descargar perfil VA para G19s Companion de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/HoksilatoED G19s.vap) (Usar botón derecho -> Decargar enlace..)
+1- Descargar perfil VA para G19s Companion de [aquí]("https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/HoksilatoED G19s.vap") (Usar botón derecho -> Decargar enlace..)
 
 2- Abrir VA y exportar vuestro actual perfil mediante el botón de al lado del icono del cuadrado y el lápiz usando la opción "Export Profile" (para hacer un backup por si aca)
 
