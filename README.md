@@ -2,10 +2,10 @@
 Perfiles de Voice Attack para uso personal pero compartidos para quien los quiera.
 
 ### Características
-- Personalidad de IA de la nave (Sirka) con la ayuda del Software EDDI y VoiceAttack
+- Personalidad de IA de la nave (Sirka del cmdr. Altair28) con la ayuda del Software EDDI y VoiceAttack
 - Comandos básicos del juego mediante voz con Sirka y Voiceattack
 - Consola externa con múltiples características gracias a la APP G19s Companion:
-  - Escucha de Música local, Spotify, Radios y Potcasts
+  - Escucha de Música local, Spotify, Radios y Podcasts
   - Tráfico aereo para mayor inmersión
   - Lector de Feeds
   - Herramientas como cálculo de rutas, búsqueda de tipo de astros por cercanía, commodities, materiales, shipyard...
@@ -22,6 +22,8 @@ Perfiles de Voice Attack para uso personal pero compartidos para quien los quier
 Entre otras cosas. Podéis descargar todos los comandos de aquí:
     - [Comandos de Sirka+EDDI](https://github.com/hoksilato2/VoiceAttack-Profiles/blob/master/VAPs/HoksilatoED-G19s.html) (Usar botón derecho -> Decargar enlace..)
     - [Comandos de G19s](https://github.com/hoksilato2/VoiceAttack-Profiles/blob/master/VAPs/HoksilatoED-Sirka%2BEDDI.html) (Usar botón derecho -> Decargar enlace..)
+
+Abajo de todo hay un recopilatorio de los posts originales del foro de Frontier.
 
 ## Manual
 Pasos a seguir para añadir los perfiles de VoiceAttack e instalar el software y los plugins necesarios (explicado lo más sencillo que he sabido)
