@@ -1,6 +1,6 @@
 ﻿{
-  "name": "Shirka 2.0",
-  "description": "La Shirka original es de Altair28",
+  "name": "Shirka 2.1",
+  "description": "Mod de Shirka de Altair28",
   "scripts": {
     "AFMU repairs": {
       "enabled": true,
@@ -677,6 +677,15 @@
       "name": "Fighter launched",
       "description": "Triggered when you launch a fighter from your ship"
     },
+    "Fighter rebuilt": {
+      "enabled": true,
+      "priority": 3,
+      "responder": true,
+      "script": "Fighter {OneOf(\"rebuilt\", \"reconstruction complete\")} and ready for {OneOf(\"launch\", \"deployment\")}.",
+      "default": true,
+      "name": "Fighter rebuilt",
+      "description": "Triggered when a ship's fighter is rebuilt in the hangar"
+    },
     "File Header": {
       "enabled": true,
       "priority": 3,
@@ -1036,6 +1045,15 @@
       "default": false,
       "name": "Material threshold",
       "description": "Triggered when a material reaches a threshold"
+    },
+    "Material traded": {
+      "enabled": true,
+      "priority": 3,
+      "responder": true,
+      "script": null,
+      "default": true,
+      "name": "Material traded",
+      "description": "Triggered when materials are traded at a material trader"
     },
     "Material use report": {
       "enabled": true,
@@ -1779,7 +1797,7 @@
       "enabled": true,
       "priority": 3,
       "responder": true,
-      "script": null,
+      "script": "{_ Context }\r\n{SetState('eddi_context_last_subject', 'system')}\r\n{SetState('eddi_context_last_action', 'change_state')}\r\n{SetState('eddi_context_system', event.system)}\r\n{SetState('eddi_context_system_system', event.system)}\r\n\r\n{_ Set up our system name}\r\n{if event.system = homesystem.name:\r\n  {set system to OneOf('{P(event.system)}',\r\n                       'Tu sistema hogar')}\r\n|elif event.system = system.name:\r\n  {set system to OneOf('{P{event.system)}',\r\n                       'este sistema')}\r\n|else:\r\n  {set system to OneOf('sistema {P(event.system)}'\r\n                       '{P(event.system)}'))}\r\n}\r\n\r\n{if event.newstate != 'None':\r\n  {_ System has entered a new state}\r\n  {OneOf('Las transmisiones locales informan que', 'Información: ', 'Transmisión interceptada.  Contiene que ')}\r\n  {if event.newstate = 'Boom':\r\n    {OneOf('{system} está experimentando un auge comercial',\r\n           '{system} está entrando en un período de mayor éxito comercial')}\r\n  |elif event.newstate = 'Bust':\r\n    {system} está experimentando dificultades económicas\r\n  |elif event.newstate = 'Civil Unrest':\r\n    {OneOf('{system} está experimentando disturbios civiles',\r\n           'hay disturbios en el {system} system')}\r\n  |elif event.newstate = 'Civil War':\r\n    {OneOf('{system} está en guerra con otra facción en el mismo sistema',\r\n           'una guerra civil estalló en {system}',\r\n           '{system} ha caído en una guerra civil',\r\n           'han estallado hostilidades en {system}')}\r\n  |elif event.newstate = 'Election':\r\n    {system} está pasando por elecciones\r\n  |elif event.newstate = 'Expansion':\r\n    {OneOf(\"una facción en {system} está intentando expandirse a un sistema vecino\",\r\n           \"una facción en {system} está preparándose para expandirse a un sistema vecino\")}\r\n  |elif event.newstate = 'Famine':\r\n    {system} está sufriendo hambruna\r\n  |elif event.newstate = 'Investment':\r\n    En {system} la facción controladora está invirtiendo fuertemente en su infraestructura local\r\n  |elif event.newstate = 'Lockdown':\r\n    {system} ha aumentado la seguridad debido a un bloqueo por parte de la facción dominante\r\n  |elif event.newstate = 'Outbreak':\r\n    {system} sufre de un brote de enfermedad contagiosa\r\n  |elif event.newstate = 'Retreat':\r\n    La facción que controla {system} se está retirando de un sistema vecino\r\n  |elif event.newstate = 'War':\r\n    {system} ahora está en guerra con un sistema vecino\r\n  |else:\r\n    {OneOf('{system} ha entrado en {event.state}',\r\n           '{system} ahora está en {event.state}')}\r\n  }.\r\n}\r\n\r\n",
       "default": false,
       "name": "System state changed",
       "description": "Triggered when there is a change in the state of a watched system"
@@ -1788,10 +1806,19 @@
       "enabled": true,
       "priority": 3,
       "responder": false,
-      "script": "{_ Fetch from context }\r\n{set reportsystem to SystemDetails(state.eddi_context_system_system)}\r\n\r\n{if !reportsystem.name || reportbody.name = \"\":\r\n    I'm not sure which system you are asking about.\r\n|else:\r\n    {P(reportsystem.name)}\r\n    {if reportsystem.state = \"None\":\r\n      is not in any particular state at current\r\n    |elif reportsystem.state = \"Retreat\":\r\n        is in retreat\r\n    |elif reportsystem.state = \"War\":\r\n        is at war; caution is advised\r\n    |elif reportsystem.state = \"Boom\":\r\n        is undergoing a boom; there might be good trading profits to be made here\r\n    |elif reportsystem.state = \"Civil War\":\r\n        is experiencing civil unrest; caution is advised\r\n    |elif reportsystem.state = \"Civil War\":\r\n        is in civil war; caution is advised\r\n    |elif reportsystem.state = \"Famine\":\r\n        is in a state of famine; caution is advised\r\n    |elif reportsystem.state = \"Lockdown\":\r\n        is in lockdown; caution is advised\r\n    |elif reportsystem.state = \"Outbreak\":\r\n        is attempting to contain an outbreak of disease; caution is advised\r\n    |elif reportsystem.state = \"Expansion\":\r\n        is gearing up to expand to another system\r\n    |elif reportsystem.state = \"Bust\":\r\n        is financially bust\r\n    |elif reportsystem.state = \"Election\":\r\n        is electing new leaders\r\n    |elif reportsystem.state = \"Investment\":\r\n        is investing in its infrastructure\r\n    |else:\r\n    }\r\n    .\r\n}",
+      "script": "{_ Fetch from context }\r\n{set reportsystem to SystemDetails(state.eddi_context_system_system)}\r\n\r\n{if !reportsystem.name || reportsystem.name = \"\":\r\n    No tengo claro a que sistema se refiere.\r\n|elif reportsystem.state && reportsystem.state != 'None':\r\n    {P(reportsystem.name)}\r\n    {if reportsystem.state = \"Retreat\":\r\n        está en retirada\r\n    |elif reportsystem.state = \"War\":\r\n        está en guerra; se recomienda precaución\r\n    |elif reportsystem.state = \"Boom\":\r\n        está experimentando un auge económico; podría hacer buenos negocios\r\n    |elif reportsystem.state = \"Civil Unrest\":\r\n        está experimentando disturbios civiles; se recomienda precaución\r\n    |elif reportsystem.state = \"Civil War\":\r\n        está en guerra civil; se recomienda precaución\r\n    |elif reportsystem.state = \"Famine\":\r\n        hay hambruna; se recomienda precaución\r\n    |elif reportsystem.state = \"Lockdown\":\r\n        está en bloqueo; se recomienda precaución\r\n    |elif reportsystem.state = \"Outbreak\":\r\n        está tratando de contener un brote de enfermedad; se recomienda precaución\r\n    |elif reportsystem.state = \"Expansion\":\r\n        se está preparando para expandirse a otro sistema\r\n    |elif reportsystem.state = \"Bust\":\r\n        está en quiebra\r\n    |elif reportsystem.state = \"Election\":\r\n        está en periodo electoral\r\n    |elif reportsystem.state = \"Investment\":\r\n        está invirtiendo en infraestructuras\r\n    }\r\n    .\r\n}",
       "default": false,
       "name": "System state report",
       "description": "Report on the current state of the contextual system"
+    },
+    "Technology broker": {
+      "enabled": true,
+      "priority": 3,
+      "responder": true,
+      "script": null,
+      "default": true,
+      "name": "Technology broker",
+      "description": "Triggered when using the Technology Broker to unlock new purchasable technology"
     },
     "Touchdown": {
       "enabled": true,
