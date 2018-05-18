@@ -11,11 +11,11 @@ TABLE { width:100%; font-family:Calibri,Tahoma,Arial; }
 .tblHeader { font-size:18px; color:#FFFFFF; background-color:#000000; font-weight:bold;font-family:Calibri,Tahoma,Arial; border-style:inset; border-width:2px; }
 </style>
 </head>
-<title>HoksilatoED-G19s - VoiceAttack Profile Command Sheet</title>
+<title>HoksilatoED G19s - VoiceAttack Profile Command Sheet</title>
 <body>
 <table class='tblHeader'>
 <tr>
-<td style='padding-left:8px'>HoksilatoED-G19s</td>
+<td style='padding-left:8px'>HoksilatoED G19s</td>
 <td style='text-align:right;white-space:nowrap;'>VoiceAttack Profile Command Sheet</td>
 </tr>
 </table>
@@ -25,133 +25,357 @@ TABLE { width:100%; font-family:Calibri,Tahoma,Arial; }
 <th>Spoken Command</th>
 <th>Description</th>
 <th>Category</th>
+<th>Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr class='r0'>
-<td width='15%'>Muestra [el;la;] [música;audio]</td>
-<td width='15%'>Menú - Música</td>
-<td width='15%'>G19s App</td>
+<td width='15%'>sube la luz</td>
+<td width='15%'></td>
+<td width='15%'>HUE</td>
+<td>Execute external plugin, 'VoiceAttack Hue Demo Plugin - v1.5.8+' , Set Text [Script] to 'cambiando luces', Execute external plugin, 'EDDI 3.0.0-rc1'</td>
 </tr>
 <tr class='r1'>
-<td width='15%'>Muestra [el;las;] [noticias;podcast]</td>
-<td width='15%'>Menú - Noticias</td>
+<td width='15%'>((EDDI docked))</td>
+<td width='15%'>G19s EDDI music (docked)</td>
 <td width='15%'>G19s App</td>
+<td>Set Text [music_env] to 'docked', Begin Text Compare : [playlist] Does Not Equal 'cantina', Begin Text Compare : [playlist] Does Not Equal 'noautomusic', Pause 2.2 seconds, Execute command, 'enter CANTINA' (and wait until it completes), End Condition, End Condition</td>
 </tr>
 <tr class='r0'>
-<td width='15%'>Muestra el sistema [actual;en el que estamos]</td>
-<td width='15%'>Menu - Sistema</td>
+<td width='15%'>((EDDI entered normal space))</td>
+<td width='15%'>G19s EDDI music (entered normal space)</td>
 <td width='15%'>G19s App</td>
+<td>Set Text [music_env] to 'space', Begin Text Compare : [playlist] Does Not Equal 'space', Begin Text Compare : [playlist] Does Not Equal 'noautomusic', Pause 2.2 seconds, Execute command, 'enter SPACE' (and wait until it completes), End Condition, End Condition</td>
 </tr>
 <tr class='r1'>
-<td width='15%'>[Muestra;ve a] status</td>
-<td width='15%'>Menú - Status</td>
+<td width='15%'>((EDDI entered signal source))</td>
+<td width='15%'>G19s EDDI music (entered signal source)</td>
 <td width='15%'>G19s App</td>
+<td>Kill command, '((EDDI entered normal space))', Pause 2.2 seconds, Set Text [music_env] to 'signal', Begin Text Compare : [playlist] Does Not Equal 'suspense', Begin Text Compare : [playlist] Does Not Equal 'noautomusic', Pause 2.2 seconds, Execute command, 'enter SUSPENSE' (and wait until it completes), End Condition, End Condition</td>
 </tr>
 <tr class='r0'>
-<td width='15%'>[Muestra;ve a] tráfico</td>
-<td width='15%'>Menú - Tráfico</td>
+<td width='15%'>((EDDI entered supercruise))</td>
+<td width='15%'>G19s EDDI music (entered supercruise)</td>
 <td width='15%'>G19s App</td>
+<td>Set Text [music_env] to 'supercruise', Begin Text Compare : [playlist] Does Not Equal 'space', Begin Text Compare : [playlist] Does Not Equal 'noautomusic', Pause 2.2 seconds, Execute command, 'enter SPACE' (and wait until it completes), End Condition, End Condition</td>
 </tr>
 <tr class='r1'>
-<td width='15%'>De [qué artista;quién] [es;has dicho; has dicho que es][esta canción;la canción actual;][de Spotify;]</td>
-<td width='15%'>Sonido - Descripción de artista</td>
+<td width='15%'>((EDDI jumped))</td>
+<td width='15%'>G19s EDDI music (entered supercruise)</td>
 <td width='15%'>G19s App</td>
+<td>Set Text [music_env] to 'supercruise', Begin Text Compare : [playlist] Does Not Equal 'space', Begin Text Compare : [playlist] Does Not Equal 'noautomusic', Pause 2.2 seconds, Execute command, 'enter SPACE' (and wait until it completes), End Condition, End Condition</td>
 </tr>
 <tr class='r0'>
-<td width='15%'>Baja[; un poco] [la música;el volumen][; de la música]</td>
-<td width='15%'>Sonido - Música - Bajar volumen</td>
+<td width='15%'>((EDDI npc attack commenced))</td>
+<td width='15%'>G19s EDDI music (under attack)</td>
 <td width='15%'>G19s App</td>
+<td>Set Text [Script] to '[Comandante. Prepárese para el combate]', Execute external plugin, 'EDDI 3.0.0-rc1' and wait for return, Begin Text Compare : [playlist] Does Not Equal 'combat', Begin Text Compare : [playlist] Does Not Equal 'noautomusic', Pause 2.2 seconds, Execute command, 'enter COMBAT' (and wait until it completes), End Condition, End Condition</td>
 </tr>
 <tr class='r1'>
-<td width='15%'>[Reproduce;Pon] [la;] [radio] [de;] Hutton Orbital</td>
-<td width='15%'>Sonido - Música - Hutton Radio</td>
+<td width='15%'>((EDDI undocked))</td>
+<td width='15%'>G19s EDDI music (C'ya cmdr.)</td>
 <td width='15%'>G19s App</td>
+<td>Set Text [music_env] to 'space', Begin Text Compare : [playlist] Does Not Equal 'noautomusic', Execute command, 'Para la música lentamente' (and wait until it completes), Pause 10.25 seconds, Execute command, 'enter SPACE' (and wait until it completes), End Condition</td>
 </tr>
 <tr class='r0'>
-<td width='15%'>Que estoy escuchando; Que suena</td>
-<td width='15%'>Sonido - Música - info. de la pista</td>
+<td width='15%'>Activa la música ambiental [;automática]</td>
+<td width='15%'>G19s App switch disable auto-music</td>
 <td width='15%'>G19s App</td>
-</tr>
-<tr class='r1'>
-<td width='15%'>[Reproduce;Pon] [la;] [radio] [de;] Kamocan</td>
-<td width='15%'>Sonido - Música - Kamocan FM</td>
-<td width='15%'>G19s App</td>
-</tr>
-<tr class='r0'>
-<td width='15%'>Reproduce Spotify; Sigue con la canción [;de Spotify]; Sigue con Spotify; Sigue con la música [;de Spotify]</td>
-<td width='15%'>Sonido - Música - PLAY (no funciona de momento)</td>
-<td width='15%'>G19s App</td>
-</tr>
-<tr class='r1'>
-<td width='15%'>Pon música [para el;de] combate</td>
-<td width='15%'>Sonido - Música - Playlist combate</td>
-<td width='15%'>G19s App</td>
-</tr>
-<tr class='r0'>
-<td width='15%'>Pon[ algo de ; ]música [del espacio; de películas del espacio]</td>
-<td width='15%'>Sonido - Música - Playlist espacio</td>
-<td width='15%'>G19s App</td>
-</tr>
-<tr class='r1'>
-<td width='15%'>Pon música [tranquila;de relax]</td>
-<td width='15%'>Sonido - Música - Playlist Relax</td>
-<td width='15%'>G19s App</td>
-</tr>
-<tr class='r0'>
-<td width='15%'>[Reproduce;Pon] [la;] [radio] [de;] Sidewinder</td>
-<td width='15%'>Sonido - Música - Sidewinder Radio</td>
-<td width='15%'>G19s App</td>
-</tr>
-<tr class='r1'>
-<td width='15%'>Pasa [a; ]la [siguiente; ]canción [;de Spotify]; Siguiente canción [;de Spotify]; Siguiente pista [;de Spotify];[Pon; ]otra canción [;de Spotify]</td>
-<td width='15%'>Sonido - Música - siguiente pista</td>
-<td width='15%'>G19s App</td>
-</tr>
-<tr class='r0'>
-<td width='15%'>[Para; Pausa] [la música;] [de;] [Spotify;]</td>
-<td width='15%'>Sonido - Música - STOP</td>
-<td width='15%'>G19s App</td>
-</tr>
-<tr class='r1'>
-<td width='15%'>Sube[; un poco] [la música;el volumen][; de la música]</td>
-<td width='15%'>Sonido - Música - Subir volumen</td>
-<td width='15%'>G19s App</td>
-</tr>
-<tr class='r0'>
-<td width='15%'>Silencia Companion</td>
-<td width='15%'>Sonido - MUTE</td>
-<td width='15%'>G19s App</td>
+<td>Set Text [playlist] to '', Set Text [Script] to 'De acuerdo, sistema automático de música ambiental activado', Execute external plugin, 'EDDI 3.0.0-rc1'</td>
 </tr>
 <tr class='r1'>
 <td width='15%'>Baja[; un poco] [el tráfico;el volumen del tráfico]</td>
-<td width='15%'>Sonido - Tráfico - Bajar volumen</td>
+<td width='15%'>G19s App volume traffic down</td>
 <td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Play sound, '{VA_SOUNDS}\EliteDangerous\blip.mp3' , Start Dictation Mode (Clearing Dictation Buffer), Pause 3 seconds, Stop Dictation Mode, Begin Text Compare : [{DICTATION}] Ends With 'más', Jump: Command Start, End Condition, Set Text [Script] to '¿Está bien así[;comandante]?', Execute external plugin, 'EDDI 3.0.0-rc1'</td>
 </tr>
 <tr class='r0'>
-<td width='15%'>Sube[; un poco] [el tráfico;el volumen del tráfico]</td>
-<td width='15%'>Sonido - Tráfico - Subir volumen</td>
+<td width='15%'>Baja[; un poco] [la música;el volumen][; de la música]</td>
+<td width='15%'>G19s App volume music down</td>
 <td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Play sound, '{VA_SOUNDS}\EliteDangerous\blip.mp3' , Start Dictation Mode (Clearing Dictation Buffer), Pause 3 seconds, Stop Dictation Mode, Begin Text Compare : [{DICTATION}] Ends With 'más', Jump: Command Start, End Condition, Set Text [Script] to '¿Está bien así[;comandante]?', Execute external plugin, 'EDDI 3.0.0-rc1'</td>
 </tr>
 <tr class='r1'>
-<td width='15%'>Kinect Center</td>
-<td width='15%'>Utils - G19s App kinect center</td>
+<td width='15%'>De [qué artista;quién] [es;has dicho; has dicho que es][esta canción;la canción actual;][de Spotify;]</td>
+<td width='15%'>G19s App tell me artist</td>
 <td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Set Text [Script] to '[El artista de esta canción es;Esta canción es de; Es de; ]{TXT:EliteG19s_Current_Artist} [;comandante].', Execute external plugin, 'EDDI 3.0.0-rc1'</td>
 </tr>
 <tr class='r0'>
-<td width='15%'>Kinect full reset</td>
-<td width='15%'>Utils - G19s App kinect full reset</td>
+<td width='15%'>Desactiva la música ambiental [;automática]</td>
+<td width='15%'>G19s App switch disable auto-music</td>
 <td width='15%'>G19s App</td>
+<td>Execute command, 'NO AUTO-MUSIC' (and wait until it completes), Set Text [Script] to 'De acuerdo, sistema automático de música ambiental desactivado', Execute external plugin, 'EDDI 3.0.0-rc1'</td>
 </tr>
 <tr class='r1'>
 <td width='15%'>Elite toggle confidential camera;Elite camera;Elite camera on;Elite camera off</td>
-<td width='15%'>Utils - G19s App toggle Confidential camera</td>
+<td width='15%'>G19s App toggle Confidential camera</td>
 <td width='15%'>G19s App</td>
+<td>Press Left Ctrl+Left Alt+Space keys and hold for 0.1 seconds and release, Pause 0.1 seconds, Press Space key and hold for 0.1 seconds and release</td>
 </tr>
 <tr class='r0'>
-<td width='15%'>Saca [un;una] [foto;pantallazo]</td>
-<td width='15%'>Utils - Pantallazo</td>
+<td width='15%'>enter CANTINA</td>
+<td width='15%'>G19s App enter cantina</td>
 <td width='15%'>G19s App</td>
+<td>Execute command, 'Silencia la música' (and wait until it completes), Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Set Text [playlist] to 'cantina' (save value to profile), ----------playlist-----------, Begin Text Compare : [music_gen] Equals 'concert', Execute command, 'PLAYLIST Concert CANTINA' (and wait until it completes), End Condition, Begin Text Compare : [music_gen] Equals 'electro', Execute command, 'PLAYLIST Electro CANTINA' (and wait until it completes), End Condition, Begin Text Compare : [music_gen] Equals 'rock', Execute command, 'PLAYLIST Rock CANTINA' (and wait until it completes), End Condition, Begin Text Compare : [music_gen] Equals 'nomatter', Set integer [random_music] value as random from 1 to 4, Begin Integer Compare : [random_music] Equals 1, Execute command, 'PLAYLIST Concert CANTINA' (and wait until it completes), End Condition, Begin Integer Compare : [random_music] Equals 2, Execute command, 'PLAYLIST Electro CANTINA' (and wait until it completes), End Condition, Begin Integer Compare : [random_music] Equals 3, Execute command, 'PLAYLIST Rock CANTINA' (and wait until it completes), End Condition, End Condition, ------------------------------, Pause 5 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>enter COMBAT</td>
+<td width='15%'>G19s App enter combat</td>
+<td width='15%'>G19s App</td>
+<td>Execute command, 'Silencia la música' (and wait until it completes), Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Set Text [playlist] to 'combat' (save value to profile), ----------playlist-----------, Begin Text Compare : [music_gen] Equals 'concert', Execute command, 'PLAYLIST Concert COMBAT' (and wait until it completes), End Condition, Begin Text Compare : [music_gen] Equals 'electro', Execute command, 'PLAYLIST Electro COMBAT' (and wait until it completes), End Condition, Begin Text Compare : [music_gen] Equals 'rock', Execute command, 'PLAYLIST Rock COMBAT' (and wait until it completes), End Condition, Begin Text Compare : [music_gen] Equals 'nomatter', Set integer [random_music] value as random from 1 to 4, Begin Integer Compare : [random_music] Equals 1, Execute command, 'PLAYLIST Concert COMBAT' (and wait until it completes), End Condition, Begin Integer Compare : [random_music] Equals 2, Execute command, 'PLAYLIST Electro COMBAT' (and wait until it completes), End Condition, Begin Integer Compare : [random_music] Equals 3, Execute command, 'PLAYLIST Rock COMBAT' (and wait until it completes), End Condition, End Condition, ------------------------------, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>enter SPACE</td>
+<td width='15%'>G19s App enter space</td>
+<td width='15%'>G19s App</td>
+<td>Execute command, 'Silencia la música' (and wait until it completes), Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Set Text [playlist] to 'space' (save value to profile), ----------playlist-----------, Begin Text Compare : [music_gen] Equals 'concert', Execute command, 'PLAYLIST Concert SPACE' (and wait until it completes), End Condition, Begin Text Compare : [music_gen] Equals 'electro', Execute command, 'PLAYLIST Electro SPACE' (and wait until it completes), End Condition, Begin Text Compare : [music_gen] Equals 'rock', Execute command, 'PLAYLIST Rock SPACE' (and wait until it completes), End Condition, Begin Text Compare : [music_gen] Equals 'nomatter', Set integer [random_music] value as random from 1 to 4, Begin Integer Compare : [random_music] Equals 1, Execute command, 'PLAYLIST Concert SPACE' (and wait until it completes), End Condition, Begin Integer Compare : [random_music] Equals 2, Execute command, 'PLAYLIST Electro SPACE' (and wait until it completes), End Condition, Begin Integer Compare : [random_music] Equals 3, Execute command, 'PLAYLIST Rock SPACE' (and wait until it completes), End Condition, End Condition, ------------------------------, Pause 5 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>enter SUSPENSE</td>
+<td width='15%'>G19s App enter suspense</td>
+<td width='15%'>G19s App</td>
+<td>Execute command, 'Silencia la música' (and wait until it completes), Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Set Text [playlist] to 'suspense' (save value to profile), Pause 5 seconds, ----------playlist-----------, Begin Text Compare : [music_gen] Equals 'concert', Execute command, 'PLAYLIST Concert SUSPENSE' (and wait until it completes), End Condition, Begin Text Compare : [music_gen] Equals 'electro', Execute command, 'PLAYLIST Electro SUSPENSE' (and wait until it completes), End Condition, Begin Text Compare : [music_gen] Equals 'rock', Execute command, 'PLAYLIST Rock SUSPENSE' (and wait until it completes), End Condition, Begin Text Compare : [music_gen] Equals 'nomatter', Set integer [random_music] value as random from 1 to 4, Begin Integer Compare : [random_music] Equals 1, Execute command, 'PLAYLIST Concert SUSPENSE' (and wait until it completes), End Condition, Begin Integer Compare : [random_music] Equals 2, Execute command, 'PLAYLIST Electro SUSPENSE' (and wait until it completes), End Condition, Begin Integer Compare : [random_music] Equals 3, Execute command, 'PLAYLIST Rock SUSPENSE' (and wait until it completes), End Condition, End Condition, ------------------------------, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>Kinect Center</td>
+<td width='15%'>G19s App kinect center</td>
+<td width='15%'>G19s App</td>
+<td>Press F12 key and hold for 0.1 seconds and release</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>Kinect full reset</td>
+<td width='15%'>G19s App kinect full reset</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.5 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin'</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>Muestra el sistema [actual;en el que estamos;]</td>
+<td width='15%'>G19s App show Orrery</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin'</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>Muestra [el;la;] [música;audio]</td>
+<td width='15%'>G19s App show audio</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin'</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>Muestra [el;las;] [noticias;podcast]</td>
+<td width='15%'>G19s App show ticker</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin'</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>[Muestra;ve a] status</td>
+<td width='15%'>G19s App show status</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin'</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>[Muestra;ve a] tráfico</td>
+<td width='15%'>G19s App show traffic</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin'</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>NO AUTO-MUSIC</td>
+<td width='15%'>G19s App AUTO-MUSIC DISABLED</td>
+<td width='15%'>G19s App</td>
+<td>Set Text [playlist] to 'noautomusic' (save value to profile), ----------playlist-----------, DISABLED - Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ------------------------------, Pause 5 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>Para la música lentamente</td>
+<td width='15%'>G19s App musica apagada decreciendo</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute command, '[Para; Pausa] la música [de;] [Spotify;]' (and wait until it completes)</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>[Para; Pausa] la música [de;] [Spotify;]</td>
+<td width='15%'>G19s App STOP music</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.1 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Set Text [playlist] to '', Execute external plugin, 'EliteG19s VoiceAttack Plugin'</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>Pasa [a; ]la [siguiente; ]canción [;de Spotify]; Siguiente canción [;de Spotify]; Siguiente pista [;de Spotify];[Pon; ]otra canción [;de Spotify]</td>
+<td width='15%'>G19s App next track</td>
+<td width='15%'>G19s App</td>
+<td>DISABLED - Execute command, 'Silencia la música' (and wait until it completes), Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Pause 2 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, DISABLED - Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Pause 2 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Set Text [Script] to 'Reproduciendo siguiente canción llamada {TXT:EliteG19s_Current_Title}; Como ordene comandante', Execute external plugin, 'EDDI 3.0.0-rc1'</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>PLAYLIST Concert CANTINA</td>
+<td width='15%'>G19s PLAYLIST Concert CANTINA</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>PLAYLIST Concert COMBAT</td>
+<td width='15%'>G19s PLAYLIST Concert Combat</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>PLAYLIST Concert SPACE</td>
+<td width='15%'>G19s PLAYLIST Concert SPACE</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>PLAYLIST Concert SUSPENSE</td>
+<td width='15%'>G19s PLAYLIST Concert SUSPENSE</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>PLAYLIST Electro CANTINA</td>
+<td width='15%'>G19s PLAYLIST Electro CANTINA</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>PLAYLIST Electro COMBAT</td>
+<td width='15%'>G19s PLAYLIST Electro Combat</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>PLAYLIST Electro SPACE</td>
+<td width='15%'>G19s PLAYLIST Electro SPACE</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>PLAYLIST Electro SUSPENSE</td>
+<td width='15%'>G19s PLAYLIST Electro SUSPENSE</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>PLAYLIST RELAX</td>
+<td width='15%'>G19s Playlist relax</td>
+<td width='15%'>G19s App</td>
+<td>Execute command, 'Silencia la música' (and wait until it completes), Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Set Text [playlist] to 'relax', ----------playlist-----------, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, ------------------------------, Pause 5 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Set Text [Script] to 'Escuchando a {TXT:EliteG19s_Current_Artist}. [;¿Le apetece una tila?]', Execute external plugin, 'EDDI 3.0.0-rc1'</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>PLAYLIST Rock CANTINA</td>
+<td width='15%'>G19s PLAYLIST Rock CANTINA</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>PLAYLIST Rock COMBAT</td>
+<td width='15%'>G19s PLAYLIST Rock Combat</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>PLAYLIST Rock SPACE</td>
+<td width='15%'>G19s PLAYLIST Rock SPACE</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>PLAYLIST Rock SUSPENSE</td>
+<td width='15%'>G19s PLAYLIST Rock SUSPENSE</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>Pon[ algo de ; ]música [del espacio; de películas del espacio]</td>
+<td width='15%'>G19s App put space playlist</td>
+<td width='15%'>G19s App</td>
+<td>Execute command, 'enter SPACE' (and wait until it completes), Set Text [Script] to 'Como ordene [;-comandante]. Escuchando {TXT:EliteG19s_Current_Artist}, de la play-list de música del espacio.', Execute external plugin, 'EDDI 3.0.0-rc1'</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>Pon [algo de;] música</td>
+<td width='15%'>poner música</td>
+<td width='15%'>G19s App</td>
+<td>Set Text [Script] to '¿Qué género musical [prefiere;le apetece]? Concierto, Rock, Electrónica o Relax', Execute external plugin, 'EDDI 3.0.0-rc1' and wait for return, Play sound, '{VA_SOUNDS}\EliteDangerous\blip.mp3'  (and wait until it completes), Start Dictation Mode (Clearing Dictation Buffer), Pause 3 seconds, Stop Dictation Mode, Set Text [music_gen] to '' (save value to profile), Begin Text Compare : [{DICTATION}] Contains 'concierto', Set Text [music_gen] to 'concert' (save value to profile), End Condition, Begin Text Compare : [{DICTATION}] Contains 'rock', Set Text [music_gen] to 'rock' (save value to profile), End Condition, Begin Text Compare : [{DICTATION}] Contains 'electrónica', Set Text [music_gen] to 'electro' (save value to profile), End Condition, Begin Text Compare : [{DICTATION}] Contains 'igual', Set Text [music_gen] to 'nomatter' (save value to profile), End Condition, Begin Text Compare : [{DICTATION}] Contains 'relax', Set Text [music_gen] to 'relax' (save value to profile), End Condition, Begin Text Compare : [music_gen] Equals 'nomatter', Set Text [Script] to 'De acuerdo, escojo yo el género musical.', Execute external plugin, 'EDDI 3.0.0-rc1' , Else If Text Compare : [music_gen] Equals 'concert', Set Text [Script] to 'De acuerdo, le pongo algo de música {TXT:music_gen}.', Execute external plugin, 'EDDI 3.0.0-rc1' , Else If Text Compare : [music_gen] Equals 'rock', Set Text [Script] to 'De acuerdo, le pongo algo de música {TXT:music_gen}.', Execute external plugin, 'EDDI 3.0.0-rc1' , Else If Text Compare : [music_gen] Equals 'electro', Set Text [Script] to 'De acuerdo, le pongo algo de música {TXT:music_gen}.', Execute external plugin, 'EDDI 3.0.0-rc1' , Else If Text Compare : [music_gen] Equals 'relax', Set Text [Script] to 'De acuerdo, le pongo algo de música {TXT:music_gen}.', Execute external plugin, 'EDDI 3.0.0-rc1' , Else, Set Text [Script] to 'No le he entendido', Execute external plugin, 'EDDI 3.0.0-rc1' , Jump: Command Start, End Condition, Begin Text Compare : [music_env] Equals 'docked', Execute command, 'enter CANTINA' (and wait until it completes), Else If Text Compare : [music_env] Equals 'space', Execute command, 'enter SPACE' (and wait until it completes), Else If Text Compare : [music_env] Equals 'signal', Execute command, 'enter SUSPENSE' (and wait until it completes), Else If Text Compare : [music_gen] Equals 'relax', Execute command, 'Desactiva la música ambiental [;automática]' (and wait until it completes), Execute command, 'PLAYLIST RELAX' (and wait until it completes), Else, Execute command, 'enter CANTINA' (and wait until it completes), End Condition</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>Pon música [para el;de] combate</td>
+<td width='15%'>G19s App Put combat playlist</td>
+<td width='15%'>G19s App</td>
+<td>Execute command, 'enter COMBAT' (and wait until it completes), Set Text [Script] to 'Escuchando {TXT:EliteG19s_Current_Artist}, [da les duro;tenga cuidado]-comandante.', Execute external plugin, 'EDDI 3.0.0-rc1'</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>Que estoy escuchando; Que suena</td>
+<td width='15%'>G19s App What's Playing</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Set Text [Script] to '[Esta canción se llama; Ahora mismo estás escuchando] {TXT:EliteG19s_Current_Title} y es de {TXT:EliteG19s_Current_Artist}, [comandante; ].', Execute external plugin, 'EDDI 3.0.0-rc1'</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>Que música [pondrás;me tienes preparada]</td>
+<td width='15%'>G19s App playlist actual</td>
+<td width='15%'>G19s App</td>
+<td>Set Text [Script] to 'Te tengo preparada la playlist {TXT:playlist} del género {TXT:music_gen}', Execute external plugin, 'EDDI 3.0.0-rc1'</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>Reproduce Spotify; Sigue con la canción [;de Spotify]; Sigue con Spotify; Sigue con la música [;de Spotify]</td>
+<td width='15%'>G19s App play Spotify</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 2 seconds, Begin Text Compare : [music_env] Equals 'space', Execute command, 'enter SPACE' (and wait until it completes), End Condition, Begin Text Compare : [music_env] Equals 'supercruise', Execute command, 'PLAYLIST RELAX' (and wait until it completes), End Condition, Begin Text Compare : [music_env] Equals 'cantina', Execute command, 'enter CANTINA' (and wait until it completes), End Condition, Begin Text Compare : [music_env] Equals 'signal', Execute command, 'enter SUSPENSE' (and wait until it completes), End Condition, Pause 5 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' and wait for return, Set Text [Script] to 'Escuchando {TXT:Spotify_SongName}', Execute external plugin, 'EDDI 3.0.0-rc1'</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>[Reproduce;Pon] [la;] [radio] [de;] Hutton Orbital</td>
+<td width='15%'>G19s App Radio Hutton</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin'</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>[Reproduce;Pon] [la;] [radio] [de;] Kamocan</td>
+<td width='15%'>G19s App Radio Kamocan [ESP]</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin'</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>[Reproduce;Pon] [la;] [radio] [de;] Sidewinder</td>
+<td width='15%'>G19s App Radio Sidewinder</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin'</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>Saca [un;una] [foto;pantallazo]</td>
+<td width='15%'>G19s App Screenshot</td>
+<td width='15%'>G19s App</td>
+<td>Press F10 key and hold for 0.1 seconds and release</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>Silencia Companion</td>
+<td width='15%'>G19s app Mute</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin'</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>Silencia la música</td>
+<td width='15%'>G19s App volume 0</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Pause 0.25 seconds, Execute external plugin, 'EliteG19s VoiceAttack Plugin'</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>Sube[; un poco] [el tráfico;el volumen del tráfico]</td>
+<td width='15%'>G19s App volume traffic up</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Play sound, '{VA_SOUNDS}\EliteDangerous\blip.mp3' , Start Dictation Mode (Clearing Dictation Buffer), Pause 3 seconds, Stop Dictation Mode, Begin Text Compare : [{DICTATION}] Ends With 'más', Jump: Command Start, End Condition, Set Text [Script] to '¿Está bien así[;comandante]?', Execute external plugin, 'EDDI 3.0.0-rc1'</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>Sube[; un poco] [la música;el volumen][; de la música]</td>
+<td width='15%'>G19s App volume music up</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Play sound, '{VA_SOUNDS}\EliteDangerous\blip.mp3' , Start Dictation Mode (Clearing Dictation Buffer), Pause 3 seconds, Stop Dictation Mode, Begin Text Compare : [{DICTATION}] Ends With 'más', Jump: Command Start, End Condition, Set Text [Script] to '¿Está bien así[;comandante]?', Execute external plugin, 'EDDI 3.0.0-rc1'</td>
+</tr>
+<tr class='r0'>
+<td width='15%'>[Sube;Baja;Pon] [;el volumen] [;de] [;la música] [a la mitad; al 50%]</td>
+<td width='15%'>G19s App volume 50%</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Play sound, '{VA_SOUNDS}\EliteDangerous\blip.mp3'</td>
+</tr>
+<tr class='r1'>
+<td width='15%'>[Sube;Pon] [;el volumen] [;de] [;la música] [a tope;al máximo; al 100%]</td>
+<td width='15%'>G19s App volume 50%</td>
+<td width='15%'>G19s App</td>
+<td>Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Execute external plugin, 'EliteG19s VoiceAttack Plugin' , Play sound, '{VA_SOUNDS}\EliteDangerous\blip.mp3'</td>
 </tr>
 </tbody>
 </table>
