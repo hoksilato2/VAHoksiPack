@@ -77,7 +77,7 @@ Si ya estáis usando a vuestra propia Sirka personalizada podéis pasar directam
 
  5- Substituir options.json por el modificado que hemos descargado.
 
- 6- Descargar plugin G19s para VA de [aquí](https://apps.magicmau.nl/EliteG19s-v...ack-latest.zip)
+ 6- Descargar plugin G19s para VA de [aquí](https://apps.magicmau.nl/EliteG19s-v2/VoiceAttack/EliteG19s-VoiceAttack-latest.zip)
 
  7- Guardar archivo .dll en la carpeta donde tenéis instalado VA:
     .\VoiceAttack\Apps\EliteG19s\EliteG19s.VoiceAttack.dll
