@@ -105,8 +105,8 @@
       "enabled": true,
       "priority": 3,
       "responder": false,
-      "script": "{_ Cargo report }\n{_ Report current cargo manifest }\n\n{set cargocarried to 0}\n{set haulage to 0}\n{set illegal to false}\n{set stolen to false}\n\n{if len(inventory) > 0:\n    {for cargo in inventory:\n        {set cargocarried to cargocarried + cargo.total}\n        {set haulage to haulage + cargo.haulage}\n        {if cargo.stolen > 0: {set stolen to true}}\n        {if status.docked:\n            {for prohibited in station.prohibited:\n                {if cargo.name = prohibited: {set illegal to true}}\n            }\n        }\n    }\n}\n\n\n{if cargocarried > 0:\n    {if cargocarried = ship.cargocapacity:\n        Tu {OneOf(\"bahía de carga está llena\", \"compartimento de carga está lleno\")}.\n    |else:\n        Estás cargando {cargocarried} tonelada{if cargocarried != 1:s}\n    }\n\n    {if len(inventory) = 1:\n        {if inventory[0].name = \"Limpet\":\n            de drónes.\n        |else:\n            de {inventory[0].name}.\n        }\n    |else:\n        {if cargocarried < ship.cargocapacity: de cargamento.}\n        {Occasionally(2, \"Ahora mismo\")} {OneOf(\"llevamos\", \"transportamos\")} lo siguiente:\n        {set position to 0}\n        {for cargo in inventory:\n            {cargo.total} tonelada{if cargo.total != 1:s} de \n            {if cargo_commodity_array[0] = \"Limpet\":\n                de drónes\n            |else:\n                de {cargo.name}\n            }\n            {set position to position + 1}\n            {if position = len(inventory) - 1: y |else:,}\n        }\n    }.\n\n    {if cargocarried < ship.cargocapacity:\n        {set free to ship.cargocapacity - cargocarried}\n        Tienes {free} tonelada{if free != 1:s} {OneOf(\"\",\"de espacio libre\")}{if free != 1:s}.\n    }\n\n    {if stolen || illegal:\n        Atención: Llevamos carga\n        {if stolen: robada}\n        {if illegal:\n            {if stolen:, e }\n            ilegal en esta jurisdicción\n        }.\n    }\n\n|else:\n    {OneOf(\"Tu bahía de carga está vacía.\",\"No tienes carga.\",\"No llevas ninguna carga.\")}\n}\n\n",
-      "default": true,
+      "script": "{_ Cargo report }\n{_ Report current cargo manifest }\n\n{set cargocarried to 0}\n{set haulage to 0}\n{set illegal to false}\n{set stolen to false}\n\n{if len(inventory) > 0:\n    {for cargo in inventory:\n        {set cargocarried to cargocarried + cargo.total}\n        {set haulage to haulage + cargo.haulage}\n        {if cargo.stolen > 0: {set stolen to true}}\n        {if status.docked:\n            {for prohibited in station.prohibited:\n                {if cargo.name = prohibited: {set illegal to true}}\n            }\n        }\n    }\n}\n\n\n{if cargocarried > 0:\n    {if cargocarried = ship.cargocapacity:\n        {OneOf(\"La bodega de carga está llena\", \"el compartimento de carga está lleno\")}.\n    |else:\n        {Occasionally(2, \"Ahora mismo\")} {OneOf(\"llevamos\", \"transportamos\")} \n    }\n\n    {if len(inventory) = 1:\n        {if inventory[0].name = \"Drón\":\n            {if cargocarried = 1:un |else:{cargocarried}} drón{if cargocarried != 1:es}.\n        |else:\n           {if cargocarried = 1:una |else:{cargocarried}} tonelada{if cargocarried != 1:s} de {inventory[0].name}.\n        }\n    |else:\n        {if cargocarried < ship.cargocapacity: de cargamento.}\n        {OneOf(\"la siguiente mercancía\",\"lo siguiente\")}.\n        {set position to 0}\n        {for cargo in inventory:\n            \n            {if cargo.name = \"Drón\":\n                 {if cargo.total = 1:un |else:{cargo.total}} drón{if cargo.total != 1:es}\n            |else:\n               {if cargo.total = 1:una |else:{cargo.total}} tonelada{if cargo.total != 1:s} de {cargo.name}\n            }\n            {set position to position + 1}\n            {if position = len(inventory) - 1: , y |else:,}\n        }\n    }.\n\n    {if cargocarried < ship.cargocapacity:\n        {set free to ship.cargocapacity - cargocarried}\n        Tienes {free} tonelada{if free != 1:s} {OneOf(\"\",\"de espacio libre\")}{if free != 1:s}.\n    }\n\n    {if stolen || illegal:\n        Atención: Llevamos carga\n        {if stolen: robada}\n        {if illegal:\n            {if stolen:, e }\n            ilegal en esta jurisdicción\n        }.\n    }\n\n|else:\n    {OneOf(\"Tu bahía de carga está vacía.\",\"Tu bodega de carga está vacía.\",\"No tienes carga.\",\"No llevas ninguna carga.\")}\n}\n\n",
+      "default": false,
       "name": "Cargo report",
       "description": "Informa de tu carga actual"
     },
@@ -825,8 +825,8 @@
       "enabled": true,
       "priority": 3,
       "responder": true,
-      "script": "{OneOf('Drone','Limpet')} launched.",
-      "default": true,
+      "script": "Drón {OneOf('lanzado','en marcha')}.",
+      "default": false,
       "name": "Limpet launched",
       "description": "Triggered when a limpet is launched"
     },
@@ -834,8 +834,8 @@
       "enabled": true,
       "priority": 3,
       "responder": true,
-      "script": "{event.amount} drón{if event.amount > 1:es}\n{Occasionally(2, \"ha{if event.amount > 1:n} sido\")}\nañadido{if event.amount > 1:s} a{OneOf(\"l compartimento de carga\",\"l inventario\",\"la bodega\")} {OneOf(\"\",\"de la {ShipName()}\")}",
-      "default": true,
+      "script": "{event.amount} drón{if event.amount > 1:es} {Occasionally(2, \"ha{if event.amount > 1:n} sido\")} añadido{if event.amount > 1:s}, a{OneOf(\"l compartimento de carga\",\"l inventario\",\"la bodega\")} {OneOf(\"\",\"de la {ShipName()}\")}",
+      "default": false,
       "name": "Limpet purchased",
       "description": "Se activa cuando compra drones en una estación espacial"
     },
@@ -843,8 +843,8 @@
       "enabled": true,
       "priority": 3,
       "responder": true,
-      "script": "{event.amount} drón{if event.amount > 1:es}\n{Occasionally(2, \"ha{if event.amount > 1:n} sido\")} vendidos.",
-      "default": true,
+      "script": "{event.amount} drón{if event.amount > 1:es}{Occasionally(2, \"ha{if event.amount > 1:n} sido\")} vendidos.",
+      "default": false,
       "name": "Limpet sold",
       "description": "Se activa cuando vende drones en una estación espacial"
     },
@@ -858,11 +858,11 @@
       "description": "Describe el contenido de las bahías con vehículos de la nave."
     },
     "Location": {
-      "enabled": true,
+      "enabled": false,
       "priority": 3,
       "responder": true,
-      "script": "{_ Context }\n{SetState('eddi_context_system_name', event.system)}\n{SetState('eddi_context_body_name', event.body)}\n{SetState('eddi_context_body_system', event.system)}\n\nNos encontramos \n{if event.docked:\n    acoplados en la\n    {if event.station = event.body:\n        estación orbital {event.station}\n    |else:\n        estación planetaria {event.station} en {event.body}\n    }\n|elif event.body:\n    cerca de {event.body}\n}\n, en el sistema {event.system}.",
-      "default": true,
+      "script": "{_ Context }\n{SetState('eddi_context_system_name', event.system)}\n{SetState('eddi_context_body_name', event.body)}\n{SetState('eddi_context_body_system', event.system)}\n\nNos encontramos \n{if event.docked:\n    acoplados en la\n    {if event.station = event.body:\n        estación orbital {event.station}\n    |else:\n        estación planetaria {event.station} en {event.body}\n    }\n|elif event.body:\n    cerca de {event.body},\n} en el sistema {event.system}.\n",
+      "default": false,
       "name": "Location",
       "description": "Se activa cuando se informa sobre la ubicación del Comandante, normalmente cuando se reinicia el juego"
     },
@@ -951,8 +951,8 @@
       "enabled": true,
       "priority": 3,
       "responder": false,
-      "script": "{_ Fetch material from state }\n{set material to state.material}\n{if material:\n    {_ Fetch full material details }\n    {set material to MaterialDetails(material)}\n\n    {_ Context }\n    {SetState('eddi_context_last_subject', 'material')}\n    {SetState('eddi_context_material_name', material.name)}\n}\n\n{if !material:\n    {_ Fetch from context }\n    {set material to MaterialDetails(state.eddi_context_material_name)}\n}\n\n{if material.name:\n    {if material.location:\n        {material.name} can be {material.location}\n    |else:\n        No encuentro información sobre dónde buscar {material.name}\n    }\n|else:\n    No reconozco ese material\n}.\n",
-      "default": true,
+      "script": "{_ Fetch material from state }\n{set material to state.material}\n{if material:\n    {_ Fetch full material details }\n    {set material to MaterialDetails(material)}\n\n    {_ Context }\n    {SetState('eddi_context_last_subject', 'material')}\n    {SetState('eddi_context_material_name', material.name)}\n}\n\n{if !material:\n    {_ Fetch from context }\n    {set material to MaterialDetails(state.eddi_context_material_name)}\n}\n\n{if material.name:\n    {if material.location:\n        Puedes obtener {material.name} de {material.location}\n    |else:\n        No encuentro información sobre dónde encontrar {material.name}\n    }\n|else:\n    No reconozco ese material\n}.\n",
+      "default": false,
       "name": "Material location report",
       "description": "Informa sobre dónde encontrar un material en particular"
     },
@@ -969,8 +969,8 @@
       "enabled": true,
       "priority": 3,
       "responder": true,
-      "script": "{if event.level = 'Minimum': \n{_ Gone below the minimum level } \n{OneOf(\"El Stock\", \"el invetario\", \"las reservas\")} de {event.material.name} han caído por debajo del mínimo establecido\n|elif event.level = 'Maximum': \n{_ Gone above the maximum level } \n{OneOf(\"El Stock\", \"el invetario\", \"las reservas\")} de {event.material.name} han superado el máximo establecido\n|else: \n{_ Moved around the desired level } \n{if event.change = 'Increase': \nHas alcanzado el nivel deseado de {event.material.name}. \n|else: \nEst{event.material.name}. \n} \n} \n\n{OneOf(\"Current stock is {event.amount}\", \n\"Currently holding {event.amount}\", \n\"{event.amount} on-board\")}.",
-      "default": true,
+      "script": "{if event.level = 'Minimum': \n{_ Gone below the minimum level } \n{OneOf(\"El Stock\", \"el inventario\", \"la reserva\")} de {event.material.name} ha caído por debajo del mínimo establecido\n|elif event.level = 'Maximum': \n{_ Gone above the maximum level } \n{OneOf(\"El Stock\", \"el inventario\", \"la reserva\")} de {event.material.name} ha superado el máximo establecido\n|else: \n{_ Moved around the desired level } \n{if event.change = 'Increase': \nHas alcanzado el nivel deseado de {event.material.name}. \n|else: \nEst{event.material.name}. \n} \n} \n\n{OneOf(\"Actualmente tenemos {event.amount}\", \n\"Ahora mismo tenemos {event.amount}\", \n\"{event.amount} a bordo\")}.",
+      "default": false,
       "name": "Material threshold",
       "description": "Se activa cuando un material alcanza el umbral"
     },
