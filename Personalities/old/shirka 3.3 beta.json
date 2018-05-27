@@ -34,7 +34,7 @@
       "priority": 3,
       "responder": false,
       "script": "{_ Fetch from context }\n{set reportbody to BodyDetails(state.eddi_context_body_name, state.eddi_context_body_system)}\n{if !reportbody.name || reportbody.name = \"\": {set reportbody to BodyDetails(state.eddi_context_body_name)} }\n\n{if !reportbody.name || reportbody.name = \"\":\n    No consigo entender a que cuerpo estelar se refiere\n|else:\n    {set shortBodyName to reportbody.name}\n    {set systemName to state.eddi_context_body_system}\n    {set sysNameLen to len(systemName)}\n    {if len(shortBodyName) > sysNameLen && eq(systemName, slice(shortBodyName, 0, sysNameLen)):\n        {set shortBodyName to cat(\"planeta\", Spacialise(slice(shortBodyName, sysNameLen)))}\n    }\n\n    El {shortBodyName}, es\r\n\r\n{if reportbody.planettype = \"Metal rich body\":\r\nUn mundo rico en metales\r\n{set gasgiant to 0}\r\n|elif reportbody.planettype = \"High metal content body\":\r\nUn mundo de alto contenido metálico \r\n{set gasgiant to 0}\r\n|elif reportbody.planettype = \"Rocky body\":\r\nUn mundo rocoso \r\n{set gasgiant to 0}\r\n|elif reportbody.planettype = \"Icy body\":\r\nUn mundo helado \r\n{set gasgiant to 0}\r\n|elif reportbody.planettype = \"Rocky ice body\":\r\nUn mundo rocoso helado\r\n{set gasgiant to 0}\r\n|elif reportbody.planettype = \"Earthlike body\":\r\nUn mundo similar a la tierra \r\n{set gasgiant to 0}\r\n|elif reportbody.planettype = \"Water world\":\r\nUn mundo acuático \r\n{set gasgiant to 0}\r\n|elif reportbody.planettype = \"Ammonia world\":\r\nUn mundo de amoníaco \r\n{set gasgiant to 0}\r\n|elif reportbody.planettype = \"Water giant\":\r\nun gigante acuático \r\n{set gasgiant to 0}\r\n|elif reportbody.planettype = \"Water giant with life\":\r\nun gigante acuático con vida \r\n{set gasgiant to 0}\r\n|elif reportbody.planettype = \"Gas giant with water based life\":\r\nun gigante gaseoso con vida basada en el agua \r\n{set gasgiant to 1}\r\n|elif reportbody.planettype = \"Gas giant with ammonia based life\":\r\nun gigante gaseoso con vida basada en el amoníaco \r\n{set gasgiant to 1}\r\n|elif reportbody.planettype = \"Sudarsky class I gas giant\":\r\nun gigante gaseoso de clase uno\r\n{set gasgiant to 1}\r\n|elif reportbody.planettype = \"Sudarsky class II gas giant\":\r\nun gigante gaseoso de clase dos\r\n{set gasgiant to 1}\r\n|elif reportbody.planettype = \"Sudarsky class III gas giant\":\r\nun gigante gaseoso de clase tres\r\n{set gasgiant to 1}\r\n|elif reportbody.planettype = \"Sudarsky class IV gas giant\":\r\nun gigante gaseoso de clase cuatro\r\n{set gasgiant to 1}\r\n|elif reportbody.planettype = \"Sudarsky class V gas giant\":\r\nun gigante gaseoso de clase cinco\r\n{set gasgiant to 1}\r\n|elif reportbody.planettype = \"Helium rich gas giant\":\r\nun gigante gaseoso rico en helio \r\n{set gasgiant to 1}\r\n|elif reportbody.planettype = \"Helium gas giant\":\r\nun gigante gaseoso de helio\r\n{set gasgiant to 1}\r\n|else:\r\nun cuerpo estelar \r\n\r\n    }\r\n\n    {if reportbody.gravity < 0.5:\n        de baja gravedad\n    |elif reportbody.gravity <2:\n        de media gravedad\n    |elif reportbody.gravity <4:\n        de alta gravedad\n    |else:\n        de extrema gravedad\n    }\n\n    {if reportbody.tidallylocked:\n        carente de rotación\n    }\n\n    {if reportbody.terraformstate = \"Terraformable\":\n        terraformable\n    |elif reportbody.terraformstate = \"Terraformed\":\n        terraformado\n    }\n\n    {if len(reportbody.rings) > 0:\n        anillado\n    }\n\n    {if reportbody.terraformstate = \"Terraforming\":\n      en proceso de terraformación\n    }\n\n    {if type(reportbody.landable) != \"void\": \n        que es\n        {if reportbody.landable:\n            adecuado\n        |else:\n            inadecuado\n        }\n        para aterrizar\n    }\n    . {_ note the full stop}\n\n    {_ Atmosphere? }\n\n    {if reportbody.volcanism:\n        Este planeta muestra signos de vulcanismo, con\n        {if reportbody.volcanism.type = 'Geysers':\n            {if reportbody.volcanism.amount = 'Major':\n                un alto número de\n            |elif reportbody.volcanism.amount = 'Minor':\n                bajo número de\n            }\n            géiseres activos de {reportbody.volcanism.composition}\n        |else:\n            {if reportbody.volcanism.amount = 'Major':\n                altos niveles de\n            |elif reportbody.volcanism.amount = 'Minor':\n                bajos niveles de\n            }\n            afloramientos activos de magma de{reportbody.volcanism.composition}\n        }.\n    }\n\n    {if reportbody.landable :\n        Tiene un período de rotación\n        {if reportbody.rotationalperiod < -20.0:\n            retrógrado bajo\n        |elif reportbody.rotationalperiod < -0.5:\n            retrógrado\n        |elif reportbody.rotationalperiod < 0:\n            retrógrado alto\n        |elif reportbody.rotationalperiod <= 0.5:\n            alto\n        |elif reportbody.rotationalperiod > 20.0:\n            bajo\n        }\n        de {Humanise(reportbody.rotationalperiod)}\n        días {if Humanise(reportbody.rotationalperiod) != \"1\":s}.\n\n        {set goodmaterials to []}\n        {set greatmaterials to []}\n        {for material in reportbody.materials:\n            {if material.percentage >= MaterialDetails(material.material).greatpctbody:\n                {set greatmaterials to cat(greatmaterials, [material])}\n            |elif material.percentage >= MaterialDetails(material.material).goodpctbody:\n                {set goodmaterials to cat(goodmaterials, [material])}\n            }\n        }\n\n        {if len(greatmaterials) > 0:\n            Este cuerpo contiene niveles muy altos de\n            {if len(greatmaterials) = 1:\n                {greatmaterials[0].material}\n            |elif len(greatmaterials) = 2:\n                {greatmaterials[0].material} y {greatmaterials[1].material}\n            |else:\n                {set cur to 0}\n                {while cur < len(greatmaterials):\n                    {if cur = 0:\n                        {greatmaterials[cur].material}\n                    |elif cur < len(greatmaterials) - 1:\n                        , {greatmaterials[cur].material}\n                    |else:\n                        , and {greatmaterials[cur].material}\n                    }\n                    {set cur to cur + 1}\n                }\n            }\n        }\n        {if len(goodmaterials) > 0:\n            {if len(greatmaterials) > 0:\n                y altos niveles de\n            |else:\n                Este cuerpo contiene niveles altos de\n            }\n            {if len(goodmaterials) = 1:\n                {goodmaterials[0].material}\n            |elif len(goodmaterials) = 2:\n                {goodmaterials[0].material} y {goodmaterials[1].material}\n            |else:\n                {set cur to 0}\n                {while cur < len(goodmaterials):\n                    {if cur = 0:\n                        {goodmaterials[cur].material}\n                    |elif cur < len(goodmaterials) - 1:\n                        , {goodmaterials[cur].material}\n                    |else:\n                        , y {goodmaterials[cur].material}\n                    }\n                    {set cur to cur + 1}\n                }\n            }\n        }\n        {if len(greatmaterials) > 0 || len(goodmaterials) > 0:\n            .\n        }\n    }\n}",
-      "default": true,
+      "default": false,
       "name": "Body report",
       "description": "Informa sobre el contenido del cuerpo estelar"
     },
@@ -60,8 +60,8 @@
       "enabled": true,
       "priority": 3,
       "responder": true,
-      "script": "{_ Context }\n{SetState('eddi_context_last_subject', 'bond')}\n{SetState('eddi_context_last_action', 'redeem')}\n{SetState('eddi_context_bond_amount', event.amount)}\n\nBonos de combate por valor de {Humanise(event.amount)} créditos {Occasionally(2, OneOf(\"han sido\", \"se han\"))}{OneOf(\"otorgados\", \"reclamados\")}\n\n{Occasionally(2, \"\n  {if len(event.rewards) = 1 && len(event.rewards[0].faction) > 0:\n    de {P(event.rewards[0].faction)}\n  |else:\n    . \n    {set cur to 0}\n    {while cur < len(event.rewards):\n      {if len(event.rewards[cur].faction) > 0:\n        {if cur = 0:\n        |elif cur < len(event.rewards) - 1:\n            , \n        |else:\n            y\n        }\n        {Humanise(event.rewards[cur].amount)} créditos de\n        {P(event.rewards[cur].faction)} \n        {set cur to cur + 1}\n      }\n    }\n  }\n\")}\n\n{if event.brokerpercentage && event.brokerpercentage > 0:\n    después de deducir \n    {OneOf(\"un pago\", \"una recompensa\")} de\n    {round((event.amount / (100 - event.brokerpercentage)) * event.brokerpercentage, 0)} créditos\n}.",
-      "default": false,
+      "script": "{_ Context }\n{SetState('eddi_context_last_subject', 'bond')}\n{SetState('eddi_context_last_action', 'redeem')}\n{SetState('eddi_context_bond_amount', event.amount)}\n\nBonos de combate por valor de {Humanise(event.amount)} créditos\n{Occasionally(2, OneOf(\"han sido\", \"se han\"))}\n{OneOf(\"otorgados\", \"reclamados\")}\n\n{Occasionally(2, \"\n  {if len(event.rewards) = 1 && len(event.rewards[0].faction) > 0:\n    de {P(event.rewards[0].faction)}\n  |else:\n    . \n    {set cur to 0}\n    {while cur < len(event.rewards):\n      {if len(event.rewards[cur].faction) > 0:\n        {if cur = 0:\n        |elif cur < len(event.rewards) - 1:\n            , \n        |else:\n            y\n        }\n        {Humanise(event.rewards[cur].amount)} créditos de\n        {P(event.rewards[cur].faction)} \n        {set cur to cur + 1}\n      }\n    }\n  }\n\")}\n\n{if event.brokerpercentage && event.brokerpercentage > 0:\n    después de deducir \n    {OneOf(\"un pago\", \"una recompensa\")} de\n    {round((event.amount / (100 - event.brokerpercentage)) * event.brokerpercentage, 0)} créditos\n}.",
+      "default": true,
       "name": "Bond redeemed",
       "description": "Se activa cuando canjeas un bono de combate"
     },
@@ -106,7 +106,7 @@
       "priority": 3,
       "responder": false,
       "script": "{_ Cargo report }\n{_ Report current cargo manifest }\n\n{set cargocarried to 0}\n{set haulage to 0}\n{set illegal to false}\n{set stolen to false}\n\n{if len(inventory) > 0:\n    {for cargo in inventory:\n        {set cargocarried to cargocarried + cargo.total}\n        {set haulage to haulage + cargo.haulage}\n        {if cargo.stolen > 0: {set stolen to true}}\n        {if status.docked:\n            {for prohibited in station.prohibited:\n                {if cargo.name = prohibited: {set illegal to true}}\n            }\n        }\n    }\n}\n\n\n{if cargocarried > 0:\n    {if cargocarried = ship.cargocapacity:\n        {OneOf(\"La bodega de carga está llena\", \"el compartimento de carga está lleno\")}.\n    |else:\n        {Occasionally(2, \"Ahora mismo\")} {OneOf(\"llevamos\", \"transportamos\")} \n    }\n\n    {if len(inventory) = 1:\n        {if inventory[0].name = \"Drón\":\n            {if cargocarried = 1:un |else:{cargocarried}} drón{if cargocarried != 1:es}.\n        |else:\n           {if cargocarried = 1:una |else:{cargocarried}} tonelada{if cargocarried != 1:s} de {inventory[0].name}.\n        }\n    |else:\n        {if cargocarried < ship.cargocapacity: de cargamento.}\n        {OneOf(\"la siguiente mercancía\",\"lo siguiente\")}.\n        {set position to 0}\n        {for cargo in inventory:\n            \n            {if cargo.name = \"Drón\":\n                 {if cargo.total = 1:un |else:{cargo.total}} drón{if cargo.total != 1:es}\n            |else:\n               {if cargo.total = 1:una |else:{cargo.total}} tonelada{if cargo.total != 1:s} de {cargo.name}\n            }\n            {set position to position + 1}\n            {if position = len(inventory) - 1: , y |else:,}\n        }\n    }.\n\n    {if cargocarried < ship.cargocapacity:\n        {set free to ship.cargocapacity - cargocarried}\n        Tienes {free} tonelada{if free != 1:s} {OneOf(\"\",\"de espacio libre\")}{if free != 1:s}.\n    }\n\n    {if stolen || illegal:\n        Atención: Llevamos carga\n        {if stolen: robada}\n        {if illegal:\n            {if stolen:, e }\n            ilegal en esta jurisdicción\n        }.\n    }\n\n|else:\n    {OneOf(\"Tu bahía de carga está vacía.\",\"Tu bodega de carga está vacía.\",\"No tienes carga.\",\"No llevas ninguna carga.\")}\n}\n\n",
-      "default": true,
+      "default": false,
       "name": "Cargo report",
       "description": "Informa de tu carga actual"
     },
@@ -456,8 +456,8 @@
       "enabled": true,
       "priority": 3,
       "responder": true,
-      "script": "{_ Context }\n{SetState('eddi_context_last_subject', 'landing pad')}\n{SetState('eddi_context_landing_pad_system', system.name)}\n{SetState('eddi_context_landing_pad_station', event.station)}\n{SetState('eddi_context_landing_pad_pad', event.landingpad)}\n\n{set station to StationDetails(event.station)}\n{if station.model = \"Estación clase Coriolis\" || station.model = \"Estación clase Orbis\" || station.model = \"Estación clase Ocellus\" || station.model = \"Base en asteroide\" || station.model = \"Estación desconocida\":\n    {Pause(8000)}\n    {F(\"Landing pad report\")}\n}",
-      "default": false,
+      "script": "{_ Context }\n{SetState('eddi_context_last_subject', 'landing pad')}\n{SetState('eddi_context_landing_pad_system', system.name)}\n{SetState('eddi_context_landing_pad_station', event.station)}\n{SetState('eddi_context_landing_pad_pad', event.landingpad)}\n\n{set station to StationDetails(event.station)}\n{if station.model = \"Estación clase Coriolis\" || station.model = \"Estación clase Orbis\" || station.model = \"Estación clase Ocellus\" || station.model = \"Base en asteroide\" || station.model = \"Estación desconocida\":\n    {Pause(8000)}\n    {F(\"Informe de plataforma de aterrizaje\")}\n}",
+      "default": true,
       "name": "Docking granted",
       "description": "Se activa cuando se te concede permiso a tu nave para aterrizar en una estación espacial o puesto avanzado"
     },
@@ -588,7 +588,7 @@
       "description": "Se activa cuando atracas el caza en tu nave."
     },
     "Fighter launched": {
-      "enabled": false,
+      "enabled": true,
       "priority": 3,
       "responder": true,
       "script": "{OneOf(\"lanzando\", \"desacoplando\")} caza {Occasionally(2, \"de la nave\")}.",
@@ -645,8 +645,8 @@
       "enabled": true,
       "priority": 3,
       "responder": true,
-      "script": "{_ Context }\n{SetState('eddi_context_last_subject', 'fsd')}\n{SetState('eddi_context_last_action', 'engage')}\n{SetState('eddi_context_system_name', event.system)}\n{SetState('eddi_context_system_system', event.system)}\n{SetState('eddi_context_fsd_target', event.target)}\n\n{if event.target = 'Hyperspace':\n    {_ Rewrite context to represent a jump }\n    {SetState('eddi_context_last_subject', 'jump')}\n    {SetState('eddi_context_last_action', 'start')}\n\n    {set system to SystemDetails(event.system)}\n\n    {_ Wait for the FSD countdown and initial jump}\n    {Pause(5000)}\n\n    {OneOf(\"Destino confirmado\",\"salto en progreso\",\"telemetría obtenida\")}.\n    {ShipName()} está {OneOf(\"en dirección a\", \"en ruta a\", \"viajando a\", \"en tránsito a\")} el sistema {P(system.name)}.\n    {if system.name = homesystem.name:\n        Bienvenido a casa, {F(\"Honorific\")}\n    |else:\n        {set scoopables to [\"O\", \"B\", \"A\", \"F\", \"G\", \"K\", \"M\"]}\n        {if slice(event.stellarclass, 0, 1) = \"D\":\n            Precaución: detectada enana blanca.\n        |elif event.stellarclass = \"N\":\n            Precaución: detectada estrella de neutrones.\n        |elif event.stellarclass = \"H\":\n            Precaución: detectado agujero negro.\n        |elif find(scoopables, event.stellarclass) = -1:\n            Atención: la estrella de destino no permite el repostaje de combustible.\n        }\n        \n        {if lastsystem.allegiance && lastsystem.allegiance != \"None\" && lastsystem.allegiance != \"Independiente\" && (!system.allegiance || system.allegiance = \"Ninguno\" || system.allegiance = \"Independiente\"):\n            Comandante {OneOf(\"está abandonando el espacio de\", \"ha dejado\", \"ya no está en territorio de\")} {lastsystem.allegiance}.\n        |elif lastsystem.allegiance && lastsystem.allegiance != system.allegiance && system.allegiance && system.allegiance != \"Ninguno\":\n            Comandante {OneOf(\"ahora está en espacio de\", \"ha llegado a\", \"está entrando en espacio de\")} {system.allegiance}.\n            {if cmdr.title != \"Commander\":\n                Bienvenido de nuevo {F(\"Honorific\")}.\n            }\n        }\n\n        {if system.visits = 0:\n            Es su primera visita a este sistema\n        |elif system.visits = 1:\n            Es su segunda visita a este sistema\n        |elif system.visits = 2:\n            Es su tercera visita a este sistema\n        |elif system.visits = 3:\n            Es su cuarta visita a este sistema\n        |else:\n            Ha visitado este sistema {system.visits} veces\n        }.\n\n        {if !system.population:\n            {OneOf(\"Este sistema está despoblado\",\"No hay presencia humana en este sistema\", \"La Humanidad aún no ha colonizado este sistema\")}.\n        |else:\n            {F(\"System report\")}\n        }\n\n        {if system.distancefromhome:\n            {Occasionally(7, \"{OneOf(\\\"Se encuentra a\\\", \\\"Su actual posición es a\\\", \\\"Actualmente esta a\\\")} {Humanise(system.distancefromhome)} años luz de {OneOf(\\\"casa\\\", \\\"{P(homesystem.name)}\\\")}.\")}\n        }\n\n        {if system.comment:\n            Ha hecho {OneOf(\"una anotación\", \"un comentario\", \"una observación\")} {OneOf(\"sobre\", \"acerca de\", \"en relación a\")} este sistema que {OneOf(\"dice\", \"indica\", \"señala\")} {system.comment}.\n        }\n    }\n}",
-      "default": false,
+      "script": "{_ Context }\n{SetState('eddi_context_last_subject', 'fsd')}\n{SetState('eddi_context_last_action', 'engage')}\n{SetState('eddi_context_system_name', event.system)}\n{SetState('eddi_context_system_system', event.system)}\n{SetState('eddi_context_fsd_target', event.target)}\n\n{if event.target = 'Hyperspace':\n    {_ Rewrite context to represent a jump }\n    {SetState('eddi_context_last_subject', 'jump')}\n    {SetState('eddi_context_last_action', 'start')}\n\n    {set system to SystemDetails(event.system)}\n\n    {_ Wait for the FSD countdown and initial jump}\n    {Pause(5000)}\n\n    {OneOf(\"Destino confirmado\",\"salto en progreso\",\"telemetría obtenida\")}.\n    {ShipName()} está {OneOf(\"en dirección a\", \"en ruta a\", \"viajando a\", \"en tránsito a\")} el sistema {P(system.name)}.\n    {if system.name = homesystem.name:\n        Bienvenido a casa, {F(\"Honorific\")}\n    |else:\n        {set scoopables to [\"O\", \"B\", \"A\", \"F\", \"G\", \"K\", \"M\"]}\n        {if slice(event.stellarclass, 0, 1) = \"D\":\n            Precaución: detectada enana blanca.\n        |elif event.stellarclass = \"N\":\n            Precaución: detectada estrella de neutrones.\n        |elif event.stellarclass = \"H\":\n            Precaución: detectado agujero negro.\n        |elif find(scoopables, event.stellarclass) = -1:\n            Atención: la estrella de destino no permite el repostaje de combustible.\n        }\n        \n        {if lastsystem.allegiance && lastsystem.allegiance != \"None\" && lastsystem.allegiance != \"Independent\" && (!system.allegiance || system.allegiance = \"None\" || system.allegiance = \"Independent\"):\n            Comandante {OneOf(\"está abandonando el espacio de\", \"ha dejado\", \"ya no está en territorio de\")} {lastsystem.allegiance}.\n        |elif lastsystem.allegiance && lastsystem.allegiance != system.allegiance && system.allegiance && system.allegiance != \"None\":\n            Comandante {OneOf(\"ahora está en espacio de\", \"ha llegado a\", \"está entrando en espacio de\")} {system.allegiance}.\n            {if cmdr.title != \"Commander\":\n                Bienvenido de nuevo {F(\"Honorific\")}.\n            }\n        }\n\n        {if system.visits = 0:\n            Es su primera visita a este sistema\n        |elif system.visits = 1:\n            Es su segunda visita a este sistema\n        |elif system.visits = 2:\n            Es su tercera visita a este sistema\n        |elif system.visits = 3:\n            Es su cuarta visita a este sistema\n        |else:\n            Ha visitado este sistema {system.visits} veces\n        }.\n\n        {if !system.population:\n            {OneOf(\"Este sistema está despoblado\",\"No hay presencia humana en este sistema\", \"La Humanidad aún no ha colonizado este sistema\")}.\n        |else:\n            {F(\"System report\")}\n        }\n\n        {if system.distancefromhome:\n            {Occasionally(7, \"{OneOf(\\\"Se encuentra a\\\", \\\"Su actual posición es a\\\", \\\"Actualmente esta a\\\")} {Humanise(system.distancefromhome)} años luz de {OneOf(\\\"casa\\\", \\\"{P(homesystem.name)}\\\")}.\")}\n        }\n\n        {if system.comment:\n            Ha hecho {OneOf(\"una anotación\", \"un comentario\", \"una observación\")} {OneOf(\"sobre\", \"acerca de\", \"en relación a\")} este sistema que {OneOf(\"dice\", \"indica\", \"señala\")} {system.comment}.\n        }\n    }\n}",
+      "default": true,
       "name": "FSD engaged",
       "description": "Se activa cuando se ha conectado su motor de distorsión (FSD)"
     },
@@ -777,7 +777,7 @@
       "description": "Se activa en espacio normal cuando se pasa a través de un chorro de eyección de una enana blanca o una estrella de neutrones ocasionando daños a los módulos de la nave"
     },
     "Jumped": {
-      "enabled": false,
+      "enabled": true,
       "priority": 3,
       "responder": true,
       "script": "{_ Context }\n{SetState('eddi_context_last_subject', 'jump')}\n{SetState('eddi_context_last_action', 'complete')}\n{SetState('eddi_context_system_name', system.name)}\n{SetState('eddi_context_system_system', system.name)}\n{SetState('eddi_context_fuel_remaining', event.fuelremaining)}\n{SetState('eddi_context_fuel_used', event.fuelused)}\n\n{F('Fuel check')}\n{Pause(2000)}\n\n{set statereport to F(\"System state report\")}\n{if statereport:\n    {Pause(2000)}\n    Información:  {statereport}\n}",
@@ -826,7 +826,7 @@
       "priority": 3,
       "responder": true,
       "script": "Drón {OneOf('lanzado','en marcha')}.",
-      "default": true,
+      "default": false,
       "name": "Limpet launched",
       "description": "Triggered when a limpet is launched"
     },
@@ -835,7 +835,7 @@
       "priority": 3,
       "responder": true,
       "script": "{event.amount} drón{if event.amount > 1:es} {Occasionally(2, \"ha{if event.amount > 1:n} sido\")} añadido{if event.amount > 1:s}, a{OneOf(\"l compartimento de carga\",\"l inventario\",\"la bodega\")} {OneOf(\"\",\"de la {ShipName()}\")}",
-      "default": true,
+      "default": false,
       "name": "Limpet purchased",
       "description": "Se activa cuando compra drones en una estación espacial"
     },
@@ -844,7 +844,7 @@
       "priority": 3,
       "responder": true,
       "script": "{event.amount} drón{if event.amount > 1:es}{Occasionally(2, \"ha{if event.amount > 1:n} sido\")} vendidos.",
-      "default": true,
+      "default": false,
       "name": "Limpet sold",
       "description": "Se activa cuando vende drones en una estación espacial"
     },
@@ -862,7 +862,7 @@
       "priority": 3,
       "responder": true,
       "script": "{_ Context }\n{SetState('eddi_context_system_name', event.system)}\n{SetState('eddi_context_body_name', event.body)}\n{SetState('eddi_context_body_system', event.system)}\n\nNos encontramos \n{if event.docked:\n    acoplados en la\n    {if event.station = event.body:\n        estación orbital {event.station}\n    |else:\n        estación planetaria {event.station} en {event.body}\n    }\n|elif event.body:\n    cerca de {event.body},\n} en el sistema {event.system}.\n",
-      "default": true,
+      "default": false,
       "name": "Location",
       "description": "Se activa cuando se informa sobre la ubicación del Comandante, normalmente cuando se reinicia el juego"
     },
@@ -952,7 +952,7 @@
       "priority": 3,
       "responder": false,
       "script": "{_ Fetch material from state }\n{set material to state.material}\n{if material:\n    {_ Fetch full material details }\n    {set material to MaterialDetails(material)}\n\n    {_ Context }\n    {SetState('eddi_context_last_subject', 'material')}\n    {SetState('eddi_context_material_name', material.name)}\n}\n\n{if !material:\n    {_ Fetch from context }\n    {set material to MaterialDetails(state.eddi_context_material_name)}\n}\n\n{if material.name:\n    {if material.location:\n        Puedes obtener {material.name} de {material.location}\n    |else:\n        No encuentro información sobre dónde encontrar {material.name}\n    }\n|else:\n    No reconozco ese material\n}.\n",
-      "default": true,
+      "default": false,
       "name": "Material location report",
       "description": "Informa sobre dónde encontrar un material en particular"
     },
@@ -970,7 +970,7 @@
       "priority": 3,
       "responder": true,
       "script": "{if event.level = 'Minimum': \n{_ Gone below the minimum level } \n{OneOf(\"El Stock\", \"el inventario\", \"la reserva\")} de {event.material.name} ha caído por debajo del mínimo establecido\n|elif event.level = 'Maximum': \n{_ Gone above the maximum level } \n{OneOf(\"El Stock\", \"el inventario\", \"la reserva\")} de {event.material.name} ha superado el máximo establecido\n|else: \n{_ Moved around the desired level } \n{if event.change = 'Increase': \nHas alcanzado el nivel deseado de {event.material.name}. \n|else: \nEst{event.material.name}. \n} \n} \n\n{OneOf(\"Actualmente tenemos {event.amount}\", \n\"Ahora mismo tenemos {event.amount}\", \n\"{event.amount} a bordo\")}.",
-      "default": true,
+      "default": false,
       "name": "Material threshold",
       "description": "Se activa cuando un material alcanza el umbral"
     },
@@ -1568,15 +1568,6 @@
       "name": "Ship swapped",
       "description": "Se activa cuando se cambia de nave"
     },
-    "Ship targeted": {
-      "enabled": true,
-      "priority": 3,
-      "responder": true,
-      "script": "{_ Ship targeted }\r\n{_ Triggered when the player selects a target }\r\n\r\n{_ event Parameters:   targetlocked - bool (ie false when losing target) }\r\n{_ If target locked:   name (of ship), scanstage (ie 0, 1, 2, 3) }\r\n{_ If Scan stage >= 1: name (of pilot), rank (of pilot) }\r\n{_ If scan stage >= 2: shieldhealth, hullhealth (both 0-100) }\r\n{_ If scan stage >= 3: faction, legalstatus (ie clean, wanted, etc), bounty (if appicable), }\r\n{_                     subsystem (ie FSD, power plant, etc), subsystemhealth (0-100) }\r\n\r\n{_ Context }\r\n{SetState('eddi_context_last_subject', 'ship')}\r\n{SetState('eddi_context_last_action', 'targeted')}\r\n\r\n{if event.targetlocked && event.scanstage > 2:\r\n    {set legalstatus to event.legalstatus}\r\n    {if legalstatus = \"Wanted\" || legalstatus = \"Wanted Enemy\" || legalstatus = \"Warrant\":\r\n        Information: Your target has been assigned a bounty.\r\n    }\r\n}\r\n\r\n",
-      "default": true,
-      "name": "Ship targeted",
-      "description": "Triggered when the player selects a target"
-    },
     "Ship transfer initiated": {
       "enabled": true,
       "priority": 3,
@@ -1594,15 +1585,6 @@
       "default": true,
       "name": "Shutdown",
       "description": "Se activa cuando se hace un cierre limpio del juego"
-    },
-    "Silent running": {
-      "enabled": true,
-      "priority": 3,
-      "responder": true,
-      "script": null,
-      "default": true,
-      "name": "Silent running",
-      "description": "Triggered when you activate or deactivate silent running"
     },
     "SRV docked": {
       "enabled": true,
@@ -1726,7 +1708,7 @@
       "priority": 3,
       "responder": false,
       "script": "{_ Fetch from context }\n{set reportsystem to SystemDetails(state.eddi_context_system_system)}\n\n{if !reportsystem.name || reportbody.name = \"\":\n    No tengo la certeza sobre a qué sistema se refiere\n|else:\n    {P(reportsystem.name)} es un sistema \n\n    {if reportsystem.population && reportsystem.population > 0:\r\n\r\n        {if reportsystem.government = \"Prison Colony\": \r\n          Colonia prisión\r\n        |elif reportsystem.government = \"Anarchy\":\r\n          Anárquico\r\n        |elif reportsystem.government = \"Colony\":\r\n          Colonial\r\n        |elif reportsystem.government = \"Communism\":\r\n          Comunista\r\n        |elif reportsystem.government = \"Confederacy\":\r\n          Confederado\r\n        |elif reportsystem.government = \"Cooperative\":\r\n          Cooperativo\r\n        |elif reportsystem.government = \"Corporate\":\r\n          Corporativo\r\n        |elif reportsystem.government = \"Democracy\":\r\n          Demócrata\r\n        |elif reportsystem.government = \"Dictatorship\":\r\n          Dictatorial\r\n        |elif reportsystem.government = \"Feudal\":\r\n          Feudal\r\n        |elif reportsystem.government = \"Imperial\":\r\n          Imperialista\r\n        |elif reportsystem.government = \"Patronage\":\r\n          Patronal\r\n        |elif reportsystem.government = \"Theocracy\":\r\n          Teocrático\r\n        |elif reportsystem.government = \"Workshop\":\r\n          Taller\r\n        |elif reportsystem.government = \"Engineer\":\r\n          Tecnológico\n            \n            \n        {if reportsystem.allegiance = \"Federation\":\n            de la Federación\n        |elif reportsystem.allegiance = \"Empire\":\n            del Imperio\n        |else:\n            independiente\n        }\n\n        |else:\n          sistema\n        }\n        {OneOf(\"de\", \"con una población de\", \"que acoje a\")} {Humanise(reportsystem.population)} de habitantes\n        {if reportsystem.power:\n            , {OneOf(\"alineados con\", \"aliados con\", \"controlados por\")} {P(reportsystem.power)}\n        }.\n\n        {if reportsystem.faction:\n          {P(reportsystem.faction)} es la {OneOf(\"potencia\", \"facción\")} {OneOf(\"dominante\", \"local\", \"que gobierna\")}.\n        }\n\n        {if len(reportsystem.stations) = 0:\n          No hay ninguna estación presente\n        |else:\n            {if len(reportsystem.orbitalstations) = 0:\n                {if len(reportsystem.planetarystations) = 1:\n                    Hay {OneOf(\"una sola\", \"solo una\", \"una solitaria\", \"una\")} estación planetaria\n                |else:\n                    Hay {len(reportsystem.planetarystations)} estaciones planetarias\n                }\n            |elif len(reportsystem.orbitalstations) = 1:\n                Hay {OneOf(\"una sola\", \"solo una\", \"una solitaria\", \"una\")} estación orbital\n                {if len(reportsystem.planetarystations) = 1:\n                    y {OneOf(\"una sola\", \"solo una\", \"una\")} estación planetaria\n                |elif len(reportsystem.planetarystations) > 1:\n                    y {len(reportsystem.planetarystations)} estaciones planetarias\n                }\n            |else:\n                Hay {len(reportsystem.orbitalstations)} estaciones orbitales\n                {if len(reportsystem.planetarystations) = 1:\n                    y {OneOf(\"una sola\", \"solo una\", \"una\")} estación planetaria\n                |elif len(reportsystem.planetarystations) > 1:\n                    y {len(reportsystem.planetarystations)} estaciones planetarias\n                }\n            }\n        }\n        en este sistema\n    |else:\n       {OneOf(\"inhabitado\",\"despoblado\",\"sin habitantes\",\"sin ningún habitante\",\"sin ninguna población\")}\n   }.\n}",
-      "default": true,
+      "default": false,
       "name": "System report",
       "description": "Función para informar sobre los detalles del sistema estelar contextual"
     },
@@ -1806,8 +1788,8 @@
       "enabled": true,
       "priority": 3,
       "responder": true,
-      "script": "{OneOf(\"Reestablecido control completo\", \"Anclajes de aterrizaje desconectados\", \"Desconectado de redes locales\")}.\n\n{set limpetcheck to F(\"Tren de aterrizaje replegado\")}\n\n{if limpetcheck:\n    {Pause(5000)}\n    {limpetcheck}\n}\n",
-      "default": false,
+      "script": "{OneOf(\"Reestablecido control completo\", \"Anclajes de aterrizaje desconectados\", \"Desconectado de redes locales\")}.\n\n{set limpetcheck to F(\"Limpet check\")}\n\n{if limpetcheck:\n    {Pause(5000)}\n    {limpetcheck}\n}\n",
+      "default": true,
       "name": "Undocked",
       "description": "Se activa cuando su nave despega de una estación espacial o puesto avanzado"
     },
