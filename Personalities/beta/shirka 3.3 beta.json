@@ -834,8 +834,8 @@
       "enabled": true,
       "priority": 3,
       "responder": true,
-      "script": "{event.amount} drón{if event.amount > 1:es} {Occasionally(2, \"ha{if event.amount > 1:n} sido\")} añadido{if event.amount > 1:s}, a{OneOf(\"l compartimento de carga\",\"l inventario\",\"la bodega\")} {OneOf(\"\",\"de la {ShipName()}\")}",
-      "default": true,
+      "script": "{event.amount} drón{if event.amount > 1:es} {Occasionally(2, \"ha{if event.amount > 1:n} sido\")} añadido{if event.amount > 1:s} a{OneOf(\"l compartimento de carga\",\"l inventario\",\"la bodega\")} {OneOf(\"\",\"de {ShipName()}\")}",
+      "default": false,
       "name": "Limpet purchased",
       "description": "Se activa cuando compra drones en una estación espacial"
     },
