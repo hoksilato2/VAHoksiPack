@@ -46,12 +46,13 @@ Si ya estáis usando a vuestra propia Sirka personalizada podéis pasar directam
 
 5- Descargar personalidad modificada de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/Personalities/eddi.es.json) (Usar botón derecho -> Decargar enlace..)
 
-6- Substituir archivo eddi.es.json en .\VoiceAttack\Apps\EDDI por el descargado. (Punto temporal hasta que EDDI internacional deje de estar en fase beta)
+6- Substituir archivo eddi.es.json en .\VoiceAttack\Apps\EDDI por el descargado. (Punto temporal hasta que EDDI 3.0.1 deje de estar en fase beta)
 
 7- (OPTATIVO) Puedes descargar una personalidad beta que voy cambiando cada vez que encuentro un error o pongo una mejora desde [esta carpeta](https://github.com/hoksilato2/VoiceAttack-Profiles/tree/master/Personalities/beta).
 
 8- (OPTATIVO) Las personalidades beta hay que copiarlas en %userprofile%\AppData\Roaming\EDDI\personalities
 
+Nota: Para descargar los archivos en la carpeta beta hay que usar el botón "Raw" con el botón derecho -> Decargar enlace..
 
 ### G19s
 1- Descargar perfil VA para G19s Companion de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/Hoksilato%20G19s-Profile.vap) (Usar botón derecho -> Decargar enlace..)
