@@ -35,7 +35,7 @@ Pasos a seguir para añadir los perfiles de VoiceAttack e instalar el software y
 Si ya estáis usando a vuestra propia Sirka personalizada podéis pasar directamente a los pasos del G19s.
 
 
-### Sirka
+### Shirka
 1- Descargar perfil VA de Sirka modificada de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/Shirka-EDDI-Profile.vap) (Usar botón derecho -> Decargar enlace..)
 
 2- Abrir VoiceAttack y mediante el botón de al lado del icono del cuadrado y el lápiz usar la opción "Import Profile"
@@ -44,9 +44,13 @@ Si ya estáis usando a vuestra propia Sirka personalizada podéis pasar directam
 
 4- Instalar EDDI. Podéis encontrarlo aquí: https://github.com/EDCD/EDDI/releases
 
-5- Descargar personalidad modificada de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/Personalities/shirka%203.3%20beta.json) (Usar botón derecho -> Decargar enlace..)
+5- Descargar personalidad modificada de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/Personalities/eddi.es.json) (Usar botón derecho -> Decargar enlace..)
 
-6- Copiar archivo Shirka.json en: %userprofile%\AppData\Roaming\EDDI\personalities
+6- Substituir archivo eddi.es.json en .\VoiceAttack\Apps\EDDI por el descargado. (Punto temporal hasta que EDDI internacional deje de estar en fase beta)
+
+7- (OPTATIVO) Puedes descargar una personalidad beta que voy cambiando cada vez que encuentro un error o pongo una mejora desde [esta carpeta](https://github.com/hoksilato2/VoiceAttack-Profiles/tree/master/Personalities/beta).
+
+8- (OPTATIVO) Las personalidades beta hay que copiarlas en %userprofile%\AppData\Roaming\EDDI\personalities
 
 
 ### G19s
