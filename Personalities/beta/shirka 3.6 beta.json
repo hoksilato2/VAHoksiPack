@@ -87,8 +87,8 @@
       "enabled": true,
       "priority": 3,
       "responder": true,
-      "script": "{_ Context }\n{SetState('eddi_context_last_subject', 'bond')}\n{SetState('eddi_context_last_action', 'redeem')}\n{SetState('eddi_context_bond_amount', event.amount)}\n\n\n{OneOf(\"Otorgados\", \"Reclamados\")}\nbonos de combate por valor de {(event.amount)} créditos\n\n{Occasionally(2, \"\n  {if len(event.rewards) = 1 && len(event.rewards[0].faction) > 0:\n    de {P(event.rewards[0].faction)}\n  |else:\n    . \n    {set cur to 0}\n    {while cur < len(event.rewards):\n      {if len(event.rewards[cur].faction) > 0:\n        {if cur = 0:\n        |elif cur < len(event.rewards) - 1:\n            , \n        |else:\n            y\n        }\n        {(event.rewards[cur].amount)} créditos de\n        {P(event.rewards[cur].faction)} \n        {set cur to cur + 1}\n      }\n    }\n  }\n\")}\n\n{if event.brokerpercentage && event.brokerpercentage > 0:\n    después de deducir \n    {OneOf(\"un pago\", \"una recompensa\")} de\n    {round((event.amount / (100 - event.brokerpercentage)) * event.brokerpercentage, 0)} créditos\n}.",
-      "default": true,
+      "script": "{_ Context }\n{SetState('eddi_context_last_subject', 'bond')}\n{SetState('eddi_context_last_action', 'redeem')}\n{SetState('eddi_context_bond_amount', event.amount)}\n\n\n{OneOf(\"Otorgados\", \"Reclamados\")} \nbonos de combate por valor de {(event.amount)} créditos\n\n{Occasionally(2, \"\n  {if len(event.rewards) = 1 && len(event.rewards[0].faction) > 0:\n    de {P(event.rewards[0].faction)}\n  |else:\n    . \n    {set cur to 0}\n    {while cur < len(event.rewards):\n      {if len(event.rewards[cur].faction) > 0:\n        {if cur = 0:\n        |elif cur < len(event.rewards) - 1:\n            , \n        |else:\n            y\n        }\n        {(event.rewards[cur].amount)} créditos de\n        {P(event.rewards[cur].faction)} \n        {set cur to cur + 1}\n      }\n    }\n  }\n\")}\n\n{if event.brokerpercentage && event.brokerpercentage > 0:\n    después de deducir \n    {OneOf(\"un pago\", \"una recompensa\")} de\n    {round((event.amount / (100 - event.brokerpercentage)) * event.brokerpercentage, 0)} créditos\n}.",
+      "default": false,
       "name": "Bounty redeemed",
       "description": "Se activa cuando cobras una recompensa"
     },
@@ -483,8 +483,8 @@
       "enabled": true,
       "priority": 3,
       "responder": true,
-      "script": "{_ Context }\n{SetState('eddi_context_last_subject', 'landing pad')}\n{SetState('eddi_context_landing_pad_system', system.name)}\n{SetState('eddi_context_landing_pad_station', event.station)}\n{SetState('eddi_context_landing_pad_pad', event.landingpad)}\n\n{set station to StationDetails(event.station)}\n{if station.model = \"Estación clase Coriolis\" || station.model = \"Estación clase Orbis\" || station.model = \"Estación clase Ocellus\" || station.model = \"Base en asteroide\" || station.model = \"Estación desconocida\":\n    {Pause(8000)}\n    {F(\"Informe de plataforma de aterrizaje\")}\n}",
-      "default": true,
+      "script": "{_ Context }\n{SetState('eddi_context_last_subject', 'landing pad')}\n{SetState('eddi_context_landing_pad_system', system.name)}\n{SetState('eddi_context_landing_pad_station', event.station)}\n{SetState('eddi_context_landing_pad_pad', event.landingpad)}\n\n{set station to StationDetails(event.station)}\n{if station.model = \"Estación clase Coriolis\" || station.model = \"Estación clase Orbis\" || station.model = \"Estación clase Ocellus\" || station.model = \"Base en asteroide\" || station.model = \"Estación desconocida\":\n    {Pause(8000)}\n    {F(\"Landing Pad Report\")}\n}",
+      "default": false,
       "name": "Docking granted",
       "description": "Se activa cuando se te concede permiso a tu nave para aterrizar en una estación espacial o puesto avanzado"
     },
@@ -1698,8 +1698,8 @@
       "enabled": true,
       "priority": 3,
       "responder": true,
-      "script": "{_ Context }\n{SetState('eddi_context_last_subject', 'star')}\n{SetState('eddi_context_last_action', 'scan')}\n{SetState('eddi_context_star_system', system.name)}\n{SetState('eddi_context_star_star', event.name)}\n{SetState('eddi_context_last_scan_estimated_value', event.estimatedvalue)}\n\n{Pause(1000)}\n\nAnálisis de estrella clase {event.stellarclass}. {OneOf(\"completado\", \"completo\", \"finalizado\")}.\n\n{F(\"Star report\")}.\n\n{F(\"Report last scan value\")}\n\n{if (event.estimatedhabzoneinner && event.estimatedhabzoneouter) && \n (event.estimatedhabzoneinner > 0 && event.estimatedhabzoneouter> 0):\n   Zona habitable\n   {Occasionally(2, OneOf(\"detectada desde\", \"existente desde\"))}: \n   {Humanise(event.estimatedhabzoneinner)} \n   hasta {Humanise(event.estimatedhabzoneouter)} \n   segundos luz.\n|elif event.estimatedhabzoneouter && event.estimatedhabzoneouter > 0:\n   Zona habitable\n   {Occasionally(2, OneOf(\"detectada a un máximo de\", \"existente a una distancia máxima de\"))}: \n   {Humanise(event.estimatedhabzoneouter)} \n   segundos luz.\n}",
-      "default": true,
+      "script": "{_ Context }\n{SetState('eddi_context_last_subject', 'star')}\n{SetState('eddi_context_last_action', 'scan')}\n{SetState('eddi_context_star_system', system.name)}\n{SetState('eddi_context_star_star', event.name)}\n{SetState('eddi_context_last_scan_estimated_value', event.estimatedvalue)}\n\n{Pause(1000)}\n\nAnálisis de estrella clase {event.stellarclass}. {OneOf(\"completado\", \"completo\", \"finalizado\")}.\n\n{F(\"Star report\")}.\n\n{F(\"Report last scan value\")}.\n\n{if (event.estimatedhabzoneinner && event.estimatedhabzoneouter) && \n (event.estimatedhabzoneinner > 0 && event.estimatedhabzoneouter> 0):\n   Zona habitable {Occasionally(2, OneOf(\"detectada\", \"existente\"))} desde \n   {Humanise(event.estimatedhabzoneinner)} \n   hasta {Humanise(event.estimatedhabzoneouter)} \n   segundos luz.\n|elif event.estimatedhabzoneouter && event.estimatedhabzoneouter > 0:\n   Zona habitable\n   {Occasionally(2, OneOf(\"detectada a un máximo de\", \"existente a una distancia máxima de\"))}: \n   {Humanise(event.estimatedhabzoneouter)} \n   segundos luz.\n}",
+      "default": false,
       "name": "Star scanned",
       "description": "Se activa cuando completa un escaneo de un cuerpo estelar"
     },
