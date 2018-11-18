@@ -1,5 +1,9 @@
-# VoiceAttack-Profiles
+# VA HoksiPack
 Perfiles de Voice Attack para uso personal pero compartidos para quien los quiera.
+
+ATENCIÓN ESTE README ESTÁ OBSOLETO. Tengo pendiente actualizarlo cuando pueda! Para mas información visitar:
+
+https://forums.frontier.co.uk/showthread.php/428059-EDDI-en-espa%C3%B1ol-released
 
 ### Características
 - Personalidad de IA de la nave (Sirka del cmdr. Altair28) con la ayuda del Software EDDI y VoiceAttack
