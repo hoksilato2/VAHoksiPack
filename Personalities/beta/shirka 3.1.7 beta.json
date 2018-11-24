@@ -114,8 +114,8 @@
       "enabled": true,
       "priority": 3,
       "responder": true,
-      "script": "{_ Cargo depot }\r\n{_ Triggered when collecting or delivering cargo for a wing mission }\r\n\r\n\r\n{if event.updatetype = \"Collect\":\r\n    You have collected {event.amount} tonne{if event.amount != 1:s} of {event.commodity} from the mission depot.\r\n|elif event.updatetype = \"Deliver\":\r\n    You have delivered {event.amount} tonne{if event.amount != 1:s} of {event.commodity} to the mission depot.\r\n}\r\n\r\n{if event.updatetype != \"WingUpdate\":\r\n    {Pause(500)}\r\n    {set remaining to event.totaltodeliver - event.delivered}\r\n    {if remaining = 0:\r\n        Wing mission requirements are now completed.\r\n    |elif event.updatetype = \"Deliver\":\r\n        Wing mission is now {round(event.delivered / event.totaltodeliver * 100, 0)} percent complete.\r\n    }\r\n}",
-      "default": true,
+      "script": "{_ Cargo depot }\r\n{_ Triggered when collecting or delivering cargo for a wing mission }\r\n\r\n\r\n{if event.updatetype = \"Collect\":\r\n    Se han añadido {event.amount} tonelada{if event.amount != 1:s} de {event.commodity} para el depósito de la misión.\r\n|elif event.updatetype = \"Deliver\":\r\n   Hemos entregado {event.amount} tonelada{if event.amount != 1:s} de {event.commodity} al depósito de la misión.\r\n}\r\n\r\n{if event.updatetype != \"WingUpdate\":\r\n    {Pause(500)}\r\n    {set remaining to event.totaltodeliver - event.delivered}\r\n    {if remaining = 0:\r\n        Los requisitos de la misión de escuadrón han sido completados.\r\n    |elif event.updatetype = \"Deliver\":\r\n        La misión de escuadrón está al {round(event.delivered / event.totaltodeliver * 100, 0)}% de ser completada.\r\n    }\r\n}",
+      "default": false,
       "name": "Cargo depot",
       "description": "Triggered when collecting or delivering cargo for a wing mission"
     },
