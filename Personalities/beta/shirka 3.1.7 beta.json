@@ -537,8 +537,8 @@
       "enabled": true,
       "priority": 3,
       "responder": true,
-      "script": "{F(\"Empire honorific\")},\nla Armada Imperial le ha \n{OneOf(\"otorgado una promoción\", \"promovido\", \"ascendido\", \"nombrado\")}\npara el rango de\n{when(cmdr.gender = \"Mujer\", event.femininerank, event.rank)}\n{Occasionally(2, \"por sus servicios para el Imperio\")}.",
-      "default": true,
+      "script": "{F(\"Empire honorific\")},\nla Armada Imperial le ha \n{OneOf(\"otorgado una promoción\", \"promovido\", \"ascendido\", \"nombrado\")} \npara el rango de \n{when(cmdr.gender = \"Mujer\", event.femininerank, event.rank)}{Occasionally(2, \" por sus servicios para el Imperio\")}.",
+      "default": false,
       "name": "Empire promotion",
       "description": "Se activa cuando asciende de rango en el Imperio"
     },
