@@ -1,78 +1,74 @@
 # VA HoksiPack
 Perfiles de Voice Attack para uso personal pero compartidos para quien los quiera.
 
-ATENCIÓN ESTE README ESTÁ OBSOLETO. Tengo pendiente actualizarlo cuando pueda! Para mas información visitar:
+ATENCIÓN ESTE README ESTÁ EN CONSTRUCCIÓN. Tengo pendiente actualizarlo cuando pueda! Para mas información visitar:
 
 https://forums.frontier.co.uk/showthread.php/428059-EDDI-en-espa%C3%B1ol-released
 
+
 ### Características
-- Personalidad de IA de la nave (Sirka del cmdr. Altair28) con la ayuda del Software EDDI y VoiceAttack
-- Comandos básicos del juego mediante voz con Sirka y Voiceattack
+- Personalidad de IA de la nave (Sirka del cmdr. Altair28) con la ayuda del Software EDDI, VoiceAttack y G19s Companion
+- Comandos básicos del juego mediante voz con EDDI y Voiceattack
 - Consola externa con múltiples características gracias a la APP G19s Companion:
-  - Escucha de Música local, Spotify, Radios y Podcasts
+  - Escucha de Música local, Spotify, Youtube, Radios, Podcasts y más...
   - Tráfico aereo para mayor inmersión
   - Lector de Feeds
   - Herramientas como cálculo de rutas, búsqueda de tipo de astros por cercanía, commodities, materiales, shipyard...
   - Discord Rich Presence (https://discordapp.com/rich-presence)
 - Mediante el perfil de VA para G19s he ideado lo que le llamo música ambiental automática. Consiste en:
-  - Playlist de Spotify adecuadas para cada circumstancia del juego
+  - Playlist de Spotify adecuadas para cada circumstancia del juego. (Pendiente hacer playlist de Youtube también)
   - Al decir "pon música" Sirka te pregunta por el género (Concierto, Rock, Electrónica o Relax)
   - Según la música que escojas esta se adecuará a la acción del juego según:
-    - Si estás en una dockeado en una estación
+    - Si estás en dockeado en una estación
     - Si estás navegando por el espacio
-    - Si estás en un momento de tensión (señales)
+    - Si estás en un momento de tensión (señales, Thargoides, Guardianes...)
     - Si estás siendo atacado.
 
-Entre otras cosas. Podéis descargar la lista de todos los comandos de aquí:
+Entre otras cosas. 
 
-- [Comandos de Sirka+EDDI](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/Shirka-EDDI-Profile.html) (Usar botón derecho -> Decargar enlace..)
-- [Comandos de G19s](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/Hoksilato%20G19s-Profile.html) (Usar botón derecho -> Decargar enlace..)
+Podéis descargar la lista de todos los comandos de aquí:
+
+- [Comandos de Shirka](http://htmlpreview.github.io/?https://raw.githubusercontent.com/hoksilato2/VAHoksiPack/master/VAPs/Hoksilato%203.1.0-1-Profile.html)
 
 Abajo de todo hay un recopilatorio de los posts originales del foro de Frontier.
 
 ## Manual
-Pasos a seguir para añadir los perfiles de VoiceAttack e instalar el software y los plugins necesarios (explicado lo más sencillo que he sabido)
+Pasos a seguir para añadir los perfiles de VoiceAttack e instalar el software y los plugins necesarios
 
-- Sirka de Altair28 con mejoras de la comunidad y mias.
-- G19s con funciones para playlist de Spotify
+- Shirka de Altair28 con mejoras de la comunidad y mias (EDDI+VoiceAttack)
+  - EDDI (gratuíto): Como sistema "Output" para que de información adicional del juego
+  - VoiceAttack (de pago): Como sistema "Input / Output" para que le puedas dar órdenes a la nave. 
+- G19s Companion con funciones para playlist de Spotify entre otras (Input / Output)
 
-Si ya estáis usando a vuestra propia Sirka personalizada podéis pasar directamente a los pasos del G19s.
+
+[HoksiPack](https://github.com/hoksilato2/VAHoksiPack/releases) automatiza la instalación. Pero si prefieres, puedes seguir los siguientes pasos para hacerlo de manera manual o para entender qué hace el Hoksipack.
 
 
 ### Shirka
-1- Descargar perfil VA de Sirka modificada de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/Shirka-EDDI-Profile.vap) (Usar botón derecho -> Decargar enlace..)
 
-2- Abrir VoiceAttack y mediante el botón de al lado del icono del cuadrado y el lápiz usar la opción "Import Profile"
+0- Descargar VoiceAttack y comprar licencia (9€) [aquí](https://voiceattack.com/).
+
+1- Descargar última versión del perfil VAP de Shirka modificada de [aquí](https://github.com/hoksilato2/VAHoksiPack/tree/master/VAPs)
+
+2- Abrir VoiceAttack y mediante el botón de al lado del icono del cuadrado y el lápiz (o "Alt+E") y usar la opción "Import Profile"
 
 3- Seleccionar el archivo .vap descargado.
 
 4- Instalar EDDI. Podéis encontrarlo aquí: https://github.com/EDCD/EDDI/releases
 
-5- Descargar personalidad modificada de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/Personalities/eddi.es.json) (Usar botón derecho -> Decargar enlace..)
+5- (OPTATIVO) Descargar última versión  de Shirka para EDDI modificada de [aquí](https://github.com/hoksilato2/VAHoksiPack/tree/master/Personalities)
 
-6- Substituir archivo eddi.es.json en .\VoiceAttack\Apps\EDDI por el descargado. (Punto temporal hasta que EDDI 3.0.1 deje de estar en fase beta)
+6- (OPTATIVO) Puedes descargar una personalidad beta que voy cambiando cada vez que encuentro un error o pongo una mejora desde [esta carpeta](https://github.com/hoksilato2/VoiceAttack-Profiles/tree/master/Personalities/beta).
 
-7- (OPTATIVO) Puedes descargar una personalidad beta que voy cambiando cada vez que encuentro un error o pongo una mejora desde [esta carpeta](https://github.com/hoksilato2/VoiceAttack-Profiles/tree/master/Personalities/beta).
-
-8- (OPTATIVO) Las personalidades beta hay que copiarlas en %userprofile%\AppData\Roaming\EDDI\personalities
+7- (OPTATIVO) Las personalidades beta hay que copiarlas en %userprofile%\AppData\Roaming\EDDI\personalities
 
 Nota: Para descargar los archivos en la carpeta beta hay que usar el botón "Raw" con el botón derecho -> Decargar enlace..
 
-### G19s
-1- Descargar perfil VA para G19s Companion de [aquí](https://github.com/hoksilato2/VoiceAttack-Profiles/raw/master/VAPs/Hoksilato%20G19s-Profile.vap) (Usar botón derecho -> Decargar enlace..)
-
-2- Abrir VA y exportar vuestro actual perfil mediante el botón de al lado del icono del cuadrado y el lápiz usando la opción "Export Profile" (para hacer un backup por si aca)
-
-3- Abrir editor del perfil que usáis en VA mediante el botón del icono del cuadrado y el lápiz
-
-4- Usar botón de abajo "Import Commands"
-
-3- Seleccionar perfil VAP de G19s Companion descargado para añadir los comandos nuevos a vuestro perfil.
 
 
 ## A tener en cuenta
 
-- ES NECESARIO ANULAR OTROS COMANDOS DE VA DE OTROS REPRODUCTORES (COMO VLC) DADO QUE PUEDE QUE ALGUNOS COMANDOS SEAN IGUALES (Ej: "Pon música")
+(EN CONSTRUCCION)
 
 
 ## Instalar G19s Companion
