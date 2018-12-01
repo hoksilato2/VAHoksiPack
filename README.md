@@ -7,7 +7,7 @@ https://forums.frontier.co.uk/showthread.php/428059-EDDI-en-espa%C3%B1ol-release
 
 
 ### Características
-- Personalidad de IA de la nave (Sirka del cmdr. Altair28) con la ayuda del Software EDDI, VoiceAttack y G19s Companion
+- Personalidad de IA de la nave (Shirka del cmdr. Altair28) con la ayuda del Software EDDI, VoiceAttack y G19s Companion
 - Comandos básicos del juego mediante voz con EDDI y Voiceattack
 - Consola externa con múltiples características gracias a la APP G19s Companion:
     - Escucha de Música local, Spotify, Youtube, Radios, Podcasts y más...
@@ -26,7 +26,7 @@ https://forums.frontier.co.uk/showthread.php/428059-EDDI-en-espa%C3%B1ol-release
 
 Entre otras cosas. 
 
-Podéis descargar la lista de todos los comandos de aquí:
+Podéis descargar la lista de todos los comandos, de aquí:
 
 - [Comandos de Shirka](http://htmlpreview.github.io/?https://raw.githubusercontent.com/hoksilato2/VAHoksiPack/master/VAPs/Hoksilato%203.1.0-1-Profile.html)
 
