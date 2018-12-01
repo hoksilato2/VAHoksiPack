@@ -1,5 +1,6 @@
 # VA HoksiPack
 Paquete con herramientas para el juego Elite: Dangerous de Frontier.
+Toda la información en español del juego en: http://eliteesp.es/introduccion-a-elite-dangerous/
 
 ATENCIÓN ESTE README ESTÁ EN CONSTRUCCIÓN. Para mas información visitar:
 https://forums.frontier.co.uk/showthread.php/428059-EDDI-en-espa%C3%B1ol-released
