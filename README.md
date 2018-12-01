@@ -1,8 +1,7 @@
 # VA HoksiPack
-Perfiles de Voice Attack para uso personal pero compartidos para quien los quiera.
+Paquete con herramientas para el juego Elite: Dangerous de Frontier.
 
-ATENCIÓN ESTE README ESTÁ EN CONSTRUCCIÓN. Tengo pendiente actualizarlo cuando pueda! Para mas información visitar:
-
+ATENCIÓN ESTE README ESTÁ EN CONSTRUCCIÓN. Para mas información visitar:
 https://forums.frontier.co.uk/showthread.php/428059-EDDI-en-espa%C3%B1ol-released
 
 
@@ -10,19 +9,19 @@ https://forums.frontier.co.uk/showthread.php/428059-EDDI-en-espa%C3%B1ol-release
 - Personalidad de IA de la nave (Sirka del cmdr. Altair28) con la ayuda del Software EDDI, VoiceAttack y G19s Companion
 - Comandos básicos del juego mediante voz con EDDI y Voiceattack
 - Consola externa con múltiples características gracias a la APP G19s Companion:
-  - Escucha de Música local, Spotify, Youtube, Radios, Podcasts y más...
-  - Tráfico aereo para mayor inmersión
-  - Lector de Feeds
-  - Herramientas como cálculo de rutas, búsqueda de tipo de astros por cercanía, commodities, materiales, shipyard...
-  - Discord Rich Presence (https://discordapp.com/rich-presence)
+    - Escucha de Música local, Spotify, Youtube, Radios, Podcasts y más...
+    - Tráfico aereo para mayor inmersión
+    - Lector de Feeds
+    - Herramientas como cálculo de rutas, búsqueda de tipo de astros por cercanía, commodities, materiales, shipyard...
+    - Discord Rich Presence (https://discordapp.com/rich-presence)
 - Mediante el perfil de VA para G19s he ideado lo que le llamo música ambiental automática. Consiste en:
-  - Playlist de Spotify adecuadas para cada circumstancia del juego. (Pendiente hacer playlist de Youtube también)
-  - Al decir "pon música" Sirka te pregunta por el género (Concierto, Rock, Electrónica o Relax)
-  - Según la música que escojas esta se adecuará a la acción del juego según:
-    - Si estás en dockeado en una estación
-    - Si estás navegando por el espacio
-    - Si estás en un momento de tensión (señales, Thargoides, Guardianes...)
-    - Si estás siendo atacado.
+    - Playlist de Spotify/Youtube adecuadas para cada circumstancia del juego.
+    - Al decir "pon música" Sirka te pregunta por el género (Concierto, Rock, Electrónica o Relax)
+    - Según la música que escojas esta se adecuará a la acción del juego según: 
+          - Si estás dockeado en una estación
+          - Si estás navegando por el espacio
+          - Si estás en un momento de tensión (señales, Thargoides, Guardianes...)
+          - Si estás siendo atacado.
 
 Entre otras cosas. 
 
@@ -30,23 +29,40 @@ Podéis descargar la lista de todos los comandos de aquí:
 
 - [Comandos de Shirka](http://htmlpreview.github.io/?https://raw.githubusercontent.com/hoksilato2/VAHoksiPack/master/VAPs/Hoksilato%203.1.0-1-Profile.html)
 
-Abajo de todo hay un recopilatorio de los posts originales del foro de Frontier.
+Abajo de todo hay un recopilatorio de los posts originales del foro de Frontier con más información.
+
+
+## Instrucciones
+
+Instrucciones para instalar:
+- Shirka de Altair28 con mejoras de la comunidad y mias (EDDI+VoiceAttack)
+    - EDDI (gratuíto): Como sistema "Output" para que de información adicional del juego
+    - VoiceAttack (de pago): Como sistema "Input / Output" para que le puedas dar órdenes a la nave. 
+- G19s Companion con funciones para playlist de Spotify y Youtube entre otras (Input / Output)
+
+
+[HoksiPack](https://github.com/hoksilato2/VAHoksiPack/releases) automatiza la instalación. Pero si prefieres, puedes seguir los pasos del manual para hacerlo de manera manual o para entender qué hace el Hoksipack.
+
+
+1.- Descargar HoksiPack(https://github.com/hoksilato2/VAHoksiPack/releases) 
+2.- Ejecutar como administrador (te lo debería pedir automáticamente)
+3.- Escoger qué módulos quieres instalar (recomiendo decirle que "Si" a todos):
+    - VoiceAttack
+    - EDDI
+    - G19s
+    
+4.- Si no escoges un módulo tampoco lo configurará.
+5.- Si tienes VoiceAttack de pago podrás editar los comandos entre los que recomiendo:
+     - VA-Commander-Name: Para modificar el nombre el cual Shirka se referirá a ti (Por defecto "Señor" y "Comandante")
+     - BindED: Modificar ruta de los binds de teclado en caso de que uses mas de uno o no uses la predeterminada
+     - PLAYLIST xxxx: Para añadir las Playlist de Spotify o Youtube que quieras para la "moodmusic"
 
 ## Manual
-Pasos a seguir para añadir los perfiles de VoiceAttack e instalar el software y los plugins necesarios
+Pasos a seguir para añadir los perfiles de VoiceAttack, personalidad de EDDI e instalar el software y los plugins necesarios
 
-- Shirka de Altair28 con mejoras de la comunidad y mias (EDDI+VoiceAttack)
-  - EDDI (gratuíto): Como sistema "Output" para que de información adicional del juego
-  - VoiceAttack (de pago): Como sistema "Input / Output" para que le puedas dar órdenes a la nave. 
-- G19s Companion con funciones para playlist de Spotify entre otras (Input / Output)
+### SHIRKA
 
-
-[HoksiPack](https://github.com/hoksilato2/VAHoksiPack/releases) automatiza la instalación. Pero si prefieres, puedes seguir los siguientes pasos para hacerlo de manera manual o para entender qué hace el Hoksipack.
-
-
-### Shirka
-
-0- Descargar VoiceAttack y comprar licencia (9€) [aquí](https://voiceattack.com/).
+0- Descargar VoiceAttack de [aquí](https://voiceattack.com/).
 
 1- Descargar última versión del perfil VAP de Shirka modificada de [aquí](https://github.com/hoksilato2/VAHoksiPack/tree/master/VAPs)
 
@@ -56,9 +72,7 @@ Pasos a seguir para añadir los perfiles de VoiceAttack e instalar el software y
 
 4- Instalar EDDI. Podéis encontrarlo aquí: https://github.com/EDCD/EDDI/releases
 
-5- (OPTATIVO) Descargar última versión  de Shirka para EDDI modificada de [aquí](https://github.com/hoksilato2/VAHoksiPack/tree/master/Personalities)
-
-6- (OPTATIVO) Puedes descargar una personalidad beta que voy cambiando cada vez que encuentro un error o pongo una mejora desde [esta carpeta](https://github.com/hoksilato2/VoiceAttack-Profiles/tree/master/Personalities/beta).
+5- (OPTATIVO) Puedes descargar una personalidad beta que voy cambiando cada vez que encuentro un error o pongo una mejora desde [esta carpeta](https://github.com/hoksilato2/VoiceAttack-Profiles/tree/master/Personalities/beta).
 
 7- (OPTATIVO) Las personalidades beta hay que copiarlas en %userprofile%\AppData\Roaming\EDDI\personalities
 
@@ -72,13 +86,13 @@ Nota: Para descargar los archivos en la carpeta beta hay que usar el botón "Raw
 
 
 ## Instalar G19s Companion
- 1- Instalar Elite G19s Companion clicando [aquí](https://apps.magicmau.nl) Una vez instalada se abrirá automáticamente
+ 1- Instalar Elite G19s Companion clicando [aquí](https://apps.magicmau.nl) Una vez instalada se abrirá automáticamente.
 
- 2- No configurar nada que te pida la aplicación y cerrarla
+ 2- No configurar nada que te pida la aplicación y cerrarla.
 
- 3- Descargar archivo json modificado de [aquí](https://raw.githubusercontent.com/hoksilato2/Elite-G19s-Companion-Options/master/options.json) (Usar botón derecho -> Decargar enlace..)
+ 3- (EN CONTRUCCION) Descargar archivo json modificado de [aquí](https://raw.githubusercontent.com/hoksilato2/Elite-G19s-Companion-Options/master/options.json) (Usar botón derecho -> Decargar enlace..)
 
- 4- Dirigirse a la carpeta "%appdata%\EliteG19s" (puedes copiar esta ruta en la barra de búsqueda de Windows)
+ 4- Dirigirse a la carpeta "%appdata%\EliteG19s"
 
  5- Substituir options.json por el modificado que hemos descargado.
 
@@ -87,17 +101,7 @@ Nota: Para descargar los archivos en la carpeta beta hay que usar el botón "Raw
  7- Guardar archivo .dll en la carpeta donde tenéis instalado VA:
     .\VoiceAttack\Apps\EliteG19s\EliteG19s.VoiceAttack.dll
 
- Si queréis usar Spotify, deberéis abrir el archivo options.json con el bloc de notas u otro editor y añadir vuestro usuario de Spotify en la siguiente linea:
-
-(linea 14):
-
-      "SpotifyUsername": "Your Spotify Device Username (see https://www.spotify.com/us/account/set-device-password/)",
-
-  Por ejemplo:
-
-      "SpotifyUsername": "Hoksilato",
-
- 6- Abrir Elite G19s Companion y rellenar todos los campos que os pida.
+ 8- Abrir Elite G19s Companion y rellenar todos los campos que os pida.
 
 
 ## Configurar Playlists de Spotify
@@ -120,7 +124,7 @@ Para configurar las Playlist hay que añadirlas (o modificarlas) tanto en el arc
 
 2- Editar dirección URI de Spotify de los comandos "PLAYLIST"
 
-3- Si queréis añadir nuevas Playlist para que Sirka las reconozca tenéis que modificar los comandos que empiezan por "enter" (nivel avanzado)
+3- Si queréis añadir nuevas Playlist para que Sirka las reconozca, tenéis que modificar los comandos que empiezan por "enter" (nivel avanzado)
 
 
 ## Como conseguir dirección URI de Spotify
@@ -135,6 +139,7 @@ d) Usar opción "URI" para que se copie en el portapapeles.
 
 e) el formato es como este: spotify:user:hoksilato:playlist:5NtEC3cKu3fPfgUAjk2keg
 
+
 ## LOGITECH ARX CONTROL
 G19s tiene la opción de poder verlo también en vuestro dispositivo Android o iOS mediante la aplicación Logitech ARX Control.
 
@@ -144,9 +149,10 @@ Logitech ARX Control:
 - iOS: https://itunes.apple.com/us/app/logi...ol/id896793941
 
 
-Espero que os guste y os sirva. En principio no debería haber problema si no tenéis cuenta premium, aunque si no la tenéis os recomiendo mil hacer una cuenta familiar con 5 colegas mas. Así os sale tirado.
 
 
+Discusión en el foro de Frontier:
+https://forums.frontier.co.uk/showthread.php/428059-EDDI-en-espa%C3%B1ol-released
 
 Sirka Original por Altair28 (VA+EDDI):
 https://forums.frontier.co.uk/showthread.php/332163-Voiceattack-EDDI-en-espa%C3%B1ol
