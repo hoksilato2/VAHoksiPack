@@ -66,31 +66,31 @@ Si tienes VoiceAttack de pago podrás editar los comandos entre los que recomien
 Una vez abierto VoiceAttack...
 
 1. Dirígete al menú opciones (llave inglesa) y verifica:
-- "Enable Plugin Support" -> habilitado
-- "Apps Folder" -> pon la ruta de la carpeta "Apps" en la carpeta de instalación de VoiceAttack
+     - "Enable Plugin Support" -> habilitado
+     - "Apps Folder" -> pon la ruta de la carpeta "Apps" en la carpeta de instalación de VoiceAttack
   
 2. Fuera del menú opciones pulsa "Alt+E"
-- Abre las opciones de perfil pulsando en el check [V] al lado del nombre
-- Selecciona la pestaña "Command each time this profile is loaded"
-echo - Busca el comando "Startup" 
-echo - Click en "OK" para cerrar la ventana "Profile Options"
-echo.
-echo 3.- Aun en el editor del Profile, dirígete a la sección "Variables", comando "VAR-Commander-Name"
-- Edita dicho comando y busca la linea de descripción para ayudarte a editar el nombre de CMDR.
+     - Abre las opciones de perfil pulsando en el check [V] al lado del nombre
+     - Selecciona la pestaña "Command each time this profile is loaded"
+     - Busca el comando "Startup" 
+     - Click en "OK" para cerrar la ventana "Profile Options"
 
-4.- Dirígete a la sección "Variables", comando "BindED"
-- Edita dicho comando y busca la línea de descripción para ayudarte a editar la ruta de tus binds.
-  (Sólo es necesario si la ruta difiere de la predeterminada, o si quieres usar unos binds en específico)
+ 3. Aun en el editor del Profile, dirígete a la sección "Variables", comando "VAR-Commander-Name"
+     - Edita dicho comando y busca la linea de descripción para ayudarte a editar el nombre de CMDR.
+
+4. Dirígete a la sección "Variables", comando "BindED"
+     - Edita dicho comando y busca la línea de descripción para ayudarte a editar la ruta de tus binds.
+       (Sólo es necesario si la ruta difiere de la predeterminada, o si quieres usar unos binds en específico)
 
 5. Abre la configuración de EDDI diciento: "Configuración EDDI"
 
-6.- Ves a la pestaña "Contestador vocal" y Activa la personalidad deseada.
+6. Ves a la pestaña "Contestador vocal" y Activa la personalidad deseada.
 
-7.- MUY Recomendable configurar:
-- API de Frontier
-- Contestador EDSM
-- Detalles del comandante
-- Activar todos los "plugins" excepto el "Monitor de Galnet" dado que aún no es compatible con la Galnet Española.
+7. MUY Recomendable configurar:
+     - API de Frontier
+     - Contestador EDSM
+     - Detalles del comandante
+     - Activar todos los "plugins" excepto el "Monitor de Galnet" dado que aún no es compatible con la Galnet Española.
   
 
 ## Manual
