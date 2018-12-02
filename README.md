@@ -96,31 +96,90 @@ Una vez abierto VoiceAttack...
 ## Instalación Manual
 Pasos a seguir para añadir los perfiles de VoiceAttack, personalidad de EDDI e instalar el software y los plugins necesarios
 
+### EDDI
 
-### SHIRKA
+1. Descargar EDDI de [aquí](https://github.com/EDCD/EDDI/releases/).
+
+2. (OPTATIVO) Puedes descargar una personalidad beta que voy cambiando cada vez que encuentro un error o pongo una mejora desde [esta carpeta](https://github.com/hoksilato2/VoiceAttack-Profiles/tree/master/Personalities/beta).
+
+3. Copiar archivo .json en "%APPDATA%\EDDI\Personalities\"
+
+4. Abrir EDDI.
+
+5. Seleccionar idioma Español o Automático (si el Windows lo tenéis en español)
+
+6. "API de Frontier" -> Añadir datos de Frontier para usar la API de Frontier
+
+7. "Contestador EDDN" -> Activar
+
+8. "Contestador Vocal" -> Activar, y seleccionar a Shirka 3.1.7 beta o la versión más reciente
+
+9. "Contestador VoiceAttack" -> Activar si habéis instalado VA. (Más info en esa misma ventana)
+
+10. "Detalles del Comandante" -> Informar si se quiere que Interactuar con esos datos.
+
+11. "Monitor de Misiones" -> Activar (Pendiente de traducir a día de este manual)
+
+12. "Monitor de carga" -> Activar
+
+13. "Monitor de la nave" -> Activar
+
+14. "Monitor de materiales" -> Activar
+
+15. "Monitor de EDDP" -> Activar si se quiere ser avisado de cuando un sistema tiene un cambio de estado (a veces crashea EDDI)
+
+16. "Monitor de Galnet" -> Desactivar (No tenemos Galnet oficial en español)
+
+17. "Texto-a-Voz" -> Seleccionar voz TTS preferida (Para activar a "Cortana" visitar:
+    https://forums.frontier.co.uk/showth...Text-to-Speech
+    
+18.- "Transpondedor EDSM" -> Muy recomendado activar. Hay que tener cuenta EDSM para añadir API. mas info:
+    https://www.edsm.net/es/settings/api
+
+
+Nota: Para descargar los archivos en la carpeta beta hay que usar el botón "Raw" con el botón derecho -> Decargar enlace..
+
+### VoiceAttack
 
 1. Descargar VoiceAttack de [aquí](https://voiceattack.com/).
 
 2. Descargar última versión del perfil VAP de Shirka modificada de [aquí](https://github.com/hoksilato2/VAHoksiPack/tree/master/VAPs)
 
-3. Abrir VoiceAttack y mediante el botón de al lado del icono del cuadrado y el lápiz (o "Alt+E") y usar la opción "Import Profile"
+3. Descargar Plugin BindED de [aquí](https://github.com/Corysia/bindED/releases)
 
-4. Seleccionar el archivo .vap descargado.
+4. Descargar Plugin VAExtensions de [aquí](https://github.com/Antaniserse/VAExtensions/releases)
 
-5. Instalar EDDI. Podéis encontrarlo aquí: https://github.com/EDCD/EDDI/releases
+5. Copiar carpetas de los plugins a .\VoiceAttack\Apps
 
-6. (OPTATIVO) Puedes descargar una personalidad beta que voy cambiando cada vez que encuentro un error o pongo una mejora desde [esta carpeta](https://github.com/hoksilato2/VoiceAttack-Profiles/tree/master/Personalities/beta).
+6. Abrir VoiceAttack y mediante el botón de al lado del icono del cuadrado y el lápiz (o "Alt+E") y usar la opción "Import Profile"
 
-7. (OPTATIVO) Las personalidades beta hay que copiarlas en %userprofile%\AppData\Roaming\EDDI\personalities
+7. Seleccionar el archivo .vap descargado.
+
+8. (OPTATIVO) Puedes descargar una personalidad beta que voy cambiando cada vez que encuentro un error o pongo una mejora desde [esta carpeta](https://github.com/hoksilato2/VoiceAttack-Profiles/tree/master/Personalities/beta).
+
+9. (OPTATIVO) Las personalidades beta hay que copiarlas en %userprofile%\AppData\Roaming\EDDI\personalities
+
+10. Dirígete al menú opciones (llave inglesa):
+     - "Enable Plugin Support" -> habilitado
+     - "Apps Folder" -> pon la ruta de la carpeta "Apps" en la carpeta de instalación de VoiceAttack
+11. Fuera del menú opciones pulsa "Alt+E"
+     - Abre las opciones de perfil pulsando en el check [V] al lado del nombre
+     - Selecciona la pestaña "Command each time this profile is loaded"
+     - Busca el comando "Startup" 
+     - Click en "OK" para cerrar la ventana "Profile Options"
+
+12. Aun en el editor del Profile, dirígete a la sección "Variables", comando "VAR-Commander-Name"
+     - Edita dicho comando y busca la linea de descripción para ayudarte a editar el nombre de CMDR.
+
+13. Dirígete a la sección "Variables", comando "BindED"
+     - Edita dicho comando y busca la línea de descripción para ayudarte a editar la ruta de tus binds.
+       (Sólo es necesario si la ruta difiere de la predeterminada, o si quieres usar unos binds en específico)
+
 
 Nota: Para descargar los archivos en la carpeta beta hay que usar el botón "Raw" con el botón derecho -> Decargar enlace..
 
-#### A tener en cuenta
 
-(EN CONSTRUCCION)
-
-
-### Instalar G19s Companion
+### G19s Companion
  1. Instalar Elite G19s Companion clicando [aquí](https://apps.magicmau.nl) Una vez instalada se abrirá automáticamente.
 
  2. No configurar nada que te pida la aplicación y cerrarla.
