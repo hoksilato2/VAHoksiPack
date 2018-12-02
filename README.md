@@ -57,9 +57,9 @@ Pero cualqueir cambio en la configuración requerirá de la licencia (¡Sólo el
 
 Si tienes VoiceAttack de pago podrás editar los comandos entre los que recomiendo:
 
-     - VA-Commander-Name: Para modificar el nombre el cual Shirka se referirá a ti (Por defecto "Señor" y "Comandante")
-     - BindED: Modificar ruta de los binds de teclado en caso de que uses mas de uno o no uses la predeterminada
-     - PLAYLIST xxxx: Para añadir las Playlist de Spotify o Youtube que quieras para la "moodmusic"
+- VA-Commander-Name: Para modificar el nombre el cual Shirka se referirá a ti (Por defecto "Señor" y "Comandante")
+- BindED: Modificar ruta de los binds de teclado en caso de que uses mas de uno o no uses la predeterminada
+- PLAYLIST xxxx: Para añadir las Playlist de Spotify o Youtube que quieras para la "moodmusic"
 
 
 ### Revisión de la auto-instalación
