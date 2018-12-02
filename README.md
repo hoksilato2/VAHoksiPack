@@ -93,90 +93,99 @@ Una vez abierto VoiceAttack...
      - Activar todos los "plugins" excepto el "Monitor de Galnet" dado que aún no es compatible con la Galnet Española.
   
 
-## Manual
+## Instalación Manual
 Pasos a seguir para añadir los perfiles de VoiceAttack, personalidad de EDDI e instalar el software y los plugins necesarios
+
 
 ### SHIRKA
 
-0- Descargar VoiceAttack de [aquí](https://voiceattack.com/).
+1. Descargar VoiceAttack de [aquí](https://voiceattack.com/).
 
-1- Descargar última versión del perfil VAP de Shirka modificada de [aquí](https://github.com/hoksilato2/VAHoksiPack/tree/master/VAPs)
+2. Descargar última versión del perfil VAP de Shirka modificada de [aquí](https://github.com/hoksilato2/VAHoksiPack/tree/master/VAPs)
 
-2- Abrir VoiceAttack y mediante el botón de al lado del icono del cuadrado y el lápiz (o "Alt+E") y usar la opción "Import Profile"
+3. Abrir VoiceAttack y mediante el botón de al lado del icono del cuadrado y el lápiz (o "Alt+E") y usar la opción "Import Profile"
 
-3- Seleccionar el archivo .vap descargado.
+4. Seleccionar el archivo .vap descargado.
 
-4- Instalar EDDI. Podéis encontrarlo aquí: https://github.com/EDCD/EDDI/releases
+5. Instalar EDDI. Podéis encontrarlo aquí: https://github.com/EDCD/EDDI/releases
 
-5- (OPTATIVO) Puedes descargar una personalidad beta que voy cambiando cada vez que encuentro un error o pongo una mejora desde [esta carpeta](https://github.com/hoksilato2/VoiceAttack-Profiles/tree/master/Personalities/beta).
+6. (OPTATIVO) Puedes descargar una personalidad beta que voy cambiando cada vez que encuentro un error o pongo una mejora desde [esta carpeta](https://github.com/hoksilato2/VoiceAttack-Profiles/tree/master/Personalities/beta).
 
-7- (OPTATIVO) Las personalidades beta hay que copiarlas en %userprofile%\AppData\Roaming\EDDI\personalities
+7. (OPTATIVO) Las personalidades beta hay que copiarlas en %userprofile%\AppData\Roaming\EDDI\personalities
 
 Nota: Para descargar los archivos en la carpeta beta hay que usar el botón "Raw" con el botón derecho -> Decargar enlace..
 
-
-
-## A tener en cuenta
+#### A tener en cuenta
 
 (EN CONSTRUCCION)
 
 
-## Instalar G19s Companion
- 1- Instalar Elite G19s Companion clicando [aquí](https://apps.magicmau.nl) Una vez instalada se abrirá automáticamente.
+### Instalar G19s Companion
+ 1. Instalar Elite G19s Companion clicando [aquí](https://apps.magicmau.nl) Una vez instalada se abrirá automáticamente.
 
- 2- No configurar nada que te pida la aplicación y cerrarla.
+ 2. No configurar nada que te pida la aplicación y cerrarla.
 
- 3- (EN CONTRUCCION) Descargar archivo json modificado de [aquí](https://raw.githubusercontent.com/hoksilato2/Elite-G19s-Companion-Options/master/options.json) (Usar botón derecho -> Decargar enlace..)
+ 3. Descargar archivo json modificado de [aquí](https://raw.githubusercontent.com/hoksilato2/Elite-G19s-Companion-Options/master/options.json) (Usar botón derecho -> Decargar enlace..)
 
- 4- Dirigirse a la carpeta "%appdata%\EliteG19s"
+ 4. Dirigirse a la carpeta "%appdata%\EliteG19s"
 
- 5- Substituir options.json por el modificado que hemos descargado.
+ 5. Substituir options.json por el modificado que hemos descargado.
 
- 6- Descargar plugin G19s para VA de [aquí](https://apps.magicmau.nl/EliteG19s-v2/VoiceAttack/EliteG19s-VoiceAttack-latest.zip)
+ 6. Descargar plugin G19s para VA de [aquí](https://apps.magicmau.nl/EliteG19s-v2/VoiceAttack/EliteG19s-VoiceAttack-latest.zip)
 
- 7- Guardar archivo .dll en la carpeta donde tenéis instalado VA:
+ 7. Guardar archivo .dll en la carpeta donde tenéis instalado VA:
     .\VoiceAttack\Apps\EliteG19s\EliteG19s.VoiceAttack.dll
 
- 8- Abrir Elite G19s Companion y rellenar todos los campos que os pida.
+ 8. Abrir Elite G19s Companion y rellenar todos los campos que os pida.
 
 
-## Configurar Playlists de Spotify
+#### Configurar Playlists de Spotify / Youtube
 Para configurar las Playlist hay que añadirlas (o modificarlas) tanto en el archivo options.json de G19s, como en el perfil de VoiceAttack.
 
 
-### En options.json
-1- Editar archivo %appdata%\EliteG19s\options.json (podéis hacerlo también desde el menú OPTIONS de la APP)
+#### En options.json
+1. Editar archivo %appdata%\EliteG19s\options.json (podéis hacerlo también desde el menú OPTIONS de la APP)
 
-2- Buscar línea con el siguiente texto:
-
-      "SpotifyPlaylists": [
-
-3- Si queréis añadir nuevas playlist acordaros de respetar el formato del archivo. Tened en cuenta que si añadís el contenido al final del apartado hay que quitar la última coma.
-
-4- A partir de aquí, ya tendréis acceso a vuestras playlist desde la APP G19s.
-
-### En Perfil VA
-1- Editar perfil de VA
-
-2- Editar dirección URI de Spotify de los comandos "PLAYLIST"
-
-3- Si queréis añadir nuevas Playlist para que Sirka las reconozca, tenéis que modificar los comandos que empiezan por "enter" (nivel avanzado)
+2. Buscar línea con el siguiente texto:
 
 
-## Como conseguir dirección URI de Spotify
+- para Spotify:
+```
+"SpotifyPlaylists": [
+```
+- para Youtube:
+```
+"TVStations": [
+```
 
-a) Abrir Spotify
+3. Si queréis añadir nuevas playlist acordaros de respetar el formato del archivo. Tened en cuenta que si añadís el contenido al final del apartado hay que quitar la última coma.
 
-b) buscar playlist deseada.
-
-c) Buscar menú "..." donde está la opción de "compartir"
-
-d) Usar opción "URI" para que se copie en el portapapeles.
-
-e) el formato es como este: spotify:user:hoksilato:playlist:5NtEC3cKu3fPfgUAjk2keg
+4. A partir de aquí, ya tendréis acceso a vuestras playlist desde la APP G19s.
 
 
-## LOGITECH ARX CONTROL
+#### En Perfil VA
+
+1. Editar perfil de VA
+
+2. Editar dirección URI de Spotify de los comandos "PLAYLIST"
+
+3. Si queréis añadir nuevas Playlist para que Sirka las reconozca, tenéis que modificar los comandos que empiezan por "enter" (nivel avanzado)
+
+
+#### Como conseguir dirección URI de Spotify
+
+a. Abrir Spotify
+
+b. buscar playlist deseada.
+
+c. Buscar menú "..." donde está la opción de "compartir"
+
+d. Usar opción "URI" para que se copie en el portapapeles.
+
+e. el formato es como este: spotify:user:hoksilato:playlist:5NtEC3cKu3fPfgUAjk2keg
+
+
+#### LOGITECH ARX CONTROL
 G19s tiene la opción de poder verlo también en vuestro dispositivo Android o iOS mediante la aplicación Logitech ARX Control.
 
 Logitech ARX Control:
