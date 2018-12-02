@@ -1,5 +1,5 @@
 # VA HoksiPack
-Paquete con herramientas para el juego Elite: Dangerous de Frontier.
+Paquete con herramientas para el juego "Elite: Dangerous" de Frontier.
 Toda la información en español del juego en: http://eliteesp.es/introduccion-a-elite-dangerous/
 
 ATENCIÓN ESTE README ESTÁ EN CONSTRUCCIÓN. Para mas información visitar:
@@ -7,8 +7,9 @@ https://forums.frontier.co.uk/showthread.php/428059-EDDI-en-espa%C3%B1ol-release
 
 
 ### Características
-- Personalidad de IA de la nave (Shirka del cmdr. Altair28) con la ayuda del Software EDDI, VoiceAttack y G19s Companion
+- Personalidad de IA de la nave (Shirka del cmdr. Altair28 ¡actualizada y mejorada!) con la ayuda del Software EDDI, VoiceAttack y G19s Companion
 - Comandos básicos del juego mediante voz con EDDI y Voiceattack
+- Si no tienes licencia VoiceAttack podrás usarlo igualmente, pero no podrás modificar ningún comando :-(
 - Consola externa con múltiples características gracias a la APP G19s Companion:
     - Escucha de Música local, Spotify, Youtube, Radios, Podcasts y más...
     - Tráfico aereo para mayor inmersión
@@ -24,7 +25,7 @@ https://forums.frontier.co.uk/showthread.php/428059-EDDI-en-espa%C3%B1ol-release
           - Si estás en un momento de tensión (señales, Thargoides, Guardianes...)
           - Si estás siendo atacado.
 
-Entre otras cosas. 
+Entre otras muchas cosas. 
 
 Podéis descargar la lista de todos los comandos, de aquí:
 
@@ -133,7 +134,7 @@ Pasos a seguir para añadir los perfiles de VoiceAttack, personalidad de EDDI e 
 17. "Texto-a-Voz" -> Seleccionar voz TTS preferida (Para activar a "Cortana" visitar:
     https://forums.frontier.co.uk/showth...Text-to-Speech
     
-18.- "Transpondedor EDSM" -> Muy recomendado activar. Hay que tener cuenta EDSM para añadir API. mas info:
+18. "Transpondedor EDSM" -> Muy recomendado activar. Hay que tener cuenta EDSM para añadir API. mas info:
     https://www.edsm.net/es/settings/api
 
 
