@@ -33,9 +33,9 @@ Podéis descargar la lista de todos los comandos, de aquí:
 Abajo de todo hay un recopilatorio de los posts originales del foro de Frontier con más información.
 
 
-### Instrucciones
+## Instrucciones
 
-## Auto-instalador
+### Auto-instalador
 
 1. Descargar [HoksiPack](https://github.com/hoksilato2/VAHoksiPack/releases)
 2. Ejecutarlo con privilegios de administrador
@@ -56,11 +56,13 @@ Pero cualqueir cambio en la configuración requerirá de la licencia (¡Sólo el
 
 
 Si tienes VoiceAttack de pago podrás editar los comandos entre los que recomiendo:
+
      - VA-Commander-Name: Para modificar el nombre el cual Shirka se referirá a ti (Por defecto "Señor" y "Comandante")
      - BindED: Modificar ruta de los binds de teclado en caso de que uses mas de uno o no uses la predeterminada
      - PLAYLIST xxxx: Para añadir las Playlist de Spotify o Youtube que quieras para la "moodmusic"
 
-## Revisión de la auto-instalación
+
+### Revisión de la auto-instalación
 Una vez abierto VoiceAttack...
 
 1. Dirígete al menú opciones (llave inglesa) y verifica:
