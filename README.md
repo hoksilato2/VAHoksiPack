@@ -35,7 +35,7 @@ Abajo de todo hay un recopilatorio de los posts originales del foro de Frontier 
 
 ### Instrucciones
 
-## Autoinstalador
+## Auto-instalador
 
 1. Descargar [HoksiPack](https://github.com/hoksilato2/VAHoksiPack/releases)
 2. Ejecutarlo con privilegios de administrador
@@ -50,8 +50,10 @@ Abajo de todo hay un recopilatorio de los posts originales del foro de Frontier 
 4. Si ya tienes instalado algún componente y no necesitas actualizarlo puedes decirle que no, Hoksipack te preguntará más tarde si quieres actualizar la configuración.
 5. ¡ATENCIÓN! Si actualizas la configuración perderás lo que hayas modificado en la configuración.
 
+
 Una vez finalizada la instalación podrás usar VoiceAttack sin comprar licencia.
 Pero cualqueir cambio en la configuración requerirá de la licencia (¡Sólo el precio de un combinado!)
+
 
 Si tienes VoiceAttack de pago podrás editar los comandos entre los que recomiendo:
      - VA-Commander-Name: Para modificar el nombre el cual Shirka se referirá a ti (Por defecto "Señor" y "Comandante")
