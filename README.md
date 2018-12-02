@@ -33,30 +33,61 @@ Podéis descargar la lista de todos los comandos, de aquí:
 Abajo de todo hay un recopilatorio de los posts originales del foro de Frontier con más información.
 
 
-## Instrucciones
+### Instrucciones
 
-Instrucciones para instalar:
-- Shirka de Altair28 con mejoras de la comunidad y mias (EDDI+VoiceAttack)
-    - EDDI (gratuíto): Como sistema "Output" para que de información adicional del juego
-    - VoiceAttack (de pago): Como sistema "Input / Output" para que le puedas dar órdenes a la nave. 
-- G19s Companion con funciones para playlist de Spotify y Youtube entre otras (Input / Output)
+## Autoinstalador
 
+1. Descargar [HoksiPack](https://github.com/hoksilato2/VAHoksiPack/releases)
+2. Ejecutarlo con privilegios de administrador
+3. Seleccionar los componentes que quieras instalar:
+     - VoiceAttack
+           - VoiceAttack Profile (archivo .VAP)
+     - EDDI
+           - Personalidad Shirka (archivo .json)
+     - Elite G19s Companion
+           - Opciones predeterminadas de G19s (archivo options.json)
 
-[HoksiPack](https://github.com/hoksilato2/VAHoksiPack/releases) automatiza la instalación. Pero si prefieres, puedes seguir los pasos del manual para hacerlo de manera manual o para entender qué hace el Hoksipack.
+4. Si ya tienes instalado algún componente y no necesitas actualizarlo puedes decirle que no, Hoksipack te preguntará más tarde si quieres actualizar la configuración.
+5. ¡ATENCIÓN! Si actualizas la configuración perderás lo que hayas modificado en la configuración.
 
+Una vez finalizada la instalación podrás usar VoiceAttack sin comprar licencia.
+Pero cualqueir cambio en la configuración requerirá de la licencia (¡Sólo el precio de un combinado!)
 
-1.- Descargar HoksiPack(https://github.com/hoksilato2/VAHoksiPack/releases) 
-2.- Ejecutar como administrador (te lo debería pedir automáticamente)
-3.- Escoger qué módulos quieres instalar (recomiendo decirle que "Si" a todos):
-    - VoiceAttack
-    - EDDI
-    - G19s
-    
-4.- Si no escoges un módulo tampoco lo configurará.
-5.- Si tienes VoiceAttack de pago podrás editar los comandos entre los que recomiendo:
+Si tienes VoiceAttack de pago podrás editar los comandos entre los que recomiendo:
      - VA-Commander-Name: Para modificar el nombre el cual Shirka se referirá a ti (Por defecto "Señor" y "Comandante")
      - BindED: Modificar ruta de los binds de teclado en caso de que uses mas de uno o no uses la predeterminada
      - PLAYLIST xxxx: Para añadir las Playlist de Spotify o Youtube que quieras para la "moodmusic"
+
+## Revisión de la auto-instalación
+Una vez abierto VoiceAttack...
+
+1. Dirígete al menú opciones (llave inglesa) y verifica:
+- "Enable Plugin Support" -> habilitado
+- "Apps Folder" -> pon la ruta de la carpeta "Apps" en la carpeta de instalación de VoiceAttack
+  
+2. Fuera del menú opciones pulsa "Alt+E"
+- Abre las opciones de perfil pulsando en el check [V] al lado del nombre
+- Selecciona la pestaña "Command each time this profile is loaded"
+echo - Busca el comando "Startup" 
+echo - Click en "OK" para cerrar la ventana "Profile Options"
+echo.
+echo 3.- Aun en el editor del Profile, dirígete a la sección "Variables", comando "VAR-Commander-Name"
+- Edita dicho comando y busca la linea de descripción para ayudarte a editar el nombre de CMDR.
+
+4.- Dirígete a la sección "Variables", comando "BindED"
+- Edita dicho comando y busca la línea de descripción para ayudarte a editar la ruta de tus binds.
+  (Sólo es necesario si la ruta difiere de la predeterminada, o si quieres usar unos binds en específico)
+
+5. Abre la configuración de EDDI diciento: "Configuración EDDI"
+
+6.- Ves a la pestaña "Contestador vocal" y Activa la personalidad deseada.
+
+7.- MUY Recomendable configurar:
+- API de Frontier
+- Contestador EDSM
+- Detalles del comandante
+- Activar todos los "plugins" excepto el "Monitor de Galnet" dado que aún no es compatible con la Galnet Española.
+  
 
 ## Manual
 Pasos a seguir para añadir los perfiles de VoiceAttack, personalidad de EDDI e instalar el software y los plugins necesarios
