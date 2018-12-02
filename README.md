@@ -141,6 +141,7 @@ Pasos a seguir para añadir los perfiles de VoiceAttack, personalidad de EDDI e 
 Nota: Para descargar los archivos en la carpeta beta hay que usar el botón "Raw" con el botón derecho -> Decargar enlace..
 
 ### VoiceAttack
+ATENCIÓN: Si no tienes licencia de VoiceAttack no podrás seguir estos pasos
 
 1. Descargar VoiceAttack de [aquí](https://voiceattack.com/).
 
