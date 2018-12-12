@@ -136,10 +136,11 @@
     },
     {
       "Name": "CMDR. Hoksilato Retro-Electro Cantina",
+      "VideoId": "CdqoNKCCt7A",
       "PlaylistId": "PLZOjJPw3kHZhr7NU-cOxypt_W41iekcTd",
       "Randomized": true,
       "StartWithLatest": true,
-      "Position": 0.0,
+      "Position": 32.74215505422363,
       "State": 0
     },
     {
@@ -178,6 +179,78 @@
     {
       "Name": "CMDR. Hoksilato Rock Suspense",
       "PlaylistId": "PLZOjJPw3kHZiw0s8XmUck-gECmtDU6Zt4",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Hoksilato Metal Space",
+      "PlaylistId": "PLZOjJPw3kHZjzHu1MHRGaVyViPv0Lyx6b",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Hoksilato Metal Combat",
+      "PlaylistId": "PLZOjJPw3kHZgU1iScJAjiYMNRznaVhn8V",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Hoksilato Metal Cantina",
+      "PlaylistId": "PLZOjJPw3kHZjH-oFFhZYDo3-Md1lxy1U8",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. LoboEstelar - SPACE",
+      "PlaylistId": "PLZOjJPw3kHZh-utqmdVnXKbRvviNdU04s",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Arkon - SPACE",
+      "PlaylistId": "PLZOjJPw3kHZha75op-64sGKuPYlaryE0F",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Arkon - COMBAT",
+      "PlaylistId": "PLZOjJPw3kHZha75op-64sGKuPYlaryE0F",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. LoboEstelar - COMBAT",
+      "PlaylistId": "PLZOjJPw3kHZhpkN547qjNCoKItyE7kc9I",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "Kamocan FM - SPACE",
+      "PlaylistId": "PLagxn9yaumM9urRYOaOElgSr3zc-npO5q",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "Kamocan FM - ELECTRO",
+      "PlaylistId": "PLagxn9yaumM960N3Uh2RUe83aqNhmEoSJ",
       "Randomized": true,
       "StartWithLatest": true,
       "Position": 0.0,
@@ -360,6 +433,61 @@
       "IsDisabled": false
     },
     {
+      "Name": "CMDR. Hoksilato ED Metal Cantina",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:5e2T9b0x9yDurLesdd9nm4",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Metal Combat",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:5KdeZ0ZLaLcCuPHUyTpoGp",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Metal Space",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:5XLl0yFo9QqBVYwmjmtLE9",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Arkon - SPACE",
+      "SpotifyLink": "spotify:user:arkandrius:playlist:55GfsLV39MZDIosGEv8TIy",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Arkon - COMBAT",
+      "SpotifyLink": "spotify:user:arkandrius:playlist:4V7TtGY4pP39w74Q7xheV8",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. LoboEstelar - SPACE",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:1CuYGiKkFrcyVLyWvYoCIP",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. LoboEstelar - COMBAT",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:2Rwzv9hLqvzRmXtm9CxLOZ",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Kacoman FM - SPACE",
+      "SpotifyLink": "spotify:user:el_txus:playlist:10zBUAszHGZW29a5ix0kI1",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Kacoman FM - Electro",
+      "SpotifyLink": "spotify:user:el_txus:playlist:4gEhAEnOkrztL15zXkev2X",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Kacoman FM - High Metal",
+      "SpotifyLink": "spotify:user:el_txus:playlist:4lMbakaqtC2h8qKNK1v6DL",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Kacoman FM - RocknMining",
+      "SpotifyLink": "spotify:user:el_txus:playlist:5JxddX5AJc5j0L5Lq1oHLU",
+      "IsDisabled": false
+    },
+    {
       "Name": "Spacetruckers Music",
       "SpotifyLink": "spotify:user:1127748710:playlist:5kDPYBrGSabnu0XapRy0ge",
       "IsDisabled": false
@@ -537,6 +665,6 @@
       }
     ],
     "ArxTicker": "http://eliteesp.es/category/galnet/feed/"
-  },
+  }
 
 }
