@@ -1,0 +1,903 @@
+{
+
+	"InitialVolume": 0.5,
+	"IsUseDirect3D": true,
+	"DisplayOptions": {
+		"UseWindow": "auto",
+		"InitialScreen": "Orrery",
+		"SaveWindowsOnExit": true,
+		"DisplayMessages": "all",
+		"DisplayEveryFrame": 1,
+		"UseUniqueWindowTitle": false,
+		"Windows": [{
+			"X": -1290,
+			"Y": 560,
+			"ShowTitleBar": true,
+			"IsAlwaysOnTop": false,
+			"IsWidescreen": false,
+			"ResolutionMultiplier": 2.0,
+			"DisplayEveryFrame": 1,
+			"ActiveScreen": "Orrery",
+			"Screens": {}
+		}],
+		"LogitechDisplays": []
+	},
+	"AudioVisualizationOptions": {
+		"StartWith": "Spectrogram",
+		"FullScreenCoverArt": {
+			"ShowBars": true
+		},
+		"Orrery": {
+			"ShowBackground": true,
+			"OrbitLineColor": "Yellow",
+			"OrbitLineLength": "Medium",
+			"RingDensity": "Dense",
+			"ShowBars": true,
+			"RingsRippleEffect": true,
+			"PlanetSizeEffect": true
+		},
+		"Starfield": {
+			"StarCount": 500
+		}
+	},
+	"OrreryOptions": {
+		"OrbitLineColor": "Yellow",
+		"OrbitLineLength": "Medium",
+		"RingDensity": "Dense",
+		"ShowBackground": true,
+		"UseKeyboardNavigation": true
+	},
+	"IsShowGPSInSRV": true,
+	"FavoriteStarSystems": [
+		"Sol",
+		"Achenar",
+		"Lave",
+		"Shinrarta Dezhra",
+		"Epsilon Indi",
+		"Sagittarius A*",
+		"Eravate",
+		"60 Herculis",
+		"Maia",
+		"Colonia"
+	],
+	"RadioStations": [{
+			"Name": "KAMOCAN FM",
+			"Url": "http://shaincast.caster.fm:31120/listen.mp3?authn0c6f76af8d2162421223043a9d170c55"
+		},
+		{
+			"Name": "Pleyades Radio",
+			"Url": "https://usa5.fastcast4u.com:2199/tunein/obocfvbe.pls"
+		},
+		{
+			"Name": "Radio Sidewinder",
+			"Url": "http://radiosidewinder.out.airtime.pro:8000/radiosidewinder_a",
+			"OriginalUrl": "http://www.radiosidewinder.com/radiosidewinder.m3u"
+		},
+		{
+			"Name": "Hutton Orbital Radio",
+			"Url": "http://bluford.torontocast.com:8447/hq"
+		},
+		{
+			"Name": "KISS FM",
+			"Url": "http://kissfm.kissfmradio.cires21.com/kissfm.mp3"
+		},
+		{
+			"Name": "M-80",
+			"Url": "http://live.emisoras.cadenaser.com:8085/M80",
+			"OriginalUrl": "http://live.emisoras.cadenaser.com:8085/M80.m3u"
+		},
+		{
+			"Name": "EuropaFM",
+			"Url": "http://icecast-streaming.nice264.com/europafm"
+		},
+		{
+			"Name": "Lave Radio",
+			"Url": "http://bluford.torontocast.com:8421/stream"
+		},
+		{
+			"Name": "Third Rock",
+			"Url": "http://rfcmedia2.streamguys1.com/thirdrock.mp3"
+		},
+		{
+			"Name": "Radio Skvortsov",
+			"Url": "http://streaming.radionomy.com/Radio-Skvortsov"
+		},
+		{
+			"Name": "GalNet Radio",
+			"Url": "http://streaming.radionomy.com/galnet"
+		},
+		{
+			"Name": "Sci-Fi Radio",
+			"Url": "http://streaming.radionomy.com/scifi-radio"
+		},
+		{
+			"Name": "Echoes of Blue Mars: Blue Mars",
+			"Url": "http://streams.echoesofbluemars.org:8000/bluemars"
+		},
+		{
+			"Name": "Echoes of Blue Mars: Cryosleep",
+			"Url": "http://streams.echoesofbluemars.org:8000/cryosleep"
+		},
+		{
+			"Name": "Soma: Mission Control",
+			"Url": "http://ice.somafm.com/missioncontrol"
+		},
+		{
+			"Name": "Soma: Space Station",
+			"Url": "http://ice.somafm.com/spacestation"
+		},
+		{
+			"Name": "Soma: Deep Space One",
+			"Url": "http://ice.somafm.com/deepspaceone"
+		},
+		{
+			"Name": "Soma: Drone Zone",
+			"Url": "http://ice.somafm.com/dronezone"
+		},
+		{
+			"Name": "Soma: Lush",
+			"Url": "http://ice.somafm.com/lush"
+		},
+		{
+			"Name": "Soma: Black Rock",
+			"Url": "http://ice.somafm.com/brfm"
+		},
+		{
+			"Name": "Soma: Doomed",
+			"Url": "http://ice.somafm.com/doomed"
+		},
+		{
+			"Name": "Rosswell UFO Radio",
+			"Url": "http://streaming.shoutcast.com/roswelluforadio",
+			"OriginalUrl": "http://listen.shoutcast.com/roswelluforadio.m3u"
+		}
+	],
+  "TVStations": [
+    {
+      "Name": "EliteESP",
+      "PlaylistId": "UC2rL2hNZ_LDxiPsJAgE0_tw",
+      "Randomized": false,
+      "StartWithLatest": false,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Hoksilato Retro-Electro Space",
+      "VideoId": "WayeZ2gg1UM",
+      "PlaylistId": "PLZOjJPw3kHZiTOty1yvYRs8zlD4rEzh_M",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 53.428911077111813,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Hoksilato Retro-Electro Combat",
+      "PlaylistId": "PLZOjJPw3kHZhLcdS_eMQmDGl2iHWgZo0S",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Hoksilato Retro-Electro Cantina",
+      "VideoId": "CdqoNKCCt7A",
+      "PlaylistId": "PLZOjJPw3kHZhr7NU-cOxypt_W41iekcTd",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 32.74215505422363,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Hoksilato Retro-Electro Suspense",
+      "PlaylistId": "PLZOjJPw3kHZhJ6JXBcQJAnMsjAjJpXlL3",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Hoksilato Rock Space",
+      "VideoId": "NoN6AKPGkBo",
+      "PlaylistId": "PLZOjJPw3kHZhb-Hp1IPNG-aqBcZ7iRV0j",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 144.00652120762939,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Hoksilato Rock Combat",
+      "PlaylistId": "PLZOjJPw3kHZgI_eG0TW-N-MDYeyCktopC",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Hoksilato Rock Cantina",
+      "PlaylistId": "PLZOjJPw3kHZhr7NU-cOxypt_W41iekcTd",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Hoksilato Rock Suspense",
+      "PlaylistId": "PLZOjJPw3kHZiw0s8XmUck-gECmtDU6Zt4",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Hoksilato Metal Space",
+      "PlaylistId": "PLZOjJPw3kHZjzHu1MHRGaVyViPv0Lyx6b",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Hoksilato Metal Combat",
+      "PlaylistId": "PLZOjJPw3kHZgU1iScJAjiYMNRznaVhn8V",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Hoksilato Metal Cantina",
+      "PlaylistId": "PLZOjJPw3kHZjH-oFFhZYDo3-Md1lxy1U8",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. LoboEstelar - SPACE (old)",
+      "VideoId": "mB5rsayMxrg",
+      "PlaylistId": "PLZOjJPw3kHZh-utqmdVnXKbRvviNdU04s",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 8140.9920570722079,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. LoboEstelar - COMBAT (old)",
+      "PlaylistId": "PLZOjJPw3kHZhpkN547qjNCoKItyE7kc9I",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. LoboEstelar - Espacio Profundo",
+      "PlaylistId": "PLTDlvHmHZaQZlZlkejypP21-icBntr_HD",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. LoboEstelar - Cantina Espacial",
+      "PlaylistId": "PLTDlvHmHZaQZKgTSnTPp7E9hlJhAu7Av9",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. LoboEstelar - Combate Espacial",
+      "PlaylistId": "PLTDlvHmHZaQb29lLFMziFHyzxwI332pzz",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. LoboEstelar - Espacio Suspense",
+      "PlaylistId": "PLTDlvHmHZaQbVzfFz0bdHL1MAnWR3aCS2",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Arkon - SPACE",
+      "PlaylistId": "PLZOjJPw3kHZha75op-64sGKuPYlaryE0F",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "CMDR. Arkon - COMBAT",
+      "PlaylistId": "PLZOjJPw3kHZha75op-64sGKuPYlaryE0F",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "Kamocan FM - SPACE",
+      "PlaylistId": "PLagxn9yaumM9urRYOaOElgSr3zc-npO5q",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "Kamocan FM - ELECTRO",
+      "PlaylistId": "PLagxn9yaumM960N3Uh2RUe83aqNhmEoSJ",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "Galnet News Digest",
+      "Username": "pwotherspoon",
+      "Randomized": false,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "Isinona",
+      "Username": "Isinona",
+      "Randomized": false,
+      "StartWithLatest": false,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "Elite Dangerous",
+      "Username": "FrontierDevelopments",
+      "Randomized": false,
+      "StartWithLatest": false,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "Obsidian Ant",
+      "Username": "ObsidianAnt",
+      "Randomized": false,
+      "StartWithLatest": false,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "Elite Racers",
+      "PlaylistId": "PLq3HkeraP8n3h9sTIXUVXhn4iDhF92Ma6",
+      "Randomized": false,
+      "StartWithLatest": false,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "Guardians of the Galaxy Soundtrack",
+      "PlaylistId": "PLpRjkOHBe_TgmznCle__jWDhoV4aFgCjw",
+      "Randomized": true,
+      "StartWithLatest": false,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "Pure Pop",
+      "PlaylistId": "PL9tY0BWXOZFvKRiSw23TNP68fIrUblrWH",
+      "Randomized": true,
+      "StartWithLatest": false,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "Top Classical Music",
+      "PlaylistId": "PLVXq77mXV53-Np39jM456si2PeTrEm9Mj",
+      "Randomized": true,
+      "StartWithLatest": false,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "Country Party",
+      "PlaylistId": "PL9tY0BWXOZFv8hIun4ujGj0RF66Ogb-vf",
+      "Randomized": true,
+      "StartWithLatest": false,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "EDM Party",
+      "PlaylistId": "PL9tY0BWXOZFvxJlU0eH71A4nkP1O1HsUo",
+      "Randomized": true,
+      "StartWithLatest": false,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "EDM Replay",
+      "PlaylistId": "PL9tY0BWXOZFspK-zf2PoWqP6NJYflkM-B",
+      "Randomized": true,
+      "StartWithLatest": false,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "The Daily 40",
+      "PlaylistId": "PLFgquLnL59akEDVznnoh3KT0EM5DVczAq",
+      "Randomized": true,
+      "StartWithLatest": false,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
+      "Name": "Top Shift",
+      "Username": "PhoenixDfire",
+      "Randomized": false,
+      "StartWithLatest": false,
+      "Position": 0.0,
+      "State": 0
+    }
+  ],
+  "SpotifyPlaylists": [{
+			"Name": "Elite: Dangerous OST",
+			"SpotifyLink": "spotify:album:7DiKsmM1Ekr9mWYxRCMjrE",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Hoksilato ED Relax",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:6oAFStd0YxPOd9KDGs45AS",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Hoksilato ED Concert Space",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:2C2jiCeuWx7Mg8l1iIZPsC",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Hoksilato ED Concert Cantina",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:5NtEC3cKu3fPfgUAjk2keg",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Hoksilato ED Concert Combat",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:60pCKymUl9aKBjrhjDWNbe",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Hoksilato ED Concert Suspense",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:0wjOczxNNN8WBTcY6kolvH",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Hoksilato ED Rock Space",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:2SKtzdH93fsns5M94SRkk0",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Hoksilato ED Rock Cantina",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:7BAeGd8cdHttubN77tmVzw",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Hoksilato ED Rock Combat",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:1of73sxHZW7btNySkCwgzU",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Hoksilato ED Rock Suspense",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:6EQ9LUCCp86rFtbRNLseGG",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Hoksilato ED Electro Space",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:7nxRGG8RVnehNmbOuTlzkj",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Hoksilato ED Electro Cantina",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:1iAksPieYgRdVJCmBfM4Z0",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Hoksilato ED Electro Combat",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:4UTWz2kUQ8WfujaW5Th43y",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Hoksilato ED Electro Suspense",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:6EQ9LUCCp86rFtbRNLseGG",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Hoksilato ED Metal Cantina",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:5e2T9b0x9yDurLesdd9nm4",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Hoksilato ED Metal Combat",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:5KdeZ0ZLaLcCuPHUyTpoGp",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Hoksilato ED Metal Space",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:5XLl0yFo9QqBVYwmjmtLE9",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Arkon - SPACE",
+			"SpotifyLink": "spotify:user:arkandrius:playlist:55GfsLV39MZDIosGEv8TIy",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. Arkon - COMBAT",
+			"SpotifyLink": "spotify:user:arkandrius:playlist:4V7TtGY4pP39w74Q7xheV8",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. LoboEstelar - SPACE",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:1CuYGiKkFrcyVLyWvYoCIP",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR. LoboEstelar - COMBAT",
+			"SpotifyLink": "spotify:user:hoksilato:playlist:2Rwzv9hLqvzRmXtm9CxLOZ",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Kacoman FM - SPACE",
+			"SpotifyLink": "spotify:user:el_txus:playlist:10zBUAszHGZW29a5ix0kI1",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Kacoman FM - Electro",
+			"SpotifyLink": "spotify:user:el_txus:playlist:4gEhAEnOkrztL15zXkev2X",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Kacoman FM - High Metal",
+			"SpotifyLink": "spotify:user:el_txus:playlist:4lMbakaqtC2h8qKNK1v6DL",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Kacoman FM - RocknMining",
+			"SpotifyLink": "spotify:user:el_txus:playlist:5JxddX5AJc5j0L5Lq1oHLU",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Spacetruckers Music",
+			"SpotifyLink": "spotify:user:1127748710:playlist:5kDPYBrGSabnu0XapRy0ge",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Guardians of the Galaxy",
+			"SpotifyLink": "spotify:user:hollywdrecrds:playlist:1xY6msLHX1W34EzB0UkkbU",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Space Cowboy",
+			"SpotifyLink": "spotify:user:sgezen:playlist:14EKKFT6YjOvrC0PpPdJpK",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Space Truckin'",
+			"SpotifyLink": "spotify:user:1231018979:playlist:4VvHCAEcXC54Sb34x5huuK",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Frontier Elite II",
+			"SpotifyLink": "spotify:user:tiayviel:playlist:2PYJtlqU93kZn67DItD2Pt",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR Discordian's list",
+			"SpotifyLink": "spotify:user:spotify:playlist:3QqnY7KqLydtKHLACW4prC",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR Paul Loachman's Elite Mixtape",
+			"SpotifyLink": "spotify:user:1113282120:playlist:7B7wi4wMyBii7HoCj8OOaf",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Space.FM",
+			"SpotifyLink": "spotify:user:1195501566:playlist:2lwRI5Xlup71GjX0fB6igf",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR MooCube's list",
+			"SpotifyLink": "spotify:user:1262772122:playlist:6DhaOBYq7ZlmlZ7WNwEYbJ",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Rocking through the Universe",
+			"SpotifyLink": "spotify:user:sszczesny:playlist:6IKlk9FfCRBQmM3DuSmK8D",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Galactonaut",
+			"SpotifyLink": "spotify:user:rieggs:playlist:5qX8boBukvwIX27tpyjR8t",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Heat Levels Critical",
+			"SpotifyLink": "spotify:user:highonmemeswhotooktheusername:playlist:4mwFgf4YXL9i4k0EvsoMuR",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Space Trucker Music",
+			"SpotifyLink": "spotify:user:1231018979:playlist:4VvHCAEcXC54Sb34x5huuK",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Homeworld",
+			"SpotifyLink": "spotify:user:1134145980:playlist:5JgJJJ1CUaEGnUH9st3t2A",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Interstellar: OST",
+			"SpotifyLink": "http://open.spotify.com/album/7a78GiEowpaCa7ZJs44xUU",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Mass Effect Andromeda: Pathfinder",
+			"SpotifyLink": "spotify:user:1156481697:playlist:2ESpOZ6IT7hB7XlVhnHIuV",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Mass Effect Andromeda: Space Exploration",
+			"SpotifyLink": "spotify:user:1156481697:playlist:57pJivChtPThtinkzq9O2N",
+			"IsDisabled": false
+		},
+		{
+			"Name": "CMDR Ebmocces' list",
+			"SpotifyLink": "spotify:user:ebmocces:playlist:4wVzEEArGpLWuH3KCpe71I",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Space Dreams",
+			"SpotifyLink": "spotify:user:deerwolf1:playlist:59tM9mHndQkT12GiC5IDuy",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Hot New Dance Tracks",
+			"SpotifyLink": "spotify:user:spotify:playlist:37i9dQZF1DWWrJKwf0q9nn",
+			"IsDisabled": false
+		},
+		{
+			"Name": "Morning Commute",
+			"SpotifyLink": "spotify:user:spotify:playlist:2lDJ2xtmpCSN9CO7ZBkIVc",
+			"IsDisabled": false
+		},
+		{
+			"Name": "FH2: Radio Levante",
+			"SpotifyLink": "spotify:user:1125090355:playlist:3Sc6PSx7ZdbsoefvQCDGrZ",
+			"IsDisabled": false
+		}
+	],
+	"Podcasts": [{
+			"Name": "EliteCast T3",
+			"Url": "http://www.ivoox.com/elitecast-t3_fg_f1308730_filtro_1.xml"
+		},
+		{
+			"Name": "Lave Radio",
+			"Url": "http://laveradio.com/feed/laveradio.xml"
+		},
+		{
+			"Name": "Guard Frequency",
+			"Url": "http://feeds.feedburner.com/GuardFrequencyPodcasts?format=xml"
+		},
+		{
+			"Name": "Hutton Orbital News",
+			"Url": "http://feeds.feedburner.com/HuttonOrbital?format=xml"
+		},
+		{
+			"Name": "SpaceTime",
+			"Url": "https://audioboom.com/channels/4642443.rss"
+		},
+		{
+			"Name": "Galnet News",
+			"Url": "http://feeds.feedburner.com/GalnetNews?format=xml"
+		}
+	],
+	"Websites": [{
+			"Name": "",
+			"Url": ""
+		},
+		{
+			"Name": "",
+			"Url": ""
+		}
+	],
+	"RacingMusic": [{
+			"Name": "F1 Spirit",
+			"Url": "https://www.msx.org/sites/default/files/downloads/music/mp3/Bart-F1Spirit-StockCar.mp3"
+		},
+		{
+			"Name": "Checkpoint",
+			"Url": "https://api.soundcloud.com/tracks/265532059"
+		},
+		{
+			"Name": "Horse Race",
+			"Url": "https://api.soundcloud.com/tracks/215140917"
+		},
+		{
+			"Name": "Rainbow Road",
+			"Url": "https://api.soundcloud.com/tracks/56488563"
+		},
+		{
+			"Name": "Mario Circuit",
+			"Url": "https://api.soundcloud.com/tracks/227725758"
+		},
+		{
+			"Name": "Koopa Vacation",
+			"Url": "https://api.soundcloud.com/tracks/122874213"
+		},
+		{
+			"Name": "Fastway",
+			"Url": "https://api.soundcloud.com/tracks/75156042"
+		},
+		{
+			"Name": "Back on the Rocks",
+			"Url": "https://api.soundcloud.com/tracks/138014504"
+		},
+		{
+			"Name": "A Perfect Hero",
+			"Url": "https://api.soundcloud.com/tracks/83372823"
+		},
+		{
+			"Name": "Don't Stop the Music",
+			"Url": "https://api.soundcloud.com/tracks/138014505"
+		}
+	],
+	"TwitchChannels": [{
+		"Name": "Monstercat",
+		"ChannelId": "monstercat"
+	}],
+	"OnTopReplica": {
+		"AttachFirstWindow": false,
+
+		"Parameters": "--windowId=$HWND$ --visible --screenPosition=TR --opacity=150 --chromeOff --clickForwarding --size=$WIDTH$,$HEIGHT$"
+	},
+	"SpaceTrafficControlOptions": {
+		"EnableOnStart": true,
+		"Volume": 0.1,
+		"Density": 1.0,
+		"UseSoundEffects": true,
+		"OnlyInSuperCruise": true,
+		"ListenNearStations": false,
+		"DimMusicWhileTransmitting": false,
+		"ShowTrafficSubtitles": true,
+		"StartDelay": 0.0,
+		"TrafficControlLocalized": true,
+		"NPCVoicesEnabled": true,
+		"NPCVolume": 0.5,
+		"CMDRVoicesEnabled": false,
+		"CMDRVoiceLanguage": "Game",
+		"VoiceOptions": {}
+	},
+	"IsConvertScreenshots": false,
+	"LogitechSettings": {
+		"SetBackgroundColor": true,
+		"PlayEffects": true,
+		"Ambilight": false
+	},
+	"IsUseGameTime": true,
+	"IsUseDiscordRichPresence": true,
+	"DefaultTTSVoice": "Microsoft Ana",
+	"ArxAnimationLevel": "full",
+	"HotKeys": [{
+			"Function": "Up",
+			"UseAlt": false,
+			"UseCtrl": true,
+			"UseShift": true,
+			"UseWin": false,
+			"Key": "Up",
+			"IsEnabled": false
+		},
+		{
+			"Function": "Down",
+			"UseAlt": false,
+			"UseCtrl": true,
+			"UseShift": true,
+			"UseWin": false,
+			"Key": "Down",
+			"IsEnabled": false
+		},
+		{
+			"Function": "Left",
+			"UseAlt": false,
+			"UseCtrl": true,
+			"UseShift": true,
+			"UseWin": false,
+			"Key": "Left",
+			"IsEnabled": false
+		},
+		{
+			"Function": "Right",
+			"UseAlt": false,
+			"UseCtrl": true,
+			"UseShift": true,
+			"UseWin": false,
+			"Key": "Right",
+			"IsEnabled": false
+		},
+		{
+			"Function": "Menu",
+			"UseAlt": false,
+			"UseCtrl": false,
+			"UseShift": false,
+			"UseWin": false,
+			"Key": "",
+			"IsEnabled": false
+		},
+		{
+			"Function": "OK",
+			"UseAlt": false,
+			"UseCtrl": false,
+			"UseShift": false,
+			"UseWin": false,
+			"Key": "",
+			"IsEnabled": false
+		},
+		{
+			"Function": "Cancel",
+			"UseAlt": false,
+			"UseCtrl": false,
+			"UseShift": false,
+			"UseWin": false,
+			"Key": "",
+			"IsEnabled": false
+		},
+		{
+			"Function": "Screen Status",
+			"UseAlt": false,
+			"UseCtrl": false,
+			"UseShift": false,
+			"UseWin": false,
+			"Key": "",
+			"IsEnabled": false
+		},
+		{
+			"Function": "Screen AudioVisualization",
+			"UseAlt": false,
+			"UseCtrl": false,
+			"UseShift": false,
+			"UseWin": false,
+			"Key": "",
+			"IsEnabled": false
+		},
+		{
+			"Function": "Screen News",
+			"UseAlt": false,
+			"UseCtrl": false,
+			"UseShift": false,
+			"UseWin": false,
+			"Key": "",
+			"IsEnabled": false
+		}
+	],
+	"NewsTicker": {
+		"Note": "This section sets the Newsticker options. Maximum of three tickers, or two if you also show the Galnet Ticker.",
+		"IsShowGalnetTicker": true,
+		"IsUseTextToSpeech": true,
+		"ScreenTickers": [{
+				"Name": "EliteESP",
+				"Url": "http://eliteesp.es/feed/"
+			},
+			{
+				"Name": "Reddit ESP",
+				"Url": "https://www.reddit.com/r/EliteDangerousSpain/new/.rss"
+			}
+		],
+		"ArxTicker": "http://eliteesp.es/category/galnet/feed/"
+	},
+	"PhilipsHue": {
+		"IsEnabled": false,
+
+		"Intensity": 0.25,
+		"Ambilight": true,
+		"PlayEffects": true
+	},
+	"AmbilightUpdateInterval": 250,
+	"LastCommanderName": ""
+}
