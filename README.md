@@ -19,17 +19,17 @@ https://forums.frontier.co.uk/showthread.php/428059-EDDI-en-espa%C3%B1ol-release
 - Mediante el perfil de VA para G19s he ideado lo que le llamo música ambiental automática. Consiste en:
     - Playlist de Spotify/Youtube adecuadas para cada circumstancia del juego.
     - Al decir "pon música" Sirka te pregunta por el género (Concierto, Rock, Electrónica o Relax)
-    - Según la música que escojas esta se adecuará a la acción del juego según: 
+    - Según la música que escojas esta se adecuará a la acción del juego según:
           - Si estás dockeado en una estación
           - Si estás navegando por el espacio
           - Si estás en un momento de tensión (señales, Thargoides, Guardianes...)
           - Si estás siendo atacado.
 
-Entre otras muchas cosas. 
+Entre otras muchas cosas.
 
 Podéis descargar la lista de todos los comandos, de aquí:
 
-- [Comandos de Shirka](http://htmlpreview.github.io/?https://raw.githubusercontent.com/hoksilato2/VAHoksiPack/master/VAPs/Hoksilato%203.3.0-1-Profile.html)
+- [Comandos de Shirka](http://htmlpreview.github.io/?https://raw.githubusercontent.com/hoksilato2/VAHoksiPack/master/VAPs/Hoksilato%203.3.4-1-Profile.html)
 
 Abajo de todo hay un recopilatorio de los posts originales del foro de Frontier con más información.
 
@@ -69,11 +69,11 @@ Una vez abierto VoiceAttack...
 1. Dirígete al menú opciones (llave inglesa) y verifica:
      - "Enable Plugin Support" -> habilitado
      - "Apps Folder" -> pon la ruta de la carpeta "Apps" en la carpeta de instalación de VoiceAttack
-  
+
 2. Fuera del menú opciones pulsa "Alt+E"
      - Abre las opciones de perfil pulsando en el check [V] al lado del nombre
      - Selecciona la pestaña "Command each time this profile is loaded"
-     - Busca el comando "Startup" 
+     - Busca el comando "Startup"
      - Click en "OK" para cerrar la ventana "Profile Options"
 
  3. Aun en el editor del Profile, dirígete a la sección "Variables", comando "VAR-Commander-Name"
@@ -92,7 +92,7 @@ Una vez abierto VoiceAttack...
      - Contestador EDSM
      - Detalles del comandante
      - Activar todos los "plugins" excepto el "Monitor de Galnet" dado que aún no es compatible con la Galnet Española.
-  
+
 
 ## Instalación Manual
 Pasos a seguir para añadir los perfiles de VoiceAttack, personalidad de EDDI e instalar el software y los plugins necesarios
@@ -133,7 +133,7 @@ Pasos a seguir para añadir los perfiles de VoiceAttack, personalidad de EDDI e 
 
 17. "Texto-a-Voz" -> Seleccionar voz TTS preferida (Para activar a "Cortana" visitar:
     https://forums.frontier.co.uk/showth...Text-to-Speech
-    
+
 18. "Transpondedor EDSM" -> Muy recomendado activar. Hay que tener cuenta EDSM para añadir API. mas info:
     https://www.edsm.net/es/settings/api
 
@@ -167,7 +167,7 @@ ATENCIÓN: Si no tienes licencia de VoiceAttack no podrás seguir estos pasos
 11. Fuera del menú opciones pulsa "Alt+E"
      - Abre las opciones de perfil pulsando en el check [V] al lado del nombre
      - Selecciona la pestaña "Command each time this profile is loaded"
-     - Busca el comando "Startup" 
+     - Busca el comando "Startup"
      - Click en "OK" para cerrar la ventana "Profile Options"
 
 12. Aun en el editor del Profile, dirígete a la sección "Variables", comando "VAR-Commander-Name"
