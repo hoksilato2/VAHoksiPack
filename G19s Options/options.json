@@ -253,6 +253,14 @@
       "State": 0
     },
     {
+      "Name": "CMDR. Hoksilato Explo.",
+      "PlaylistId": "PLZOjJPw3kHZiK7qHAhK_PD_IkkJivo4Hk",
+      "Randomized": true,
+      "StartWithLatest": true,
+      "Position": 0.0,
+      "State": 0
+    },
+    {
       "Name": "CMDR. LoboEstelar - SPACE (old)",
       "VideoId": "mB5rsayMxrg",
       "PlaylistId": "PLZOjJPw3kHZh-utqmdVnXKbRvviNdU04s",
@@ -522,6 +530,11 @@
     {
       "Name": "CMDR. Hoksilato ED Metal Space",
       "SpotifyLink": "spotify:user:hoksilato:playlist:5XLl0yFo9QqBVYwmjmtLE9",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato Explo.",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:4vBaHwfZyOPcPP58gzOnO9",
       "IsDisabled": false
     },
     {

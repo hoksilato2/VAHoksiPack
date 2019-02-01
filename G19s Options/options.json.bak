@@ -438,243 +438,264 @@
       "State": 0
     }
   ],
-  "SpotifyPlaylists": [{
-			"Name": "Elite: Dangerous OST",
-			"SpotifyLink": "spotify:album:7DiKsmM1Ekr9mWYxRCMjrE",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Hoksilato ED Relax",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:6oAFStd0YxPOd9KDGs45AS",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Hoksilato ED Concert Space",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:2C2jiCeuWx7Mg8l1iIZPsC",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Hoksilato ED Concert Cantina",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:5NtEC3cKu3fPfgUAjk2keg",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Hoksilato ED Concert Combat",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:60pCKymUl9aKBjrhjDWNbe",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Hoksilato ED Concert Suspense",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:0wjOczxNNN8WBTcY6kolvH",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Hoksilato ED Rock Space",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:2SKtzdH93fsns5M94SRkk0",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Hoksilato ED Rock Cantina",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:7BAeGd8cdHttubN77tmVzw",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Hoksilato ED Rock Combat",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:1of73sxHZW7btNySkCwgzU",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Hoksilato ED Rock Suspense",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:6EQ9LUCCp86rFtbRNLseGG",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Hoksilato ED Electro Space",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:7nxRGG8RVnehNmbOuTlzkj",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Hoksilato ED Electro Cantina",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:1iAksPieYgRdVJCmBfM4Z0",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Hoksilato ED Electro Combat",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:4UTWz2kUQ8WfujaW5Th43y",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Hoksilato ED Electro Suspense",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:6EQ9LUCCp86rFtbRNLseGG",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Hoksilato ED Metal Cantina",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:5e2T9b0x9yDurLesdd9nm4",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Hoksilato ED Metal Combat",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:5KdeZ0ZLaLcCuPHUyTpoGp",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Hoksilato ED Metal Space",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:5XLl0yFo9QqBVYwmjmtLE9",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Arkon - SPACE",
-			"SpotifyLink": "spotify:user:arkandrius:playlist:55GfsLV39MZDIosGEv8TIy",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. Arkon - COMBAT",
-			"SpotifyLink": "spotify:user:arkandrius:playlist:4V7TtGY4pP39w74Q7xheV8",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. LoboEstelar - SPACE",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:1CuYGiKkFrcyVLyWvYoCIP",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR. LoboEstelar - COMBAT",
-			"SpotifyLink": "spotify:user:hoksilato:playlist:2Rwzv9hLqvzRmXtm9CxLOZ",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Kacoman FM - SPACE",
-			"SpotifyLink": "spotify:user:el_txus:playlist:10zBUAszHGZW29a5ix0kI1",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Kacoman FM - Electro",
-			"SpotifyLink": "spotify:user:el_txus:playlist:4gEhAEnOkrztL15zXkev2X",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Kacoman FM - High Metal",
-			"SpotifyLink": "spotify:user:el_txus:playlist:4lMbakaqtC2h8qKNK1v6DL",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Kacoman FM - RocknMining",
-			"SpotifyLink": "spotify:user:el_txus:playlist:5JxddX5AJc5j0L5Lq1oHLU",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Spacetruckers Music",
-			"SpotifyLink": "spotify:user:1127748710:playlist:5kDPYBrGSabnu0XapRy0ge",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Guardians of the Galaxy",
-			"SpotifyLink": "spotify:user:hollywdrecrds:playlist:1xY6msLHX1W34EzB0UkkbU",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Space Cowboy",
-			"SpotifyLink": "spotify:user:sgezen:playlist:14EKKFT6YjOvrC0PpPdJpK",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Space Truckin'",
-			"SpotifyLink": "spotify:user:1231018979:playlist:4VvHCAEcXC54Sb34x5huuK",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Frontier Elite II",
-			"SpotifyLink": "spotify:user:tiayviel:playlist:2PYJtlqU93kZn67DItD2Pt",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR Discordian's list",
-			"SpotifyLink": "spotify:user:spotify:playlist:3QqnY7KqLydtKHLACW4prC",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR Paul Loachman's Elite Mixtape",
-			"SpotifyLink": "spotify:user:1113282120:playlist:7B7wi4wMyBii7HoCj8OOaf",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Space.FM",
-			"SpotifyLink": "spotify:user:1195501566:playlist:2lwRI5Xlup71GjX0fB6igf",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR MooCube's list",
-			"SpotifyLink": "spotify:user:1262772122:playlist:6DhaOBYq7ZlmlZ7WNwEYbJ",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Rocking through the Universe",
-			"SpotifyLink": "spotify:user:sszczesny:playlist:6IKlk9FfCRBQmM3DuSmK8D",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Galactonaut",
-			"SpotifyLink": "spotify:user:rieggs:playlist:5qX8boBukvwIX27tpyjR8t",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Heat Levels Critical",
-			"SpotifyLink": "spotify:user:highonmemeswhotooktheusername:playlist:4mwFgf4YXL9i4k0EvsoMuR",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Space Trucker Music",
-			"SpotifyLink": "spotify:user:1231018979:playlist:4VvHCAEcXC54Sb34x5huuK",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Homeworld",
-			"SpotifyLink": "spotify:user:1134145980:playlist:5JgJJJ1CUaEGnUH9st3t2A",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Interstellar: OST",
-			"SpotifyLink": "http://open.spotify.com/album/7a78GiEowpaCa7ZJs44xUU",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Mass Effect Andromeda: Pathfinder",
-			"SpotifyLink": "spotify:user:1156481697:playlist:2ESpOZ6IT7hB7XlVhnHIuV",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Mass Effect Andromeda: Space Exploration",
-			"SpotifyLink": "spotify:user:1156481697:playlist:57pJivChtPThtinkzq9O2N",
-			"IsDisabled": false
-		},
-		{
-			"Name": "CMDR Ebmocces' list",
-			"SpotifyLink": "spotify:user:ebmocces:playlist:4wVzEEArGpLWuH3KCpe71I",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Space Dreams",
-			"SpotifyLink": "spotify:user:deerwolf1:playlist:59tM9mHndQkT12GiC5IDuy",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Hot New Dance Tracks",
-			"SpotifyLink": "spotify:user:spotify:playlist:37i9dQZF1DWWrJKwf0q9nn",
-			"IsDisabled": false
-		},
-		{
-			"Name": "Morning Commute",
-			"SpotifyLink": "spotify:user:spotify:playlist:2lDJ2xtmpCSN9CO7ZBkIVc",
-			"IsDisabled": false
-		},
-		{
-			"Name": "FH2: Radio Levante",
-			"SpotifyLink": "spotify:user:1125090355:playlist:3Sc6PSx7ZdbsoefvQCDGrZ",
-			"IsDisabled": false
-		}
-	],
-	"Podcasts": [{
+    "SpotifyPlaylists": [
+    {
+      "Name": "Elite: Dangerous OST",
+      "SpotifyLink": "spotify:album:7DiKsmM1Ekr9mWYxRCMjrE",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Relax",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:6oAFStd0YxPOd9KDGs45AS",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Concert Space",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:2C2jiCeuWx7Mg8l1iIZPsC",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Concert Cantina",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:5NtEC3cKu3fPfgUAjk2keg",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Concert Combat",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:60pCKymUl9aKBjrhjDWNbe",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Concert Suspense",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:0wjOczxNNN8WBTcY6kolvH",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Rock Space",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:2SKtzdH93fsns5M94SRkk0",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Rock Cantina",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:7BAeGd8cdHttubN77tmVzw",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Rock Combat",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:1of73sxHZW7btNySkCwgzU",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Rock Suspense",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:6EQ9LUCCp86rFtbRNLseGG",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Electro Space",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:7nxRGG8RVnehNmbOuTlzkj",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Electro Cantina",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:1iAksPieYgRdVJCmBfM4Z0",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Electro Combat",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:4UTWz2kUQ8WfujaW5Th43y",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Electro Suspense",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:6EQ9LUCCp86rFtbRNLseGG",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Metal Cantina",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:5e2T9b0x9yDurLesdd9nm4",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Metal Combat",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:5KdeZ0ZLaLcCuPHUyTpoGp",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Hoksilato ED Metal Space",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:5XLl0yFo9QqBVYwmjmtLE9",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Arkon - SPACE",
+      "SpotifyLink": "spotify:user:arkandrius:playlist:55GfsLV39MZDIosGEv8TIy",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. Arkon - COMBAT",
+      "SpotifyLink": "spotify:user:arkandrius:playlist:4V7TtGY4pP39w74Q7xheV8",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. LoboEstelar - SPACE (old)",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:1CuYGiKkFrcyVLyWvYoCIP",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. LoboEstelar - COMBAT (old)",
+      "SpotifyLink": "spotify:user:hoksilato:playlist:2Rwzv9hLqvzRmXtm9CxLOZ",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. LoboEstelar - Cantina Espacial",
+      "SpotifyLink": "spotify:user:exodisea:playlist:0OVIfB0rhy6Vq3F1cPJufI",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. LoboEstelar - Espacio Profundo",
+      "SpotifyLink": "spotify:user:exodisea:playlist:1SAPl3sdaHm6jX1ZAno295",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. LoboEstelar - Espacio Suspense",
+      "SpotifyLink": "spotify:user:exodisea:playlist:20ekOr4uj0HPpWhV0b9soc",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR. LoboEstelar - Combate Espacial",
+      "SpotifyLink": "spotify:user:exodisea:playlist:42qni8NYHvPpf9JG1E54vm",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Kacoman FM - SPACE",
+      "SpotifyLink": "spotify:user:el_txus:playlist:10zBUAszHGZW29a5ix0kI1",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Kacoman FM - Electro",
+      "SpotifyLink": "spotify:user:el_txus:playlist:4gEhAEnOkrztL15zXkev2X",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Kacoman FM - High Metal",
+      "SpotifyLink": "spotify:user:el_txus:playlist:4lMbakaqtC2h8qKNK1v6DL",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Kacoman FM - RocknMining",
+      "SpotifyLink": "spotify:user:el_txus:playlist:5JxddX5AJc5j0L5Lq1oHLU",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Spacetruckers Music",
+      "SpotifyLink": "spotify:user:1127748710:playlist:5kDPYBrGSabnu0XapRy0ge",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Guardians of the Galaxy",
+      "SpotifyLink": "spotify:user:hollywdrecrds:playlist:1xY6msLHX1W34EzB0UkkbU",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Space Cowboy",
+      "SpotifyLink": "spotify:user:sgezen:playlist:14EKKFT6YjOvrC0PpPdJpK",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Space Truckin'",
+      "SpotifyLink": "spotify:user:1231018979:playlist:4VvHCAEcXC54Sb34x5huuK",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Frontier Elite II",
+      "SpotifyLink": "spotify:user:tiayviel:playlist:2PYJtlqU93kZn67DItD2Pt",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR Discordian's list",
+      "SpotifyLink": "spotify:user:spotify:playlist:3QqnY7KqLydtKHLACW4prC",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR Paul Loachman's Elite Mixtape",
+      "SpotifyLink": "spotify:user:1113282120:playlist:7B7wi4wMyBii7HoCj8OOaf",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Space.FM",
+      "SpotifyLink": "spotify:user:1195501566:playlist:2lwRI5Xlup71GjX0fB6igf",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR MooCube's list",
+      "SpotifyLink": "spotify:user:1262772122:playlist:6DhaOBYq7ZlmlZ7WNwEYbJ",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Rocking through the Universe",
+      "SpotifyLink": "spotify:user:sszczesny:playlist:6IKlk9FfCRBQmM3DuSmK8D",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Galactonaut",
+      "SpotifyLink": "spotify:user:rieggs:playlist:5qX8boBukvwIX27tpyjR8t",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Heat Levels Critical",
+      "SpotifyLink": "spotify:user:highonmemeswhotooktheusername:playlist:4mwFgf4YXL9i4k0EvsoMuR",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Space Trucker Music",
+      "SpotifyLink": "spotify:user:1231018979:playlist:4VvHCAEcXC54Sb34x5huuK",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Homeworld",
+      "SpotifyLink": "spotify:user:1134145980:playlist:5JgJJJ1CUaEGnUH9st3t2A",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Interstellar: OST",
+      "SpotifyLink": "http://open.spotify.com/album/7a78GiEowpaCa7ZJs44xUU",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Mass Effect Andromeda: Pathfinder",
+      "SpotifyLink": "spotify:user:1156481697:playlist:2ESpOZ6IT7hB7XlVhnHIuV",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Mass Effect Andromeda: Space Exploration",
+      "SpotifyLink": "spotify:user:1156481697:playlist:57pJivChtPThtinkzq9O2N",
+      "IsDisabled": false
+    },
+    {
+      "Name": "CMDR Ebmocces' list",
+      "SpotifyLink": "spotify:user:ebmocces:playlist:4wVzEEArGpLWuH3KCpe71I",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Space Dreams",
+      "SpotifyLink": "spotify:user:deerwolf1:playlist:59tM9mHndQkT12GiC5IDuy",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Hot New Dance Tracks",
+      "SpotifyLink": "spotify:user:spotify:playlist:37i9dQZF1DWWrJKwf0q9nn",
+      "IsDisabled": false
+    },
+    {
+      "Name": "Morning Commute",
+      "SpotifyLink": "spotify:user:spotify:playlist:2lDJ2xtmpCSN9CO7ZBkIVc",
+      "IsDisabled": false
+    },
+    {
+      "Name": "FH2: Radio Levante",
+      "SpotifyLink": "spotify:user:1125090355:playlist:3Sc6PSx7ZdbsoefvQCDGrZ",
+      "IsDisabled": false
+    }
+  ],
+ 	"Podcasts": [{
 			"Name": "EliteCast T3",
 			"Url": "http://www.ivoox.com/elitecast-t3_fg_f1308730_filtro_1.xml"
 		},
