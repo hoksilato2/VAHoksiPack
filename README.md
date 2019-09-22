@@ -29,7 +29,7 @@ Entre otras muchas cosas.
 
 Podéis descargar la lista de todos los comandos, de aquí:
 
-- [Comandos de Shirka](https://htmlpreview.github.io/?https://raw.githubusercontent.com/hoksilato2/VAHoksiPack/master/VAPs/Hoksilato%203.4.1-1-Profile.html)
+- [Comandos de Shirka](https://1drv.ms/x/s!AtU0ym2slNFVhoJIsAXfN2twCJ-Skw?e=8SgYxA)
 
 Abajo de todo hay un recopilatorio de los posts originales del foro de Frontier con más información.
 
