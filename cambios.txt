@@ -1,0 +1,78 @@
+## Hoksipack 3.5.3-1b
+
+- Actualizados textos de ayuda del final según últimos updates de EDDI.
+
+## VoiceAttack 1.8.5
+
+- Añadida nueva versión de VA.
+- Todos lo cambios los podéis encontrar [aquí](https://www.voiceattack.com/changes.aspx) (desde la versión 1.7.5):
+	
+
+## EDDI 3.5.3-b3
+
+- Añadida versión 3.5.3-b3 de EDDI
+https://github.com/EDCD/EDDI/blob/Release/3.5.3-b3/EDDI/ChangeLog.md
+
+
+## Shirka 3.5.3-1b
+
+- Actualizado eventos Body scanned y Star scanned con el nuevo formato
+- Traducido evento Ring hotspots detected (Solo funciona si la nave la tenéis etiquetada como minera o multipropósito)
+- Traducido evento Powerplay
+- Traducido evento Surface signals detected (añadidos plurales para el castellano)
+- Actualizado evento "Jumped" con el nuevo formato.
+- Actualizado evento "Touchdown" con el nuevo formato.
+- Actualizado evento "Location" con el nuevo formato.
+- Editado evento "Next Jump" para añadir mejoras
+- Traducido evento "Ship targeted" (pendiente de pruebas)
+- Traducido evento "Launchbay report" (pendiente de pruebas)
+- Eliminado evento "List Launchbay" dado que se reemplaza por "Launchbay report"
+- Actualizado evento "Bodies mapped" al nuevo formato.
+- Actualizado y revisado evento "Fuel check" para que informe de la estrella o sistema recolectable más cercano.
+- Editado evento "FSD engaged" para que informe de los saltos que faltan hasta llegar al destino.
+- Corregidos varios errores del evento "System report". Ahora informará correctamente del tipo de gobierno del sistema y el estado del Powerplay.
+- Añadido redondeador de cifra para el evento "Bond awarded"
+- Añadido y traducido evento "Carrier jump cancelled"
+- Añadido y traducido evento "Carrier jump engaged" con detección de género y plural de tipos de cuerpos estelares
+- Añadido y traducido evento "Carrier jump request" con detección de género y plural de tipos de cuerpos estelares
+- Añadido y traducido evento "Carrier jumped" con detección de género y plural de tipos de cuerpos estelares
+- Añadido y traducido evento "Carrier pads locked"
+- Añadido y traducido evento "Ship repaired"
+- Actualizado y traducido el evento "Crime check station" con el nuevo formato
+- Actualizado y traducido el evento "Crime check system" con el nuevo formato
+- Actualizado, traducido de nuevo y corregido errores del evento "Entered normal space" para el nuevo formato.
+- Reconstruido y traducido evento "Mission check galaxy" con el nuevo formato.
+- Reconstruido y traducido evento "Mission check system" con el nuevo formato.
+- Reconstruido y traducido evento "Mission check station" con el nuevo formato.
+- Actualizado evento "Mission completed" con nuevo formato.
+- Actualizado evento "Mission report" con nuevo formato.
+- FSD engaged: Ahora al llegar al sistema hogar no informará de nada más.
+
+
+## VAP Hoksilato 3.4.3-3
+
+- Comandos actualizados:
+ - ¿Y este planeta? (comando añadido a "Que me puedes decir de este planeta")
+ 
+- Corregidos todos los materiales  para los comandos:
+ - Para que se usan...
+ - Cuántos....tengo.
+ 
+- Añadido nuevos comandos para las modificaciones
+ - ¿Cuánto [modificación] de grado [1..5] puedo hacer?
+ - ¿Qué necesito para hacer [modificación] de grado [1..5]?
+
+- ((EDDI shutdown)) eliminado cierre automático de G19s. En la última versión del G19s ya lo hace él automáticamente.
+
+- Modificados comentarios en el cambio de nombre del Comandante.
+
+## Elite G19s Companion 3.3.4
+
+
+
+## Options.json 3.3.4-1
+Añadido Podcast "Crónicas de Lobo Estelar"
+
+
+  
+[Me apetece una cervecita...](https://github.com/hoksilato2/VAHoksiPack/wiki/Me-apetece-una-cervecita...)
