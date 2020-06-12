@@ -1,0 +1,156 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VAExtensions
+</name>
+</assembly>
+<members>
+<member name="F:VAExtensions.DebugForm.components">
+ <summary>
+ Designer variable used to keep track of non-visual components.
+ </summary>
+</member>
+<member name="M:VAExtensions.DebugForm.Dispose(System.Boolean)">
+ <summary>
+ Disposes resources used by the form.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:VAExtensions.DebugForm.InitializeComponent">
+ <summary>
+ This method is required for Windows Forms designer support.
+ Do not change the method contents inside the source code editor. The Forms designer might
+ not be able to load this method if it was changed manually.
+ </summary>
+</member>
+<member name="F:VAExtensions.InfoForm.components">
+ <summary>
+ Designer variable used to keep track of non-visual components.
+ </summary>
+</member>
+<member name="M:VAExtensions.InfoForm.Dispose(System.Boolean)">
+ <summary>
+ Disposes resources used by the form.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:VAExtensions.InfoForm.InitializeComponent">
+ <summary>
+ This method is required for Windows Forms designer support.
+ Do not change the method contents inside the source code editor. The Forms designer might
+ not be able to load this method if it was changed manually.
+ </summary>
+</member>
+<member name="F:VAExtensions.TextForm.components">
+ <summary>
+ Designer variable used to keep track of non-visual components.
+ </summary>
+</member>
+<member name="M:VAExtensions.TextForm.Dispose(System.Boolean)">
+ <summary>
+ Disposes resources used by the form.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:VAExtensions.TextForm.InitializeComponent">
+ <summary>
+ This method is required for Windows Forms designer support.
+ Do not change the method contents inside the source code editor. The Forms designer might
+ not be able to load this method if it was changed manually.
+ </summary>
+</member>
+<member name="M:VAExtensions.SQLiteHelper.#ctor">
+ <summary>
+     Default Constructor for SQLiteDatabase Class.
+ </summary>
+</member>
+<member name="M:VAExtensions.SQLiteHelper.#ctor(System.String)">
+ <summary>
+     Single Param Constructor for specifying the DB file.
+ </summary>
+ <param name="inputFile">The File containing the DB</param>
+</member>
+<member name="M:VAExtensions.SQLiteHelper.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})">
+ <summary>
+     Single Param Constructor for specifying advanced connection options.
+ </summary>
+ <param name="connectionOpts">A dictionary containing all desired options and their values</param>
+</member>
+<member name="M:VAExtensions.SQLiteHelper.GetDataTable(System.String)">
+ <summary>
+     Allows the programmer to run a query against the Database.
+ </summary>
+ <param name="sql">The SQL to run</param>
+ <returns>A DataTable containing the result set.</returns>
+</member>
+<member name="M:VAExtensions.SQLiteHelper.ExecuteNonQuery(System.String)">
+ <summary>
+     Allows the programmer to interact with the database for purposes other than a query.
+ </summary>
+ <param name="sql">The SQL to be run.</param>
+ <returns>An Integer containing the number of rows updated.</returns>
+</member>
+<member name="M:VAExtensions.SQLiteHelper.ExecuteScalar(System.String)">
+ <summary>
+     Allows the programmer to retrieve single items from the DB.
+ </summary>
+ <param name="sql">The query to run.</param>
+ <returns>A string.</returns>
+</member>
+<member name="M:VAExtensions.SQLiteHelper.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+ <summary>
+     Allows the programmer to easily update rows in the DB.
+ </summary>
+ <param name="tableName">The table to update.</param>
+ <param name="data">A dictionary containing Column names and their new values.</param>
+ <param name="where">The where clause for the update statement.</param>
+ <returns>A boolean true or false to signify success or failure.</returns>
+</member>
+<member name="M:VAExtensions.SQLiteHelper.Delete(System.String,System.String)">
+ <summary>
+     Allows the programmer to easily delete rows from the DB.
+ </summary>
+ <param name="tableName">The table from which to delete.</param>
+ <param name="where">The where clause for the delete.</param>
+ <returns>A boolean true or false to signify success or failure.</returns>
+</member>
+<member name="M:VAExtensions.SQLiteHelper.Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+ <summary>
+     Allows the programmer to easily insert into the DB
+ </summary>
+ <param name="tableName">The table into which we insert the data.</param>
+ <param name="data">A dictionary containing the column names and data for the insert.</param>
+ <returns>A boolean true or false to signify success or failure.</returns>
+</member>
+<member name="M:VAExtensions.SQLiteHelper.ClearDB">
+ <summary>
+     Allows the programmer to easily delete all data from the DB.
+ </summary>
+ <returns>A boolean true or false to signify success or failure.</returns>
+</member>
+<member name="M:VAExtensions.SQLiteHelper.ClearTable(System.String)">
+ <summary>
+     Allows the user to easily clear all data from a specific table.
+ </summary>
+ <param name="table">The name of the table to clear.</param>
+ <returns>A boolean true or false to signify success or failure.</returns>
+</member>
+<member name="T:VAExtensions.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:VAExtensions.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:VAExtensions.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+</members>
+</doc>

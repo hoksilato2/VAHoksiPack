@@ -1,0 +1,10 @@
+Windows binaries of GNU Wget
+https://eternallybored.org/misc/wget/
+
+Warning: some antivirus tools recognise wget-1.20.3-win32.zip as potentially dangerous. The file that triggers the warning is wget.exe.debug, which contains debugging symbols for wget.exe, and isn't even executable. If your AV is giving you trouble, and you don't need the documentation or debug symbols, you can download wget.exe directly, or switch to a less broken security product.
+
+All of the binaries are compiled statically, meaning that wget.exe doesn't require any other files to work.
+
+Source code:
+https://eternallybored.org/misc/wget/src/
+

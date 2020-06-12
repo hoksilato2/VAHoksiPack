@@ -1,6 +1,12 @@
-## Hoksipack 3.5.3-1b
+## Hoksipack 3.5.3-2b
 
 - Actualizados textos de ayuda del final según últimos updates de EDDI.
+- Eliminados ejecutables de aplicaciones
+- Añadido wget para descarga de paquetes (https://eternallybored.org/misc/wget/)
+- Ahora las aplicaciones VoiceAttack, EDDI y G19s Companion se descargarán directamente de Internet antes de su instalación.
+- Cuidado, repetidos intentos de descarga pueden hacer que VoiceAttack te bloquee la descarga temporalmente (unos minutos)
+- Reducido x10 el tamaño del paquete instalador.
+
 
 ## VoiceAttack 1.8.5
 

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CacheTimeout>0</CacheTimeout>
+  <ResponseLimit>0</ResponseLimit>
+  <RSSCustomDateTimeFormat />
+  <DownloadedFiles>
+    <DownloadedFile>
+      <SourcePath>https://community.elitedangerous.com/galnet-rss</SourcePath>
+      <LocalPath>C:\Users\axelh\AppData\Local\Temp\tmpC6A7.tmp</LocalPath>
+      <IsTemporary>true</IsTemporary>
+      <TimeStamp>2018-11-18T13:35:32.5153163+01:00</TimeStamp>
+    </DownloadedFile>
+    <DownloadedFile>
+      <SourcePath>https://bandito.re/4ee45149-e2d6-48ef-96ee-7ee8ca6f5f91.atom</SourcePath>
+      <LocalPath>C:\Users\axelh\AppData\Local\Temp\tmpA32B.tmp</LocalPath>
+      <IsTemporary>true</IsTemporary>
+      <TimeStamp>2018-11-18T16:13:46.1514839+01:00</TimeStamp>
+    </DownloadedFile>
+  </DownloadedFiles>
+</Settings>
