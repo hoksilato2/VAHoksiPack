@@ -10,14 +10,18 @@ set G19SVER=3.7.7461.28459
 set VAdlink=https://voiceattack.com/FileSend.aspx?id=VoiceAttackInstaller.exe
 set EDDIdlink=https://github.com/EDCD/EDDI/releases/download/Release/3.5.3-b3/EDDI-%EDDIVER%.exe
 set G19Sdlink=https://apps.magicmau.nl/EliteG19s/EliteG19s-latest.msi
+set BindEDdlink=https://github.com/Corysia/bindED/releases/download/1.0.0.1/bindED.zip
+set VAEXTdlink=https://github.com/Antaniserse/VAExtensions/releases/download/v2.0/VAExtensions.zip
+set unzipdlink=http://stahlworks.com/dev/unzip.exe
+
 rem color 0E
 echo.                                                                                                    
 echo         [0m[37m                                                   ...                                            
 echo                                                     ..':cc;co;;,.                                         
 echo                                              ..',;:cdkkkko,..'oxl:,.                                      
 echo                                        ..';::::cclolc;..      ,oc',::'.                                   
-echo                                  .':c:c:;,',;;;::,[33m[7m²²²²²²²²²²±±±±±±°°°°°°°°°°°°     HoksiPack %PACKVER%      [0m[37m
-echo                               .''','.....;:cc;'.       [33m[7m²²±±±±±±±°°°°°°°°°°°°           by cmdr. Hoksilato  [0m[37m
+echo                                  .':c:c:;,',;;;::,[93m[7m²²²²²²²²²²±±±±±±°°°°°°°°°°°°     HoksiPack %PACKVER%      [0m[37m
+echo                               .''','.....;:cc;'.       [93m[7m²²±±±±±±±°°°°°°°°°°°°           by cmdr. Hoksilato  [0m[37m
 echo                            .':c;.    .;:c;'.                     ,o;     .,::,..                          
 echo                           ';;..  .':::,.                          ,l,       .':c;..                       
 echo                       ..,;,...,;c:,..                              ,l,         .,::,..                    
@@ -44,19 +48,19 @@ echo           .:d'            :o.                          ...,;;::,.          
 echo           'l:.            .l:.                    ..';:cc:;..                 .co'   :o.                  
 echo           :d'              'oc.               ..;::::;..                      .ll.  .lc                   
 echo           :o.               ;o,           ..,;c:,..                                              
-echo           ;xdc;'...         .:l'     ..,::::,.                        [33m - VoiceAttack: [92m%VAVER%       [0m[37m
-echo           .,ldxxxocccccc;'''',ll'..,cc:,'..                           [33m  ú VAP:        [91m%VAPVER%            [0m[37m
-echo              :dc::lol:'.,:::ccoxc:do,.                                [33m - EDDI:        [92m%EDDIVER%              [0m[37m
-echo                   .,:c:;,.   .....:c:;'.                              [33m  ú Shirka:     [92m%PERSOVER%          [0m[37m
-echo                       .';;,..       .';c:,'.                          [33m - G19s:        [92m%G19SVER%    [0m[37m
-echo                           .;::;,.       .,;:cc:'.                     [33m  ú Options:   [91m %OPTIONSVER%           [0m[37m
+echo           ;xdc;'...         .:l'     ..,::::,.                        [93m - VoiceAttack: [92m%VAVER%       [0m[37m
+echo           .,ldxxxocccccc;'''',ll'..,cc:,'..                           [93m  ú VAP:        [91m%VAPVER%            [0m[37m
+echo              :dc::lol:'.,:::ccoxc:do,.                                [93m - EDDI:        [92m%EDDIVER%              [0m[37m
+echo                   .,:c:;,.   .....:c:;'.                              [93m  ú Shirka:     [92m%PERSOVER%          [0m[37m
+echo                       .';;,..       .';c:,'.                          [93m - G19s:        [92m%G19SVER%    [0m[37m
+echo                           .;::;,.       .,;:cc:'.                     [93m  ú Options:   [91m %OPTIONSVER%           [0m[37m
 echo                              .,:cc:'.       .',:cc;'.                    
 echo                                 ..,:::;'.        .,:::;'..               ,oxd,                            
 echo                                      .';::....       .';::::,..         .okx,                             
 echo                                          ...;cccccc;,''',,,',ccc;'.    .ckk;                              
 echo                                               .....,:::::ccccclodxxd,..'ld;                               
 echo                                                           .....,:clc',:,,'                                 
-echo    [33m­Pulsa una tecla para empezar!
+echo    [93m­Pulsa una tecla para empezar!
 pause>nul
 
 net session >nul 2>&1
@@ -66,8 +70,8 @@ cls
 echo.                                       
 echo.                                     
 echo.                                 
-echo                                            [33m[7m²²²²²²²²²²±±±±±±°°°°°°°°°°°°     HoksiPack %PACKVER%      [0m[0m
-echo                                                 [33m[7m²²±±±±±±±°°°°°°°°°°°°           by cmdr. Hoksilato  [0m[0m                                                                                                    
+echo                                            [93m[7m²²²²²²²²²²±±±±±±°°°°°°°°°°°°     HoksiPack %PACKVER%      [0m[0m
+echo                                                 [93m[7m²²±±±±±±±°°°°°°°°°°°°           by cmdr. Hoksilato  [0m[0m                                                                                                    
 echo.
 echo.
 echo.
@@ -78,7 +82,7 @@ echo    [96m%~dp0
 
 :quequieres
 echo.
-echo [33m¨Qu‚ quieres hacer?
+echo [93m¨Qu‚ quieres hacer?
 echo.
 echo 1. Instalar (descarga, instalaci¢n y configuraci¢n)
 echo 2. Actualizar (solo configuraci¢n)
@@ -96,10 +100,10 @@ echo Te lo vuelvo a preguntar,
 goto quequieres
 
 :Instalar
-SET /p inst_VA=[33m¨Quieres instalar VoiceAttack? (S/N):[97m 
-SET /p inst_EDDI=[33m¨Quieres instalar EDDI? (S/N):[97m
-SET /p inst_G19s=[33m¨Quieres instalar G19s Companion? (S/N):[97m 
-SET /p inst_Ana=[33m¨Quieres poder usar la voz de Cortana? (S/N):[97m 
+SET /p inst_VA=[93m¨Quieres instalar VoiceAttack? (S/N):[97m 
+SET /p inst_EDDI=[93m¨Quieres instalar EDDI? (S/N):[97m
+SET /p inst_G19s=[93m¨Quieres instalar G19s Companion? (S/N):[97m 
+SET /p inst_Ana=[93m¨Quieres poder usar la voz de Cortana? (S/N):[97m 
 
 
 if %inst_EDDI%==s set inst_EDDI=S
@@ -127,10 +131,10 @@ goto VA
 echo.
 echo Reparar, ejecutar  de nuevo los instaladores de los programas que quieras y renombrar  las carpetas de su configuraci¢n.
 echo.
-SET /p inst_VA=[33m¨Quieres reparar VoiceAttack? (S/N):[97m 
-SET /p inst_EDDI=[33m¨Quieres reparar EDDI? (S/N):[97m
-SET /p inst_G19s=[33m¨Quieres reparar G19s Companion? (S/N):[97m 
-SET /p inst_Ana=[33m¨Quieres reparar la voz de Cortana? (S/N):[97m 
+SET /p inst_VA=[93m¨Quieres reparar VoiceAttack? (S/N):[97m 
+SET /p inst_EDDI=[93m¨Quieres reparar EDDI? (S/N):[97m
+SET /p inst_G19s=[93m¨Quieres reparar G19s Companion? (S/N):[97m 
+SET /p inst_Ana=[93m¨Quieres reparar la voz de Cortana? (S/N):[97m 
 
 if %inst_EDDI%==s set inst_EDDI=S
 if %inst_EDDI%==si set inst_EDDI=S
@@ -150,7 +154,7 @@ if not %inst_VA% == S goto EDDI
 
 :VANORMAL
 echo.
-if %inst_mode%==1 (set /p VAVERSTEAM="[33m¨Querr s usar la versi¢n [96mSteam[33m de VoiceAttack? (S/N):[97m ") else (set /p VAVERSTEAM="[33m¨Est s usando la versi¢n [96mSteam[33m de VoiceAttack? (S/N):[97m ") 
+if %inst_mode%==1 (set /p VAVERSTEAM="[93m¨Querr s usar la versi¢n [96mSteam[93m de VoiceAttack? (S/N):[97m ") else (set /p VAVERSTEAM="[93m¨Est s usando la versi¢n [96mSteam[93m de VoiceAttack? (S/N):[97m ") 
 
 
 if %VAVERSTEAM%==s goto VAVERSTEAMADV
@@ -163,18 +167,16 @@ if %inst_mode%==3 echo Si tienes la versi¢n [96mSteam[0m de VoiceAttack, cance
 if %inst_mode%==1 echo Si tienes la versi¢n [96mSteam[0m de VoiceAttack, cancela el instalador que aparecer  a continuaci¢n.
 
 echo.
-echo [33mDescargando instalador VoiceAttack %VAVER%...
+echo [93mDescargando instalador VoiceAttack %VAVER%...
 echo fuente: [96m%VAdlink%[0m
-"%~dp0wget.exe" --quiet --show-progress %VAdlink%
-ren "%~dp0*VoiceAttackInstaller.exe" VoiceAttackinstaller.exe
-
+powershell Invoke-WebRequest %VAdlink% -OutFile "%~dp0VoiceAttackinstaller.exe"
 echo.
-echo [33mAbriendo instalador VoiceAttack %VAVER%...
+echo [93mAbriendo instalador VoiceAttack %VAVER%...
 "%~dp0VoiceAttackinstaller.exe"
 
 echo.
 echo [0mSi has abierto VoiceAttack, ci‚rralo
-echo Luego lo configuraremos mas tarde [33m
+echo Luego lo configuraremos mas tarde [93m
 echo.
 pause
 goto EDDI
@@ -182,7 +184,7 @@ goto EDDI
 :VAVERSTEAMADV
 if %inst_mode%==3 goto VAVERSTEAMINSTNO
 echo.
-echo [33mPara utilizar la versi¢n [96mSteam[33m de VoiceAttack, antes necesitar s instalarla.
+echo [93mPara utilizar la versi¢n [96mSteam[93m de VoiceAttack, antes necesitar s instalarla.
 set /p VAVERSTEAMINST=¨Quieres instalarla ahora? Requiere de Steam ya instalado. (S/N):[97m 
 
 if %VAVERSTEAMINST%==s goto VAVERSTEAMINSTSI
@@ -200,7 +202,7 @@ echo [97m­Necesitar s tener [96mSteam[097m instalado!
 ::VA de pago
 start "" "steam://install/583010"
 echo.
-echo [33mPulse una tecla cuando ya tengas la versi¢n [96mSteam[33m instalada...
+echo [93mPulse una tecla cuando ya tengas la versi¢n [96mSteam[93m instalada...
 pause>nul
 goto EDDI
 
@@ -216,20 +218,21 @@ if %inst_VA% == portable echo Redirigiendo instalacion...
 if %inst_VA% == portable goto G19s
 
 echo.
-echo [33mDescargando EDDI %EDDIVER%...[0m
+echo [93mDescargando EDDI %EDDIVER%...[0m
 echo fuente: [96m%EDDIdlink%[0m
-"%~dp0wget.exe" --quiet --show-progress %EDDIdlink%
-echo.
-echo [33mAbriendo instalador EDDI %EDDIVER%...
+powershell Invoke-WebRequest %EDDIdlink% -OutFile "%~dp0EDDI-%EDDIVER%.exe"
 
 echo.
-echo [0mSi has instalado VoiceAttack, debes instalar EDDI en la siguiente carpeta:[33m
+echo [93mAbriendo instalador EDDI %EDDIVER%...
+
 echo.
-echo [96m.\VoiceAttack\Apps\EDDI[33m
+echo [0mSi has instalado VoiceAttack, debes instalar EDDI en la siguiente carpeta:[93m
+echo.
+echo [96m.\VoiceAttack\Apps\EDDI[93m
 "%~dp0\EDDI-%EDDIVER%.exe"
 echo.
 echo [0mSi has abierto EDDI, ci‚rralo
-echo Luego lo configuraremos.[33m
+echo Luego lo configuraremos.[93m
 echo.
 pause
 
@@ -238,10 +241,13 @@ if not %inst_G19s% == S goto PrepareALL
 echo.
 echo Descargando Elite G19s Companion %G19SVER%...[0m
 echo fuente: [96m%G19Sdlink%[0m
-"%~dp0wget.exe" --quiet --show-progress %G19Sdlink%
+powershell Invoke-WebRequest %G19Sdlink% -OutFile "%~dp0EliteG19s-latest.msi"
+
 echo.
 echo [0mSInstalando Elite G19s Companion %G19SVER%...[0m
-"%~dp0EliteG19s-latest.msi" /passive
+if exist "%~dp0EliteG19s-latest.msi" "%~dp0EliteG19s-latest.msi" /passive
+if exist "%~dp0EliteG19s-%G19SVER%.msi" "%~dp0EliteG19s-%G19SVER%.msi" /passive
+
 goto PrepareALL
 
 :AFTEREPAIR
@@ -253,8 +259,8 @@ cls
 echo.                                       
 echo.                                     
 echo.                                 
-echo                                            [33m[7m²²²²²²²²²²±±±±±±°°°°°°°°°°°°     HoksiPack %PACKVER%      [0m[0m
-echo                                                 [33m[7m²²±±±±±±±°°°°°°°°°°°°           by cmdr. Hoksilato  [0m[0m                                                                                                    
+echo                                            [93m[7m²²²²²²²²²²±±±±±±°°°°°°°°°°°°     HoksiPack %PACKVER%      [0m[0m
+echo                                                 [93m[7m²²±±±±±±±°°°°°°°°°°°°           by cmdr. Hoksilato  [0m[0m                                                                                                    
 echo.
 echo.
 echo.
@@ -275,29 +281,29 @@ rem powershell %~dp0listsoft.ps1
 
 
 echo.
-echo [33mComprobando instalaci¢n de EDDI...[37m
+echo [93mComprobando instalaci¢n de EDDI...[37m
 echo.
 type "%temp%\listsoft.log" | findstr /C:"EDDI">"ruta_EDDI.log"
 set /p ruta_EDDI=<"ruta_EDDI.log"
 if %errorlevel% == 1 set ruta_EDDI=NO
 if "%ruta_EDDI%" == "NO" echo [31mNo se ha encontrado EDDI instalado.[37m
-if not "%ruta_EDDI%" == "NO" echo [33mRuta de instalaci¢n de EDDI:[37m
+if not "%ruta_EDDI%" == "NO" echo [93mRuta de instalaci¢n de EDDI:[37m
 if not "%ruta_EDDI%" == "NO" echo [96m%ruta_EDDI%[37m
 
 echo.
-echo [33mComprobando instalaci¢n VoiceAttack...[37m
+echo [93mComprobando instalaci¢n VoiceAttack...[37m
 echo.
 type "%temp%\listsoft.log" | findstr /C:"VoiceAttack" | findstr /V "EDDI">ruta_VA.log
 rem if %errorlevel% == 1 type "%temp%\listsoft.txt" | findstr /C:"VoiceAttack" | findstr /V "EDDI">ruta_VA.log
 set /p ruta_VA=<ruta_VA.log
 if %errorlevel% == 1 set ruta_VA=NO
 if "%ruta_VA%" == "NO" echo [31mNo se ha encontrado VoiceAttack instalado.[37m
-if not "%ruta_VA%" == "NO" echo [33mRuta de instalaci¢n de VoiceAttack:[37m
+if not "%ruta_VA%" == "NO" echo [93mRuta de instalaci¢n de VoiceAttack:[37m
 if not "%ruta_VA%" == "NO" echo [96m%ruta_VA%[37m
 
 if not "%ruta_VA%" == "NO" goto NEXT
 
-echo En algunos casos, si tienes la versi¢n de [96mSteam[33m instalada puede que no lo detecte :-(
+echo En algunos casos, si tienes la versi¢n de [96mSteam[93m instalada puede que no lo detecte :-(
 set /p VAREPAIR=¨Quieres mirar de arreglarlo? (S/N): 
 
 if %VAREPAIR%==s set VAREPAIR=S
@@ -307,19 +313,19 @@ if not %VAREPAIR%==S goto NEXT
 set VAU=C
 :FINDSTEAM
 echo.
-echo [31mBuscando instalaci¢n de VoiceAttack versi¢n [96mSteam[33m en %VAU%:\...[37m
+echo [31mBuscando instalaci¢n de VoiceAttack versi¢n [96mSteam[93m en %VAU%:\...[37m
 dir %VAU%:\ /s /b /o:n /ad > %temp%\allfolders.log
 type "%temp%\allfolders.log" | findstr /C:"VoiceAttack" | findstr /C:"Steam">ruta_VA.log 
 set /p ruta_VA=<ruta_VA.log
 echo.
-echo [33mRuta de instalaci¢n de VoiceAttack:[37m
+echo [93mRuta de instalaci¢n de VoiceAttack:[37m
 echo %ruta_VA%
 if %errorlevel% == 1 goto FINDSTEAMNOC
 goto NEXT
 
 :FINDSTEAMNOC
 echo.
-echo [33mNo se ha encontrado la ruta de instalaci¢n de VoiceAttack.
+echo [93mNo se ha encontrado la ruta de instalaci¢n de VoiceAttack.
 SET /P VAU=Si est  en una unidad que no es la C:\, escribe aqu¡ la unidad (SOLO la letra):[37m 
 
 echo Unidad seleccionada: %VAU%:\
@@ -327,18 +333,18 @@ goto FINDSTEAM
 
 :NEXT
 echo.
-echo [33mComprobando instalaci¢n de Elite G19s Companion...[37m
+echo [93mComprobando instalaci¢n de Elite G19s Companion...[37m
 echo.
 if exist %localappdata%\Programs\EliteG19s\EliteG19s.Windows.exe set ruta_G19s=%localappdata%\Programs\EliteG19s
 if not exist %localappdata%\Programs\EliteG19s\EliteG19s.Windows.exe set ruta_G19s=NO
 if "%ruta_G19s%" == "NO" echo [31mNo se ha encontrado Elite G19s Companion instalado.[37m
-if not "%ruta_G19s%" == "NO" echo [33mRuta de instalaci¢n de Elite G19s Companion:[37m
+if not "%ruta_G19s%" == "NO" echo [93mRuta de instalaci¢n de Elite G19s Companion:[37m
 if not "%ruta_G19s%" == "NO" echo [96m%ruta_G19s%[37m
 
 :PrepareEDDI
 if %inst_EDDI% == S goto CONFEDDI
 if not "%ruta_EDDI%" == "NO" echo.
-if not "%ruta_EDDI%" == "NO" echo [33mSe ha detectado EDDI ya instalado
+if not "%ruta_EDDI%" == "NO" echo [93mSe ha detectado EDDI ya instalado
 set conf_EDDI=Notset
 if not "%ruta_EDDI%" == "NO" set /p conf_EDDI=¨Deseas actualizar su configuraci¢n? (S/N):[37m 
 if %conf_EDDI% == s set conf_EDDI=S
@@ -353,7 +359,7 @@ goto PrepareVA
 
 :CONFEDDI
 echo.
-echo [33mRuta de instalaci¢n de EDDI:[37m
+echo [93mRuta de instalaci¢n de EDDI:[37m
 echo [96m%ruta_EDDI%[37m
 echo.
 
@@ -361,13 +367,13 @@ if %inst_mode% == 3 goto EDIT_RUTA_EDDI
 goto NOEDIT_RUTA_EDDI
 
 :EDIT_RUTA_EDDI
-set /p ruta_EDDI_OK=[33m¨Es correcta la ruta de instalaci¢n de EDDI? (S/N):[37m 
+set /p ruta_EDDI_OK=[93m¨Es correcta la ruta de instalaci¢n de EDDI? (S/N):[37m 
 if %ruta_EDDI_OK% == s set ruta_EDDI_OK=S
 if %ruta_EDDI_OK% == si set ruta_EDDI_OK=S
 if %ruta_EDDI_OK% == S goto NOEDIT_RUTA_EDDI
 
 echo.
-echo [33mOk, busca la carpeta donde est  ubicado EDDI...[37m
+echo [93mOk, busca la carpeta donde est  ubicado EDDI...[37m
 
 :::::::::::::::::::::
 setlocal
@@ -387,19 +393,19 @@ goto CONFEDDI
 for /f "tokens=1 delims=:" %%u in ("%ruta_EDDI%") do set VAU=%%u
 
 if %inst_mode% == 3 echo.
-if %inst_mode% == 3 echo [33mReparando configuraci¢n de EDDI...[37m
+if %inst_mode% == 3 echo [93mReparando configuraci¢n de EDDI...[37m
 if %inst_mode% == 3 if not exist %APPDATA%\HoksiPack md %APPDATA%\HoksiPack
 if %inst_mode% == 3 ren "%APPDATA%\EDDI" "EDDI.%time:~0,2%%time:~3,2%%time:~6,2%_%date:~-10,2%%date:~-7,2%%date:~-4,4%.bak"
 if %inst_mode% == 3 for /D %%d in ("%APPDATA%\EDDI*") do move /Y "%%d" "%APPDATA%\HoksiPack\BACKUP_EDDI"
 
 echo.
-echo [33mcopiando archivo "eddi.es.json"...[37m
+echo [93mcopiando archivo "eddi.es.json"...[37m
 %VAU%:
 cd /D %ruta_EDDI%
 xcopy /Y "%~dp0EDDI\eddi.es.json"
 
 echo.
-echo [33mCopiando Shirka...[37m
+echo [93mCopiando Shirka...[37m
 xcopy /Y "%~dp0EDDI\Shirka*" "%APPDATA%\EDDI\Personalities\"
 
 
@@ -409,7 +415,7 @@ findstr /C:"Steam" "%~dp0ruta_VA.log" > nul
 if %errorlevel% == 0 goto VASTEAM
 
 if not "%ruta_VA%" == "NO" echo.
-if not "%ruta_VA%" == "NO" echo [33mSe ha detectado VoiceAttack ya instalado
+if not "%ruta_VA%" == "NO" echo [93mSe ha detectado VoiceAttack ya instalado
 set conf_VA=Notset
 if not "%ruta_VA%" == "NO" set /p conf_VA=¨Deseas actualizar su configuraci¢n? (S/N):[37m 
 if %conf_VA% == s set conf_VA=S
@@ -428,7 +434,7 @@ goto PrepareG19s
 set /p ruta_VA=<ruta_VA.log
 if %errorlevel% == 1 goto VAERROR
 echo.
-echo [33mDetectada versi¢n [96mSteam[33m de VoiceAttack
+echo [93mDetectada versi¢n [96mSteam[93m de VoiceAttack
 set /p VASTEAMCONF=¨Quieres configurarlo de todos modos? (S/N):[37m 
 if %VASTEAMCONF% == s set VASTEAMCONF=S
 if %VASTEAMCONF% == si set VASTEAMCONF=S
@@ -437,7 +443,7 @@ goto PrepareG19s
 
 :CONFVA
 echo.
-echo [33mRuta de instalaci¢n de VA:[37m
+echo [93mRuta de instalaci¢n de VA:[37m
 echo [96m%ruta_VA%[37m
 
 
@@ -445,13 +451,13 @@ if %inst_mode% == 3 goto EDIT_RUTA_VA
 goto NOEDIT_RUTA_VA
 
 :EDIT_RUTA_VA
-set /p ruta_VA_OK=[33m¨Es correcta la ruta de instalaci¢n de VA? (S/N):[37m 
+set /p ruta_VA_OK=[93m¨Es correcta la ruta de instalaci¢n de VA? (S/N):[37m 
 if %ruta_VA_OK% == s set ruta_VA_OK=S
 if %ruta_VA_OK% == si set ruta_VA_OK=S
 if %ruta_VA_OK% == S goto NOEDIT_RUTA_VA
 
 echo.
-echo [33mOk, busca la carpeta donde est  ubicado VoiceAttack...[37m
+echo [93mOk, busca la carpeta donde est  ubicado VoiceAttack...[37m
 
 :::::::::::::::::::::
 setlocal
@@ -475,7 +481,7 @@ goto VACNOREP
 
 :VACREP
 echo.
-echo [33mReparando configuraci¢n de VA...[37m
+echo [93mReparando configuraci¢n de VA...[37m
 if not exist %APPDATA%\HoksiPack md %APPDATA%\HoksiPack
 ren "%APPDATA%\Voiceattack" "Voiceattack.%time:~0,2%%time:~3,2%%time:~6,2%_%date:~-10,2%%date:~-7,2%%date:~-4,4%.bak"
 for /D %%d in ("%APPDATA%\Voiceattack*") do move /Y "%%d" "%APPDATA%\HoksiPack\BACKUP_VA"
@@ -485,15 +491,31 @@ ren "%LOCALAPPDATA%\VoiceAttack.com" "Voiceattack.com%time:~0,2%%time:~3,2%%time
 for /D %%d in ("%LOCALAPPDATA%\Voiceattack*") do move /Y "%%d" "%LOCALAPPDATA%\HoksiPack\BACKUP_VA"
 
 :VACNOREP
-echo.
-echo [33mInstalando plugins...[37m
 %VAU%:
-cd /D %ruta_VA%
+cd /D %ruta_VA%			   
+
+echo.
+echo [93mDescargando plguin BindED...
+echo fuente: [96m%BindEDdlink%[0m
+powershell Invoke-WebRequest %BindEDdlink% -OutFile "%~dp0bindED.zip"
+
+echo.
+echo [93mDescargando plguin VAExtensions...
+echo fuente: [96m%VAEXTdlink%[0m
+powershell Invoke-WebRequest %VAEXTdlink% -OutFile "%~dp0VAExtensions.zip"
+
+echo.
+echo [93mInstalando plugins...[37m
+if not exist %~dp0Apps md %~dp0Apps
+powershell Expand-Archive -Path %~dp0bindED.zip -DestinationPath %~dp0VA\Apps\bindED
+powershell Expand-Archive -Path %~dp0VAExtensions.zip -DestinationPath %~dp0VA\Apps\VAExtensions
+
+
 xcopy /Q /E /Y /I "%~dp0VA\Apps" .\Apps
 xcopy /Q /E /Y /I "%~dp0VA\Sounds" .\Sounds
 
 echo.
-if not exist "%appdata%\Voiceattack\VoiceAttack.dat" echo [33mAbriendo VoiceAttack (1a vez)...
+if not exist "%appdata%\Voiceattack\VoiceAttack.dat" echo [93mAbriendo VoiceAttack (1a vez)...
 if not exist "%appdata%\Voiceattack\VoiceAttack.dat" echo Por favor, espera y no intentes configurar nada, en cuanto se haya abierto VA, ci‚rralo
 if not exist "%appdata%\Voiceattack\VoiceAttack.dat" START /WAIT "" "%ruta_VA%\Voiceattack.exe"
 
@@ -501,14 +523,14 @@ ping 127.0.0.1>nul
 echo Si no se ha abierto VoiceAttack,  brelo manualmente, no configures nada y ci‚rralo...
 pause
 echo.
-echo [33mConfigurando VoiceAttack...[37m
+echo [93mConfigurando VoiceAttack...[37m
 if exist "%appdata%\Voiceattack\VoiceAttack.dat" echo.
 if exist "%appdata%\Voiceattack\VoiceAttack.dat" echo Generando backup de la configuracion de VoiceAttack...[37m
 if exist "%appdata%\Voiceattack\VoiceAttack.dat" ren "%appdata%\Voiceattack\VoiceAttack.dat" "Voiceattack.dat.%time:~0,2%%time:~3,2%%time:~6,2%_%date:~-10,2%%date:~-7,2%%date:~-4,4%.bak"
 xcopy /Y /Q "%~dp0VA\Voiceattack.dat" "%appdata%\Voiceattack\"
 
 echo.
-echo [33mBuscando configuraci¢n predeterminada...
+echo [93mBuscando configuraci¢n predeterminada...
 cd /D "%localappdata%\VoiceAttack.com"
 dir /s /b "user.config">"%~dp0uc.log"
 findstr /C:"VoiceAttack" "%~dp0uc.log">"%~dp0vauc.log"
@@ -519,11 +541,11 @@ echo Ruta de configuraci¢n VA:[37m
 echo [96m%ruta_VAUC%[37m
 
 echo.
-echo [33mGenerando Backup de user.config...[37m
+echo [93mGenerando Backup de user.config...[37m
 ren "%ruta_VAUC%" "user.config.%time:~0,2%%time:~3,2%%time:~6,2%_%date:~-10,2%%date:~-7,2%%date:~-4,4%.bak"
 
 echo.
-echo [33mTrasladando propiedades...[37m
+echo [93mTrasladando propiedades...[37m
 xcopy /Y /Q "%~dp0VA\user.config*" %ruta_VAUC%*
 
 
@@ -531,7 +553,7 @@ xcopy /Y /Q "%~dp0VA\user.config*" %ruta_VAUC%*
 if %inst_G19s% == S goto CONFG19s
 
 if not "%ruta_G19s%" == "NO" echo.
-if not "%ruta_G19s%" == "NO" echo [33mSe ha detectado Elite G19s Companion ya instalado
+if not "%ruta_G19s%" == "NO" echo [93mSe ha detectado Elite G19s Companion ya instalado
 set conf_G19s=Notset
 if not "%ruta_G19s%" == "NO" set /p conf_G19s=¨Deseas actualizar su configuraci¢n? (S/N):[37m 
 if %conf_G19s% == s set conf_G19s=S
@@ -543,16 +565,16 @@ goto CORTANA2ANA
 
 :CONFG19s
 echo.
-echo [33mGenerando Backup de options.json...[37m
+echo [93mGenerando Backup de options.json...[37m
 ren "%appdata%\EliteG19s\options.json" "options.json.%time:~0,2%%time:~3,2%%time:~6,2%_%date:~-10,2%%date:~-7,2%%date:~-4,4%.bak"
 echo.
-echo [33mConfigurando Elite G19s Companion...[37m
+echo [93mConfigurando Elite G19s Companion...[37m
 xcopy /Y /Q "%~dp0G19s\options.json" "%appdata%\EliteG19s\"
 
 :CORTANA2ANA
 if not %inst_Ana% == S goto ALLINSTALLED
 echo.
-echo [33mAbriendo configurador de motor TTS de Cortana...[37m
+echo [93mAbriendo configurador de motor TTS de Cortana...[37m
 START CMD /c "%~dp0Cortana2Ana\Cortana2Ana.cmd"
 
 :ALLINSTALLED
@@ -565,7 +587,7 @@ if not %inst_VA% == S goto FI
 rem if %inst_mode% == 3 goto AFTEREPAIR
 
 echo.
-echo [33mAbriendo VoiceAttack...[37m
+echo [93mAbriendo VoiceAttack...[37m
 ping 127.0.0.1>nul
 
 if inst_VA == portable START "" "%~dp0Extras\VA\VoiceAttack.exe"
@@ -578,8 +600,8 @@ cls
 echo.[0m                                       
 echo.                                     
 echo.                                 
-echo                                            [33m[7m²²²²²²²²²²±±±±±±°°°°°°°°°°°°     HoksiPack %PACKVER%      [0m[0m
-echo                                                 [33m[7m²²±±±±±±±°°°°°°°°°°°°           by cmdr. Hoksilato  [0m[37m                                                                                                    
+echo                                            [93m[7m²²²²²²²²²²±±±±±±°°°°°°°°°°°°     HoksiPack %PACKVER%      [0m[0m
+echo                                                 [93m[7m²²±±±±±±±°°°°°°°°°°°°           by cmdr. Hoksilato  [0m[37m                                                                                                    
 echo.
 echo.
 echo.
@@ -591,7 +613,7 @@ if %inst_mode%==3 (echo ­TODO REPARADO!) else (echo ­TODO INSTALADO y Configurad
 if %inst_mode%==3 echo Los backups de las anteriores configuraciones las encontrar s en: 
 if %inst_mode%==3 echo [96m"%APPDATA%\HoksiPack"[0m y [96m"%LOCALAPPDATA%\HoksilPack"[37m
 echo.
-echo ­Disfruta de [33mElite Dangerous[37m!
+echo ­Disfruta de [93mElite Dangerous[37m!
 echo.
 echo.
 echo.
@@ -609,54 +631,54 @@ echo ...y muchas opciones m s!
 echo.
 echo.
 echo Pulsa una tecla si quieres ver c¢mo revisar la configuraci¢n necesaria para que el VAP funcione correctamente.
-echo [31mIMPORTANTE[0m: Los pasos 5 y 6 [33mSON NECESARIOS[0m y se pueden realizar sin tener licencia de VoiceAttack.
+echo [31mIMPORTANTE[0m: Los pasos 5 y 6 [93mSON NECESARIOS[0m y se pueden realizar sin tener licencia de VoiceAttack.
 pause>nul
 
 cls                                                                                                    
 echo.[0m                                       
 echo.                                     
 echo.                                 
-echo                                            [33m[7m²²²²²²²²²²±±±±±±°°°°°°°°°°°°     HoksiPack %PACKVER%      [0m[0m
-echo                                                 [33m[7m²²±±±±±±±°°°°°°°°°°°°           by cmdr. Hoksilato  [0m[0m                                                                                                    
+echo                                            [93m[7m²²²²²²²²²²±±±±±±°°°°°°°°°°°°     HoksiPack %PACKVER%      [0m[0m
+echo                                                 [93m[7m²²±±±±±±±°°°°°°°°°°°°           by cmdr. Hoksilato  [0m[0m                                                                                                    
 echo.
 echo.
 echo.
 echo.
 echo Una vez abierto VoiceAttack...
 echo.
-echo [33m1.[0m COMPROBACION de carpeta de plugins:
+echo [93m1.[0m COMPROBACION de carpeta de plugins:
 echo - Dir¡gete al men£ opciones (llave inglesa) y verifica:
 echo - Pesta¤a General -^> "Enable Plugin Support" -^> HABILITADO
 echo - "Apps Folder" -^> pon la ruta de la carpeta "Apps" en la carpeta de instalaci¢n de VoiceAttack
 echo.  
-echo [33m2.[0m COMPROBACION Startup Command ([31mSolo versi¢n VA de pago[0m)
+echo [93m2.[0m COMPROBACION Startup Command ([31mSolo versi¢n VA de pago[0m)
 echo - Fuera del men£ opciones selecciona el perfil Hoksilato %VAPVER% y luego pulsa "Alt+E"
 echo - Abre las opciones de perfil pulsando en el bot¢n "Options" al lado del nombre del perfil
 echo - En la pesta¤a "Profile Exec" HABILITA la opci¢n "Execute command each time this profile is loaded"
 echo - Busca el comando "Startup" 
 echo - Click en "OK" para cerrar la ventana "Profile Options"
 echo.
-echo [33m3.[0m CAMBIO de nombre de comandante ([31mSolo versi¢n VA de pago[0m)
+echo [93m3.[0m CAMBIO de nombre de comandante ([31mSolo versi¢n VA de pago[0m)
 echo - Aun en el editor del Profile, dir¡gete a la secci¢n "Variables", comando "VAR-Commander-Name"
 echo - Edita dicho comando y busca la linea de descripci¢n para ayudarte a editar el nombre de CMDR.
 echo.
-echo [33m4.[0m MODIFICACION de ruta de binds ([31mSolo versi¢n VA de pago[0m)
+echo [93m4.[0m MODIFICACION de ruta de binds ([31mSolo versi¢n VA de pago[0m)
 echo - Dir¡gete a la secci¢n "Variables", comando "BindED"
 echo - Edita dicho comando y busca la l¡nea de descripci¢n para ayudarte a editar la ruta de tus binds.
 echo   (S¢lo es necesario si la ruta difiere de la predeterminada, o si quieres usar unos binds en espec¡fico)
 echo.
-echo [33m5.[0m CONFIGURACION EDDI ([33m­IMPORTANTE![0m)
+echo [93m5.[0m CONFIGURACION EDDI ([93m­IMPORTANTE![0m)
 echo - Abre la configuraci¢n de EDDI diciento: "Configuraci¢n EDDI"
 echo - Ves a la pesta¤a "Asistente vocal" y Activa la personalidad "Shirka %PERSOVER%".
 echo.
-echo [33m6.[0m En EDDI, MUY Recomendable configurar: ([33m­IMPORTANTE![0m)
+echo [93m6.[0m En EDDI, MUY Recomendable configurar: ([93m­IMPORTANTE![0m)
 echo - API de Frontier
 echo - Asistente de Inara
 echo - Asistente EDSM
 echo - Detalles del comandante
 echo - Activar todos los "plugins" o monitores excepto el de la Galnet dado que a£n no es compatible con la Galnet Espa¤ola.
 echo.
-echo [33m -FIN-[0m Pulsa una tecla para abrir la WIKI del HoksiPack y finalizar.
+echo [93m -FIN-[0m Pulsa una tecla para abrir la WIKI del HoksiPack y finalizar.
 pause>nul
 START "" "https://github.com/hoksilato2/VAHoksiPack/wiki/Me-apetece-una-cervecita..."
 
@@ -667,14 +689,14 @@ cls
 echo.                                       
 echo.                                     
 echo.                                 
-echo                                            [33m[7m²²²²²²²²²²±±±±±±°°°°°°°°°°°°     HoksiPack %PACKVER%      [0m[0m
-echo                                                 [33m[7m²²±±±±±±±°°°°°°°°°°°°           by cmdr. Hoksilato  [0m[0m                                                                                                    
+echo                                            [93m[7m²²²²²²²²²²±±±±±±°°°°°°°°°°°°     HoksiPack %PACKVER%      [0m[0m
+echo                                                 [93m[7m²²±±±±±±±°°°°°°°°°°°°           by cmdr. Hoksilato  [0m[0m                                                                                                    
 echo.
 echo.
 echo.
 echo.
 echo.
-echo.[31m­ATENCION![33m
+echo.[31m­ATENCION![93m
 echo.
 echo No has abierto HoksiPack con permisos de administrador...
 echo.
@@ -683,6 +705,6 @@ echo.
 echo Pulsa una tecla para cerrar.
 START "" "https://github.com/hoksilato2/VAHoksiPack/wiki"
 pause>nul
-exit [33m
+exit [93m
 
  
