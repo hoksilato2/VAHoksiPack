@@ -20,7 +20,7 @@
 https://github.com/EDCD/EDDI/blob/Release/3.5.3-b3/EDDI/ChangeLog.md
 
 
-## Shirka 3.5.3-1b
+## Shirka 3.5.3-3b
 
 - Actualizado eventos Body scanned y Star scanned con el nuevo formato
 - Traducido evento Ring hotspots detected (Solo funciona si la nave la tenéis etiquetada como minera o multipropósito)
@@ -53,6 +53,8 @@ https://github.com/EDCD/EDDI/blob/Release/3.5.3-b3/EDDI/ChangeLog.md
 - Actualizado evento "Mission completed" con nuevo formato.
 - Actualizado evento "Mission report" con nuevo formato.
 - FSD engaged: Ahora al llegar al sistema hogar no informará de nada más.
+- Corregido error en evento "Mission expired"
+- Limpiado evento "Commander continued" de scripts ya no usados.
 
 
 ## VAP Hoksilato 3.4.3-3

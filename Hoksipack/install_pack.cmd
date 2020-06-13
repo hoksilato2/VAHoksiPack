@@ -1,7 +1,7 @@
 @echo off
 mode con: cols=115 lines=45
 set OPTIONSVER=3.3.4-1
-set PACKVER=3.5.3-2b
+set PACKVER=3.5.3-3b
 set VAVER=1.8.5
 set VAPVER=3.4.3-3
 set EDDIVER=3.5.3.b3
@@ -13,6 +13,7 @@ set G19Sdlink=https://apps.magicmau.nl/EliteG19s/EliteG19s-latest.msi
 set BindEDdlink=https://github.com/Corysia/bindED/releases/download/1.0.0.1/bindED.zip
 set VAEXTdlink=https://github.com/Antaniserse/VAExtensions/releases/download/v2.0/VAExtensions.zip
 set unzipdlink=http://stahlworks.com/dev/unzip.exe
+set cort2anadlink=https://github.com/hoksilato2/Cortana-2-Ana/releases/download/0.7/Cortana-2-Ana-07.exe
 
 rem color 0E
 echo.                                                                                                    
@@ -163,8 +164,8 @@ if %VAVERSTEAM%==si goto VAVERSTEAMADV
 
 if %inst_mode%==3 echo.
 if %inst_mode%==1 echo.
-if %inst_mode%==3 echo Si tienes la versi¢n [96mSteam[0m de VoiceAttack, cancela el instalador que aparecer  a continuaci¢n.
-if %inst_mode%==1 echo Si tienes la versi¢n [96mSteam[0m de VoiceAttack, cancela el instalador que aparecer  a continuaci¢n.
+if %inst_mode%==3 echo [97mSi tienes la versi¢n [96mSteam[97m de VoiceAttack, cancela el instalador que aparecer  a continuaci¢n.[0m
+if %inst_mode%==1 echo [97mSi tienes la versi¢n [96mSteam[97m de VoiceAttack, cancela el instalador que aparecer  a continuaci¢n.[0m
 
 echo.
 echo [93mDescargando instalador VoiceAttack %VAVER%...
@@ -495,12 +496,12 @@ for /D %%d in ("%LOCALAPPDATA%\Voiceattack*") do move /Y "%%d" "%LOCALAPPDATA%\H
 cd /D %ruta_VA%			   
 
 echo.
-echo [93mDescargando plguin BindED...
+echo [93mDescargando plugin BindED...
 echo fuente: [96m%BindEDdlink%[0m
 powershell Invoke-WebRequest %BindEDdlink% -OutFile "%~dp0bindED.zip"
 
 echo.
-echo [93mDescargando plguin VAExtensions...
+echo [93mDescargando plugin VAExtensions...
 echo fuente: [96m%VAEXTdlink%[0m
 powershell Invoke-WebRequest %VAEXTdlink% -OutFile "%~dp0VAExtensions.zip"
 
@@ -573,9 +574,15 @@ xcopy /Y /Q "%~dp0G19s\options.json" "%appdata%\EliteG19s\"
 
 :CORTANA2ANA
 if not %inst_Ana% == S goto ALLINSTALLED
+
+echo.
+echo [93mDescargando Cortana-2-Ana.exe
+echo fuente: [96m%cort2Anadlink%[0m
+powershell Invoke-WebRequest %cort2Anadlink% -OutFile "%~dp0Cortana-2-Ana.exe"
+
 echo.
 echo [93mAbriendo configurador de motor TTS de Cortana...[37m
-START CMD /c "%~dp0Cortana2Ana\Cortana2Ana.cmd"
+"%~dp0Cortana-2-Ana.exe"
 
 :ALLINSTALLED
 if %inst_VA% == portable goto READYVA
