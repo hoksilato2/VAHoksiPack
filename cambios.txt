@@ -1,27 +1,29 @@
-## Hoksipack 3.5.3-2b
+## Hoksipack 3.5.3-3b
 
 - Actualizados textos de ayuda del final según últimos updates de EDDI.
 - Eliminados ejecutables de aplicaciones
-- Añadido wget para descarga de paquetes (https://eternallybored.org/misc/wget/)
+- Añadida descarga de paquetes externos mediante PowerShell
 - Ahora las aplicaciones VoiceAttack, EDDI y G19s Companion se descargarán directamente de Internet antes de su instalación.
 - Cuidado, repetidos intentos de descarga pueden hacer que VoiceAttack te bloquee la descarga temporalmente (unos minutos)
-- Reducido x10 el tamaño del paquete instalador.
+- Ahora el HoksiPack solo ocupa 500kb!
+- Añadida Cortana-2-Ana v0.7. Por fin disponible el resto de voces de Windows 10.
 
 
 ## VoiceAttack 1.8.5
 
-- Añadida nueva versión de VA.
+- Añadida descarga de la nueva versión de VA.
 - Todos lo cambios los podéis encontrar [aquí](https://www.voiceattack.com/changes.aspx) (desde la versión 1.7.5):
 	
 
-## EDDI 3.5.3-b3
+## EDDI 3.5.3-b7
 
-- Añadida versión 3.5.3-b3 de EDDI
-https://github.com/EDCD/EDDI/blob/Release/3.5.3-b3/EDDI/ChangeLog.md
+- Añadida descarga de la nueva versión 3.5.3-b7 de EDDI
+https://github.com/EDCD/EDDI/blob/Release/3.5.3-b7/EDDI/ChangeLog.md
 
 
-## Shirka 3.5.3-3b
+## Shirka 3.5.3-2b (Personalidad EDDI)
 
+- Traducido nuevo evento Asteroid prospected
 - Actualizado eventos Body scanned y Star scanned con el nuevo formato
 - Traducido evento Ring hotspots detected (Solo funciona si la nave la tenéis etiquetada como minera o multipropósito)
 - Traducido evento Powerplay
@@ -55,9 +57,20 @@ https://github.com/EDCD/EDDI/blob/Release/3.5.3-b3/EDDI/ChangeLog.md
 - FSD engaged: Ahora al llegar al sistema hogar no informará de nada más.
 - Corregido error en evento "Mission expired"
 - Limpiado evento "Commander continued" de scripts ya no usados.
+- Corregidos errores en evento "Mission failed"
+- modificado FSD Engaged: Ahora al saltar solo informará de si la próxima estrella es scoopeable si tienes menos de un 25% de combustible.
+- modificado FSD Engaged: Ahora al saltar informará de cuantas veces has visitado el sistema de vez en cuando si lo has visitado más de 4 veces y nunca si es tu sistema hogar.
+- Modificado Jumped: Al salir de un salto, ahora sólo informará del combustible si está a menos del 60%
 
+## VAP Hoksilato 3.5.3-1 (Perfil VoiceAttack)
 
-## VAP Hoksilato 3.4.3-3
+- Modificado comando "Gracias": Ahora servirá para desactivar la escucha de Shirka. Para volver a activarla puedes usar el botón de la interfaz o usando el comando "Shirka atenta" (o sus variables)
+- Recordar, aunque Shirka no escuche, atenderá si delante de cada comando decís su nombre.
+- Añadido comando: ¿[Me ;][Puedes repetir;][Qué;la] pista[ de aterrizaje;] [;has dicho]?
+- Añadido comando: [Hazme un;] informe de [posibles ;]descuentos [;de la nave]
+- Añadido comando: [;Dame] más información [de;sobre;] [;este] [planeta;cuerpo;satélite;]
+
+-----------------
 
 - Comandos actualizados:
  - ¿Y este planeta? (comando añadido a "Que me puedes decir de este planeta")

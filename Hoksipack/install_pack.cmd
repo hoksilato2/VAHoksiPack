@@ -3,12 +3,12 @@ mode con: cols=115 lines=45
 set OPTIONSVER=3.3.4-1
 set PACKVER=3.5.3-3b
 set VAVER=1.8.5
-set VAPVER=3.4.3-3
-set EDDIVER=3.5.3.b3
+set VAPVER=3.5.3-1
+set EDDIVER=3.5.3.b7
 set PERSOVER=3.5.3-1b
 set G19SVER=3.7.7461.28459
 set VAdlink=https://voiceattack.com/FileSend.aspx?id=VoiceAttackInstaller.exe
-set EDDIdlink=https://github.com/EDCD/EDDI/releases/download/Release/3.5.3-b3/EDDI-%EDDIVER%.exe
+set EDDIdlink=https://github.com/EDCD/EDDI/releases/download/Release/3.5.3-b7/EDDI-%EDDIVER%.exe
 set G19Sdlink=https://apps.magicmau.nl/EliteG19s/EliteG19s-latest.msi
 set BindEDdlink=https://github.com/Corysia/bindED/releases/download/1.0.0.1/bindED.zip
 set VAEXTdlink=https://github.com/Antaniserse/VAExtensions/releases/download/v2.0/VAExtensions.zip
