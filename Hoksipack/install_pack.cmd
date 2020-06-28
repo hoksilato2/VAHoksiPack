@@ -1,7 +1,7 @@
 @echo off
 mode con: cols=115 lines=45
 set OPTIONSVER=3.3.4-1
-set PACKVER=3.5.3-3b
+set PACKVER=3.5.3-4b
 set VAVER=1.8.5
 set VAPVER=3.5.3-1
 set EDDIVER=3.5.3.b7
@@ -13,7 +13,7 @@ set G19Sdlink=https://apps.magicmau.nl/EliteG19s/EliteG19s-latest.msi
 set BindEDdlink=https://github.com/Corysia/bindED/releases/download/1.0.0.1/bindED.zip
 set VAEXTdlink=https://github.com/Antaniserse/VAExtensions/releases/download/v2.0/VAExtensions.zip
 set unzipdlink=http://stahlworks.com/dev/unzip.exe
-set cort2anadlink=https://github.com/hoksilato2/Cortana-2-Ana/releases/download/0.7/Cortana-2-Ana-07.exe
+set cort2anadlink=https://github.com/hoksilato2/Cortana-2-Ana/releases/download/0.8/Cortana-2-Ana-08.exe
 
 rem color 0E
 echo.                                                                                                    
@@ -547,7 +547,7 @@ ren "%ruta_VAUC%" "user.config.%time:~0,2%%time:~3,2%%time:~6,2%_%date:~-10,2%%d
 
 echo.
 echo [93mTrasladando propiedades...[37m
-xcopy /Y /Q "%~dp0VA\user.config*" %ruta_VAUC%*
+xcopy /Y /Q "%~dp0VA\user.config*" "%ruta_VAUC%*"
 
 
 :PrepareG19s
