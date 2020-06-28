@@ -170,7 +170,7 @@ if %inst_mode%==1 echo [97mSi tienes la versi¢n [96mSteam[97m de VoiceAttack,
 echo.
 echo [93mDescargando instalador VoiceAttack %VAVER%...
 echo fuente: [96m%VAdlink%[0m
-powershell Invoke-WebRequest %VAdlink% -OutFile "%~dp0VoiceAttackinstaller.exe"
+powershell -command Invoke-WebRequest %VAdlink% -OutFile '%~dp0VoiceAttackinstaller.exe'
 echo.
 echo [93mAbriendo instalador VoiceAttack %VAVER%...
 "%~dp0VoiceAttackinstaller.exe"
@@ -221,7 +221,7 @@ if %inst_VA% == portable goto G19s
 echo.
 echo [93mDescargando EDDI %EDDIVER%...[0m
 echo fuente: [96m%EDDIdlink%[0m
-powershell Invoke-WebRequest %EDDIdlink% -OutFile "%~dp0EDDI-%EDDIVER%.exe"
+powershell -command Invoke-WebRequest %EDDIdlink% -OutFile '%~dp0EDDI-%EDDIVER%.exe'
 
 echo.
 echo [93mAbriendo instalador EDDI %EDDIVER%...
@@ -242,7 +242,7 @@ if not %inst_G19s% == S goto PrepareALL
 echo.
 echo Descargando Elite G19s Companion %G19SVER%...[0m
 echo fuente: [96m%G19Sdlink%[0m
-powershell Invoke-WebRequest %G19Sdlink% -OutFile "%~dp0EliteG19s-latest.msi"
+powershell -command Invoke-WebRequest %G19Sdlink% -OutFile '%~dp0EliteG19s-latest.msi'
 
 echo.
 echo [0mSInstalando Elite G19s Companion %G19SVER%...[0m
@@ -498,18 +498,18 @@ cd /D %ruta_VA%
 echo.
 echo [93mDescargando plugin BindED...
 echo fuente: [96m%BindEDdlink%[0m
-powershell Invoke-WebRequest %BindEDdlink% -OutFile "%~dp0bindED.zip"
+powershell -command Invoke-WebRequest %BindEDdlink% -OutFile '%~dp0bindED.zip'
 
 echo.
 echo [93mDescargando plugin VAExtensions...
 echo fuente: [96m%VAEXTdlink%[0m
-powershell Invoke-WebRequest %VAEXTdlink% -OutFile "%~dp0VAExtensions.zip"
+powershell -command Invoke-WebRequest %VAEXTdlink% -OutFile '%~dp0VAExtensions.zip'
 
 echo.
 echo [93mInstalando plugins...[37m
 if not exist %~dp0Apps md %~dp0Apps
-powershell Expand-Archive -Path %~dp0bindED.zip -DestinationPath %~dp0VA\Apps\bindED
-powershell Expand-Archive -Path %~dp0VAExtensions.zip -DestinationPath %~dp0VA\Apps\VAExtensions
+powershell -command Expand-Archive -Path '%~dp0bindED.zip' -DestinationPath '%~dp0VA\Apps\bindED'
+powershell -command Expand-Archive -Path '%~dp0VAExtensions.zip' -DestinationPath '%~dp0VA\Apps\VAExtensions'
 
 
 xcopy /Q /E /Y /I "%~dp0VA\Apps" .\Apps
@@ -578,7 +578,7 @@ if not %inst_Ana% == S goto ALLINSTALLED
 echo.
 echo [93mDescargando Cortana-2-Ana.exe
 echo fuente: [96m%cort2Anadlink%[0m
-powershell Invoke-WebRequest %cort2Anadlink% -OutFile "%~dp0Cortana-2-Ana.exe"
+powershell -command Invoke-WebRequest %cort2Anadlink% -OutFile '%~dp0Cortana-2-Ana.exe'
 
 echo.
 echo [93mAbriendo configurador de motor TTS de Cortana...[37m
