@@ -911,6 +911,7 @@
     "Ambilight": true
   },
   "IsUseGameTime": true,
+  "QuitWhenEliteExits": true,
   "IsUseDiscordRichPresence": true,
   "DefaultTTSVoice": "Microsoft Ana",
   "ArxAnimationLevel": "full",
