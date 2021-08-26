@@ -2,19 +2,19 @@
 mode con: cols=115 lines=45
 set OPTIONSVER=3.7.7-1
 set PACKVER=3.7.2-1b
-set VAVER=1.8.7
+set VAVER=1.8.9
 set VAPVER=3.5.3-1
-set EDDIVER=3.7.2
-set PERSOVER=3.5.3-2b
-set G19SVER=3.7.7699.31281 (beta)
+set EDDIVER=4.0.1
+set PERSOVER=4.0.1-1b
+set G19SVER=3.7.7888.21039 (beta)
 set VAdlink=https://voiceattack.com/FileSend.aspx?id=VoiceAttackInstaller.exe
-set EDDIdlink=https://github.com/EDCD/EDDI/releases/download/Release/3.7.2/EDDI-%EDDIVER%.exe
+set EDDIdlink=https://github.com/EDCD/EDDI/releases/download/Release/4.0.1/EDDI-%EDDIVER%.exe
 rem set G19Sdlink=https://apps.magicmau.nl/EliteG19s/EliteG19s-latest.msi
-set G19Sdlink=https://apps.magicmau.nl/Beta/EliteG19s-3.7.7699.31281.msi
+set G19Sdlink=https://apps.magicmau.nl/Beta/EliteG19s-3.7.7888.21039.msi
 set BindEDdlink=https://github.com/Corysia/bindED/releases/download/1.0.0.1/bindED.zip
 set VAEXTdlink=https://github.com/Antaniserse/VAExtensions/releases/download/v2.0/VAExtensions.zip
 set unzipdlink=http://stahlworks.com/dev/unzip.exe
-set cort2anadlink=https://github.com/hoksilato2/Cortana-2-Ana/releases/download/0.8/Cortana-2-Ana-08.exe
+set cort2anadlink=https://github.com/hoksilato2/Cortana-2-Ana/releases/download/0.9/Cortana-2-Ana-09.cmd
 
 rem color 0E
 echo.                                                                                                    
@@ -53,9 +53,9 @@ echo           :o.               ;o,           ..,;c:,..
 echo           ;xdc;'...         .:l'     ..,::::,.                        [93m - VoiceAttack: [92m%VAVER%       [0m[37m
 echo           .,ldxxxocccccc;'''',ll'..,cc:,'..                           [93m  ú VAP:        [91m%VAPVER%            [0m[37m
 echo              :dc::lol:'.,:::ccoxc:do,.                                [93m - EDDI:        [92m%EDDIVER%              [0m[37m
-echo                   .,:c:;,.   .....:c:;'.                              [93m  ú Shirka:     [91m%PERSOVER%          [0m[37m
+echo                   .,:c:;,.   .....:c:;'.                              [93m  ú Shirka:     [92m%PERSOVER%          [0m[37m
 echo                       .';;,..       .';c:,'.                          [93m - G19s:        [92m%G19SVER%    [0m[37m
-echo                           .;::;,.       .,;:cc:'.                     [93m  ú Options:   [92m %OPTIONSVER%           [0m[37m
+echo                           .;::;,.       .,;:cc:'.                     [93m  ú Options:   [91m %OPTIONSVER%           [0m[37m
 echo                              .,:cc:'.       .',:cc;'.                    
 echo                                 ..,:::;'.        .,:::;'..               ,oxd,                            
 echo                                      .';::....       .';::::,..         .okx,                             
@@ -579,11 +579,11 @@ if not %inst_Ana% == S goto ALLINSTALLED
 echo.
 echo [93mDescargando Cortana-2-Ana.exe
 echo fuente: [96m%cort2Anadlink%[0m
-powershell -command Invoke-WebRequest %cort2Anadlink% -OutFile '%~dp0Cortana-2-Ana.exe'
+powershell -command Invoke-WebRequest %cort2Anadlink% -OutFile '%~dp0Cortana-2-Ana.cmd'
 
 echo.
 echo [93mAbriendo configurador de motor TTS de Cortana...[37m
-"%~dp0Cortana-2-Ana.exe"
+"%~dp0Cortana-2-Ana.cmd"
 
 :ALLINSTALLED
 if %inst_VA% == portable goto READYVA
