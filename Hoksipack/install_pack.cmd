@@ -1,11 +1,11 @@
 @echo off
 mode con: cols=115 lines=45
 set OPTIONSVER=3.7.7-1
-set PACKVER=3.7.2-1b
+set PACKVER=4.0.1-2b
 set VAVER=1.8.9
 set VAPVER=3.5.3-1
 set EDDIVER=4.0.1
-set PERSOVER=4.0.1-1b
+set PERSOVER=4.0.1-1bT3
 set G19SVER=3.7.7888.21039 (beta)
 set VAdlink=https://voiceattack.com/FileSend.aspx?id=VoiceAttackInstaller.exe
 set EDDIdlink=https://github.com/EDCD/EDDI/releases/download/Release/4.0.1/EDDI-%EDDIVER%.exe
@@ -50,11 +50,11 @@ echo           .:d'            :o.                          ...,;;::,.          
 echo           'l:.            .l:.                    ..';:cc:;..                 .co'   :o.                  
 echo           :d'              'oc.               ..;::::;..                      .ll.  .lc                   
 echo           :o.               ;o,           ..,;c:,..                                              
-echo           ;xdc;'...         .:l'     ..,::::,.                        [93m - VoiceAttack: [92m%VAVER%       [0m[37m
+echo           ;xdc;'...         .:l'     ..,::::,.                        [93m - VoiceAttack: [91m%VAVER%       [0m[37m
 echo           .,ldxxxocccccc;'''',ll'..,cc:,'..                           [93m  ú VAP:        [91m%VAPVER%            [0m[37m
-echo              :dc::lol:'.,:::ccoxc:do,.                                [93m - EDDI:        [92m%EDDIVER%              [0m[37m
+echo              :dc::lol:'.,:::ccoxc:do,.                                [93m - EDDI:        [91m%EDDIVER%              [0m[37m
 echo                   .,:c:;,.   .....:c:;'.                              [93m  ú Shirka:     [92m%PERSOVER%          [0m[37m
-echo                       .';;,..       .';c:,'.                          [93m - G19s:        [92m%G19SVER%    [0m[37m
+echo                       .';;,..       .';c:,'.                          [93m - G19s:        [91m%G19SVER%    [0m[37m
 echo                           .;::;,.       .,;:cc:'.                     [93m  ú Options:   [91m %OPTIONSVER%           [0m[37m
 echo                              .,:cc:'.       .',:cc;'.                    
 echo                                 ..,:::;'.        .,:::;'..               ,oxd,                            
